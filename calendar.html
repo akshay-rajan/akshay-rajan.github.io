@@ -10,6 +10,16 @@
             .input {
                 text-align: center;
             }
+            table, tr, td {
+                border: 1px solid red;
+                border-collapse: collapse;
+            }
+            table {
+                display: inline-block;
+                margin: 10px;
+                text-align: center;
+                vertical-align: top;
+            }
         </style>
     </head>
     <body>
@@ -44,6 +54,8 @@ For each month:
             <div id="calendar"></div>
         </div> 
         <script>
+            let calendar = document.querySelector('#calendar');
+            calendar.innerHTML = "";
             document.querySelector('#getCal').addEventListener('click', () => {
                 let year = document.querySelector('#year').value;
                 let monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -88,7 +100,7 @@ For each month:
                         monthTable.appendChild(weekRow);
                     }
                     monthCount++;
-                    document.querySelector('#calendar').appendChild(monthTable);
+                    calendar.appendChild(monthTable);
                 }
             });
         </script>
