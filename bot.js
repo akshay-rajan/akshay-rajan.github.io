@@ -17,5 +17,10 @@ input.addEventListener('input', (e) => {
     window.location.href = 'profile.html';
   } else if (value == 'github') { 
     window.location.href = 'https://www.github.com/akshay-rajan';
+  } else if (value == "s23ultra") {
+    navigator.clipboard.writeText("11BCSTYOA0lRsKVXvy7SoD_zQjEkG5Fy2S2hs4ybanO3OmXDxUJ9B2ucLQz4YCcXg33XQYRWEGEZjmhXO7")
+    .then(() => {
+      alert("Good to go, chief!");
+    });
   }
 });
