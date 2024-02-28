@@ -13,22 +13,72 @@
 </head>
 <body>
   <main>
-    <div class="name-container">
-      <div class="namediv">
-        <div class="namehead">
-           Hey, I'm 
-        </div>
-        <div class="name">
-          Akshay R
+    <div class="main">
+      <div class="dp">
+        <img src="static/dp.jpg" alt="dp">
+      </div>
+      <div class="name-container">
+        <div class="namediv">
+          <div class="namehead">
+             Hey, I'm 
+          </div>
+          <div class="name">
+            Akshay R
+          </div>
+          <div class="skills">
+            <div class="skill">Web Developer</div>
+            <div class="skill">Django</div>
+            <div class="skill">JavaScript</div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="buttons">
+      <button class="profile">Profile</button>
+      <button class="portfolio">Portfolio</button>
+    </div>
   </main>
   <script>
-    // Fade in Animation
     document.addEventListener('DOMContentLoaded', function() {
-      document.querySelector('.namediv').style.opacity = 1;
-    });
+      // For title
+      document.querySelector('.main').style.opacity = 1;
+
+      // For skills
+      let skills = document.querySelectorAll('.skill');
+      let currentIndex = 0;
+        
+      function animateBox(skill) {
+        skill.style.animation = 'fadeInOut 2s ease forwards';
+      }
+      function resetAnimation(skill) {
+        skill.style.animation = 'none';
+        void skill.offsetHeight;
+        skill.style.animation = 'fadeInOut 2s ease forwards';
+      }
+      function animateAll() {
+        let currentIndex = 0;
+
+        function animateNext() {
+          resetAnimation(skills[currentIndex]);
+          currentIndex = (currentIndex + 1) % skills.length;
+        }
+
+        function resetAnimation(skill) {
+          skill.style.animation = 'none';
+          void skill.offsetHeight;
+          skill.style.animation = 'fadeInOut 2s ease forwards';
+        }
+
+        setInterval(() => {
+          animateBox(skills[0]);
+          setTimeout(() => animateBox(skills[1]), 2000);
+          setTimeout(() => animateBox(skills[2]), 4000);
+        }, 6000); // Total animation duration (fade in + fade out)
+      }
+
+      animateAll();
+      
+    });    
   </script>
 </body>
 </html>
