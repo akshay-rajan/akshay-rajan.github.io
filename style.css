@@ -1,18 +1,40 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
   margin: 20px;
   padding: 20px;
   color: white;
   background-image: url(static/tech_bg.jpg);
+  backdrop-filter: blur(4px);
   background-color: black!important;
   border: none;
 }
 
+.name-container {
+  display: grid;
+  place-items: center;
+  height: 500px;
+}
+
+.namediv {
+  font-family: "brush script mt";
+  font-weight: lighter;
+}
+.namehead {
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+  /* font-weight: 5; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .name {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
   font-size: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-decoration: 1px solid underline;
 }
 
 .container {
