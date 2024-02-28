@@ -18,6 +18,8 @@ body {
 .namediv {
   font-family: "brush script mt";
   font-weight: lighter;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 .namehead {
   font-family: "Kaushan Script", cursive;
