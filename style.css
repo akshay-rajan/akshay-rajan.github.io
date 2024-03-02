@@ -5,7 +5,6 @@ body {
   color: white;
   background-image: url(static/dark-floral.jpg);
   background-color: black!important;
-  /* backdrop-filter: blur(4px); */
   border: none;
 }
 
