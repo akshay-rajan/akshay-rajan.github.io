@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="static/favicon.svg" type="image/x-icon">
 </head>
 <body>
   <main>
@@ -27,9 +27,7 @@
             Akshay R
           </div>
           <div class="skills">
-            <div class="skill">Web Developer</div>
-            <div class="skill">Django</div>
-            <div class="skill">JavaScript</div>
+
           </div>
         </div>
       </div>
@@ -40,46 +38,33 @@
     </div>
   </main>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // For title
+    function animateSkills() {
+      let skillsDiv = document.querySelector('.skills');
+      let skills = ['Django', 'JavaScript', 'Flask', 'HTML', 'CSS', 'Bootstrap', 'React','SQL', 'Python', 'C++', 'Java', 'Git', 'GitHub', 'Linux', 'Selenium', 'BeautifuSoup'];
+      let index = 0;
+
+      function addSkill() {
+          let currentSkill = document.createElement('div');
+          currentSkill.classList.add('skill');
+          currentSkill.innerText = skills[index % skills.length];
+          currentSkill.style.animation = `fadeInOut 2s ease-in-out forwards`;
+          skillsDiv.appendChild(currentSkill);
+
+          currentSkill.addEventListener('animationend', () => {
+              setTimeout(() => {
+                  skillsDiv.removeChild(currentSkill);
+                  index++;
+                  addSkill();
+              }, 1000); // Wait for 1 second after animation ends
+          });
+      }
+      addSkill();
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.main').style.opacity = 1;
-
-      // For skills
-      let skills = document.querySelectorAll('.skill');
-      let currentIndex = 0;
-        
-      function animateBox(skill) {
-        skill.style.animation = 'fadeInOut 2s ease forwards';
-      }
-      function resetAnimation(skill) {
-        skill.style.animation = 'none';
-        void skill.offsetHeight;
-        skill.style.animation = 'fadeInOut 2s ease forwards';
-      }
-      function animateAll() {
-        let currentIndex = 0;
-
-        function animateNext() {
-          resetAnimation(skills[currentIndex]);
-          currentIndex = (currentIndex + 1) % skills.length;
-        }
-
-        function resetAnimation(skill) {
-          skill.style.animation = 'none';
-          void skill.offsetHeight;
-          skill.style.animation = 'fadeInOut 2s ease forwards';
-        }
-
-        setInterval(() => {
-          animateBox(skills[0]);
-          setTimeout(() => animateBox(skills[1]), 2000);
-          setTimeout(() => animateBox(skills[2]), 4000);
-        }, 6000); // Total animation duration (fade in + fade out)
-      }
-
-      animateAll();
-      
-    });    
+      animateSkills();
+    });
   </script>
 </body>
 </html>
