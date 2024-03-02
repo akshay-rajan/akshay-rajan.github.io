@@ -54,6 +54,7 @@ body {
   height: 400px;
   opacity: 0;
   transition: opacity 2s ease;
+  color: white;
   background-color: black;
 }
 @media (max-width: 600px) {
@@ -83,7 +84,7 @@ body {
 
 .skill {
   opacity: 0;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -99,5 +100,13 @@ body {
 }
 
 .buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+}
+.buttons button {
+  margin: 10px;
+  width: 150px;
+  /* width: 100%; */
 }
