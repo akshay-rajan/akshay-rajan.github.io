@@ -15,13 +15,29 @@ function animateSkills() {
                 skillsDiv.removeChild(currentSkill);
                 index++;
                 addSkill();
-            }, 1000); // Wait for 1 second after animation ends
+            }, 1000);
         });
     }
     addSkill();
-  };
+};
 
-  document.addEventListener('DOMContentLoaded', () => {
+function displayProfile() {
+    console.log('Profile');
+}
+
+function displayPortfolio() {
+    console.log('Portfolio');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Main Content
     document.querySelector('.main').style.opacity = 1;
+    
+    // Skills
     animateSkills();
+
+    // Profile
+    document.querySelector('.profile').addEventListener('click', displayProfile);
+    // Portfolio
+    document.querySelector('.portfolio').addEventListener('click', displayPortfolio);
 });
