@@ -3,13 +3,10 @@ body {
   margin: 20px;
   padding: 20px;
   color: white;
-  background-image: url(static/space.jpg);
+  background-image: url(static/dark-floral.jpg);
   background-color: black!important;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   border: none;
-}
-body::before {
-  background-color: rgba(0, 255, 55, 0.9);
 }
 
 .name-container {
@@ -51,18 +48,32 @@ body::before {
 
 .main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 400px;
   opacity: 0;
   transition: opacity 2s ease;
+  background-color: black;
+}
+@media (max-width: 600px) {
+  .main {
+    height: 430px;
+  }
 }
 
-.dp img {
+.dp {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  height: 200px;
+  margin: 20px;
+}
+#dp {
   border-radius: 50%;
+  margin: 0px;
   width: 150px;
   height: 150px;
-  margin-right: 50px;
 }
 
 .skills {
@@ -72,8 +83,8 @@ body::before {
 
 .skill {
   opacity: 0;
-  transform: translateY(-20px);
-  /* animation: fadeInOut 4s ease infinite; */
+  margin: 10px;
+  text-align: center;
 }
 
 @keyframes fadeInOut {
