@@ -109,3 +109,7 @@ body {
   width: 150px;
   /* width: 100%; */
 }
+
+.portfolio, .profile {
+  opacity: 0;
+}
