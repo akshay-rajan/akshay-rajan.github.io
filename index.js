@@ -26,16 +26,13 @@ function displayProfile() {
     document.querySelector('main').style.display = "none";
     document.querySelector('.portfolio').style.display = "none";
     document.querySelector('.profile').style.display = "block";
-    console.log('Profile');
 }
 
 function displayPortfolio() {
     // Hide and Show elements
     document.querySelector('main').style.display = "none";
     document.querySelector('.profile').style.display = "none";
-    document.querySelector('.portfolio').style.display = "block";
-    
-    console.log('Portfolio');
+    document.querySelector('.portfolio').style.display = "block";    
 }
 
 function displayMain() {
@@ -43,14 +40,11 @@ function displayMain() {
     document.querySelector('.profile').style.display = "none";
     document.querySelector('.portfolio').style.display = "none";
     document.querySelector('main').style.display = "block";
-
-    console.log('Main');
 }
 
 function mouseOverAnimation() {
     let mainDiv = document.querySelector('.main');
     mainDiv.addEventListener('mousemove', function(event) {
-        console.log('X: ' + event.clientX + ', Y: ' + event.clientY);
         const mouseX = event.clientX / window.innerWidth;
         const mouseY = event.clientY / window.innerHeight;
         
