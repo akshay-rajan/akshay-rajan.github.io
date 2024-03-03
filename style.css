@@ -269,3 +269,11 @@ button:hover {
   width: 100px;
   height: 40px;
 }
+
+.contact p {
+  display: inline-block;
+}
+
+.contact-link {
+  color: white!important;
+}

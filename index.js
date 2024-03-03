@@ -47,9 +47,22 @@ function displayMain() {
     console.log('Main');
 }
 
+function mouseOverAnimation() {
+    let mainDiv = document.querySelector('.main');
+    mainDiv.addEventListener('mousemove', function(event) {
+        console.log('X: ' + event.clientX + ', Y: ' + event.clientY);
+        const mouseX = event.clientX / window.innerWidth;
+        const mouseY = event.clientY / window.innerHeight;
+        
+        const angle = mouseX * 360;        
+        mainDiv.style.backgroundImage = `linear-gradient(${angle}deg, #182358  0%, #22133a 46%, #000000 100%)`;
+    });    
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Main Content
     document.querySelector('.main').style.opacity = 1;
+    mouseOverAnimation();
     
     // Skills
     animateSkills();
