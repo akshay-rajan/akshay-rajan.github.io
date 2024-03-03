@@ -23,26 +23,26 @@ function animateSkills() {
 
 function displayProfile() {
     // Hide and Show elements
-    document.querySelector('main').style.opacity = 0;
-    document.querySelector('.portfolio').style.opacity = 0;
-    document.querySelector('.profile').style.opacity = 1;
+    document.querySelector('main').style.display = "none";
+    document.querySelector('.portfolio').style.display = "none";
+    document.querySelector('.profile').style.display = "block";
     console.log('Profile');
 }
 
 function displayPortfolio() {
     // Hide and Show elements
-    document.querySelector('main').style.opacity = 0;
-    document.querySelector('.profile').style.opacity = 0;
-    document.querySelector('.portfolio').style.opacity = 1;
+    document.querySelector('main').style.display = "none";
+    document.querySelector('.profile').style.display = "none";
+    document.querySelector('.portfolio').style.display = "block";
     
     console.log('Portfolio');
 }
 
 function displayMain() {
     // Hide and Show elements
-    document.querySelector('.profile').style.opacity = 0;
-    document.querySelector('.portfolio').style.opacity = 0;
-    document.querySelector('main').style.opacity = 1;
+    document.querySelector('.profile').style.display = "none";
+    document.querySelector('.portfolio').style.display = "none";
+    document.querySelector('main').style.display = "block";
 
     console.log('Main');
 }
