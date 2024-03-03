@@ -1,12 +1,24 @@
 function displayCard() {
     let projects = {
-        'project1': {
-            'name': 'Name',
-            'details': 'Details',
+        '1': {
+            'name': 'DeviceDash',
+            'details': 'Smartphone Recommendation Website',
         },
-        'project2': {
-            'name': 'Name',
-            'details': 'Details',
+        '2': {
+            'name': 'Timer For Chrome',
+            'details': 'A Timer Chrome Extension',
+        },
+        '3': {
+            'name': 'Auctions',
+            'details': 'Auction Website',
+        },
+        '4': {
+            'name': 'Ripple',
+            'details': 'A Twitter-like Social Media App',
+        },
+        '5': {
+            'name': 'Numerical Analysis',
+            'details': 'Solving Mathematical Problems using Numerical Analysis in Python',
         },
     };
     let cardsDiv = document.querySelector('.project-cards');
