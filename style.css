@@ -123,14 +123,11 @@ button:hover {
   display: none;
 }
 
-.back button {
-  width: 40px;
-  height: 40px;
-}
-
 .profile-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
   align-items: center;
   height: 400px;
 }
@@ -146,11 +143,13 @@ button:hover {
 
 .profile-container div {
   margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
 }
-.profile-container div:hover {
-  color: rgb(178, 183, 255);
-
-}
+/* .profile-container div:hover {
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+} */
 
 .summary {
   text-align: left;
@@ -160,11 +159,12 @@ button:hover {
   display: inline-block;
   padding: 10px;
   margin: 2px!important;
-  border: 1px solid white;
+  background-image: linear-gradient(43deg, #000000 0%, #3e1f70 46%, #4158D0 100%)!important;
 }
 .skill-name:hover {
-  background-color: white;
-  color: black!important;
+  background-image: linear-gradient(43deg, #6a82fa 0%, #7842f5 46%, #d152f8 100%)!important;
+  border: none;
+  color: white!important;
 }
 
 
@@ -256,3 +256,16 @@ button:hover {
   transform: translateX(100%);
 }
 /* * Card End */
+
+.back {
+  display: block!important;
+  /* position: absolute; */
+  top: 10px;
+  margin: 5px;
+  z-index: 1;
+}
+
+.js-main-btn {
+  width: 100px;
+  height: 40px;
+}

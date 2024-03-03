@@ -47,17 +47,6 @@ function displayMain() {
     console.log('Main');
 }
 
-function displayCard() {
-    let cardDiv = document.createElement('div');
-    cardDiv.classList.add('card');
-    cardDiv.innerHTML = `<div class='card-content'>
-                            <p class='card-title'>ProjectName</p>
-                            <p class='card-para'>Project Details</p>
-                        </div>`;
-    document.querySelector('.project-cards').appendChild(cardDiv);
-}
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Main Content
     document.querySelector('.main').style.opacity = 1;
@@ -69,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#js-profile').addEventListener('click', displayProfile);
 
     // Portfolio
-    displayCard();
     displayCard();
     document.querySelector('#js-portfolio').addEventListener('click', displayPortfolio);
 
