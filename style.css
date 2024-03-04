@@ -154,6 +154,10 @@ button:hover {
 .summary {
   text-align: left;
 }
+.summary-p {
+  padding: 5px!important;
+  margin: 5px!important;
+}
 
 .skill-name {
   display: inline-block;
@@ -272,6 +276,7 @@ button:hover {
 
 .contact-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -285,4 +290,31 @@ button:hover {
   color: white!important;
 }
 
-.edu {}
+.edu ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+.achievements ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+.certifications ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.resume-download-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  width: 75px;
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
