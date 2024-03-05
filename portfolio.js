@@ -52,12 +52,10 @@ function displayCard() {
 function displayProject(project, cardDiv) {
     // * If the project is displayed, hide it
     if (cardDiv.classList.contains('card-expanded')) {
-        cardDiv.innerHTML = `<div class='card-content'>
-                                <p class='card-title'>${project['name']}</p>
-                                <p class='card-para'>${project['details']}</p>
-                            </div>`;
-        cardDiv.classList.remove('card-expanded');
+        cardDiv.querySelector('.card-desc').remove();
+        cardDiv.querySelector('.github-link').remove();            
         cardDiv.style.animation = 'zoomIn 1s forwards';
+        cardDiv.classList.remove('card-expanded');
         return;
     }
     // * Hide any other project that is displayed
