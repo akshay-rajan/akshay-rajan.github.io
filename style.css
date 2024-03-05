@@ -318,3 +318,20 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.card-expanded {
+  width: 93%;
+  height: 100%!important;
+}
+
+.github-link {
+  color: white!important;
+  text-decoration: none!important;
+  font-weight: bold;
+  font-size: 16px;
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 5px;
+}
