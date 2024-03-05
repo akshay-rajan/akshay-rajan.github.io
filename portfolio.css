@@ -101,20 +101,26 @@
     margin: 5px;
 }
 
+.card-expanded {
+    animation: none;
+
+}
 
 @keyframes zoomOut {
     0% {
         width: 300px;
         height: 200px;
-    } 100% {
-        width: 700px;
-        height: 100%;
-    }
+        opacity: 0;
+    } 10%, 100% {
+        width: 90%;
+        height: 500px;
+        opacity: 1;
+    } 
 }
 @keyframes zoomIn {
     0% {
         width: 700px;
-        height: 100%;
+        height: 500px;
     } 100% {
         width: 300px;
         height: 200px;

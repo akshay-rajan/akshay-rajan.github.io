@@ -5,6 +5,7 @@ let projects = {
         'name': 'DeviceDash',
         'details': 'Smartphone Recommendation Website',
         'github': 'devicedash',
+        'img': 'static/devicedash.png',
         'description': 'DeviceDash is a smartphone recommendation website that helps users find the best smartphone for their needs. It uses a set of pre-defined ratings to predict the best smartphone for the user based on their preferences. The website is built using Django.'
     },
     '2': {
@@ -68,14 +69,15 @@ function displayProject(project, cardDiv) {
         }
     });
     // * Display the project
+    cardDiv.classList.remove('card');
     cardDiv.style.animation = 'zoomOut 1s forwards';
-    cardDiv.addEventListener('animationend', () => {
-        cardDiv.classList.add('card-expanded');
-        cardDiv.innerHTML = `<div class='card-content'>
-                                <p class='card-title'>${project['name']}</p>
-                                <p class='card-para'>${project['details']}</p>
-                                <p class='card-desc'>${project['description']}</p>
-                                <button class='github-link' onclick="window.location.href='https://www.github.com/akshay-rajan/${project['github']}'"><icon class="fab fa-github"></icon> View on GitHub</button>
-                            </div>`;
-    });
+    cardDiv.classList.add('card-expanded');
+    
+    cardDiv.innerHTML = `<div class='card-content'>
+                            <img class='card-img' src='${project['img']}' alt='Project Image'>
+                            <p class='card-title'>${project['name']}</p>
+                            <p class='card-para'>${project['details']}</p>
+                            <p class='card-desc'>${project['description']}</p>
+                            <button class='github-link' onclick="window.location.href='https://www.github.com/akshay-rajan/${project['github']}'"><icon class="fab fa-github"></icon> View on GitHub</button>
+                        </div>`;
 }
