@@ -34,6 +34,7 @@ let projects = {
     },
 };
 
+// * Display the projects
 function displayCard() {
     Object.values(projects).forEach(project => {
         let cardDiv = document.createElement('div');
@@ -45,17 +46,19 @@ function displayCard() {
         cardsDiv.appendChild(cardDiv);
         cardDiv.addEventListener('click', () => {
             displayProject(project, cardDiv);
-            // window.location.href = `https://www.github.com/akshay-rajan/${project['github']}`;
         });
     });
 }
 
+// * Display a Project when clicked
 function displayProject(project, cardDiv) {
     // * If the project is displayed, hide it
     if (cardDiv.classList.contains('card-expanded')) {
         cardDiv.querySelector('.card-desc').remove();
+        cardDiv.querySelector('.card-img').remove();            
         cardDiv.querySelector('.github-link').remove();            
         cardDiv.style.animation = 'zoomIn 1s forwards';
+        cardDiv.classList.add('card');
         cardDiv.classList.remove('card-expanded');
         return;
     }
@@ -63,8 +66,10 @@ function displayProject(project, cardDiv) {
     Array.from(cardsDiv.children).forEach(card => {
         if (card.classList.contains('card-expanded')) {
             card.querySelector('.card-desc').remove();
+            card.querySelector('.card-img').remove();            
             card.querySelector('.github-link').remove();            
             cardDiv.style.animation = 'zoomIn 1s forwards';
+            cardDiv.classList.add('card');
             card.classList.remove('card-expanded');
         }
     });
