@@ -94,15 +94,23 @@
     text-decoration: none!important;
     font-weight: bold;
     font-size: 16px;
-    background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+    background-image: linear-gradient(43deg, #1f064d 0%, #41266e 46%, #6908d8 100%);
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid white;
+    /* border: none; */
     margin: 5px;
+    width: 50%;
+}
+.github-link:hover {
+    background-image: linear-gradient(43deg, #431057 0%, #6306f8 46%, #c752f5 100%);
+    transform: rotate();
+    color: white;
+    cursor: pointer;
 }
 
 .card-expanded {
     animation: none;
+    background-image: linear-gradient(43deg, #4d0c34 0%, #7b31f3 46%, #9903fd 100%);
 
 }
 
