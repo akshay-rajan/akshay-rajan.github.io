@@ -121,7 +121,7 @@
     0% {
         width: 700px;
         height: 500px;
-    } 100% {
+    } 10%, 100% {
         width: 300px;
         height: 200px;
     }

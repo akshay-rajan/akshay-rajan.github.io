@@ -68,8 +68,8 @@ function displayProject(project, cardDiv) {
             card.querySelector('.card-desc').remove();
             card.querySelector('.card-img').remove();            
             card.querySelector('.github-link').remove();            
-            cardDiv.style.animation = 'zoomIn 1s forwards';
-            cardDiv.classList.add('card');
+            card.style.animation = 'zoomIn 1s forwards';
+            card.classList.add('card');
             card.classList.remove('card-expanded');
         }
     });
