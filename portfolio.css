@@ -102,3 +102,21 @@
 }
 
 
+@keyframes zoomOut {
+    0% {
+        width: 300px;
+        height: 200px;
+    } 100% {
+        width: 700px;
+        height: 100%;
+    }
+}
+@keyframes zoomIn {
+    0% {
+        width: 700px;
+        height: 100%;
+    } 100% {
+        width: 300px;
+        height: 200px;
+    }
+}
