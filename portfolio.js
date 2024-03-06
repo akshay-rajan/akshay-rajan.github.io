@@ -11,6 +11,7 @@ let projects = {
     '2': {
         'name': 'Timer For Chrome',
         'details': 'A Timer Chrome Extension',
+        'img': 'static/timer.png',
         'github': 'timer',
         'description': 'Timer for Chrome is a Chrome Extension that allows users to set a timer for a specific time. The extension is built using JavaScript and HTML. Built as a part of the CS50 course.'
     },
