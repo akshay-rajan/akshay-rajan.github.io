@@ -134,3 +134,17 @@
         height: 200px;
     }
 }
+
+.card-img {
+    /* max-height: 400px; */
+    /* width: auto!important; */
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ? Styles for PC and Laptop */
+@media only screen and (min-width: 1024px) {
+    .card-img {
+        max-height: 400px;
+        width: auto!important;
+    }
+}

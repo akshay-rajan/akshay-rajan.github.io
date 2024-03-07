@@ -18,19 +18,29 @@ let projects = {
     '3': {
         'name': 'Auctions',
         'details': 'Auction Website',
+        'img': 'static/auctions.png',
         'github': 'cs50w/blob/main/commerce',
         'description': 'Auctions is a website that allows users to create auctions, bid on auctions, and add auctions to their watchlist. The website is built using Django and Bootstrap.'
     },
     '4': {
         'name': 'Ripple',
         'details': 'A Twitter-like Social Media App',
+        'img': 'static/ripple.png',
         'github': 'cs50w/tree/main/network',
         'description': 'Ripple is a social media app inspired from Twitter(X) that allows users to post messages, follow other users, and like posts. The website is built using Django and Bootstrap.'
     },
     '5': {
+        'name': 'Wiki',
+        'details': 'Blogging Platform',
+        'img': 'static/wiki.png',
+        'github': 'cs50w/tree/main/wiki',
+        'description': 'Wiki is a blogging platform built using Django that allows users to create, edit, and delete blog posts. It is inspired by Wikipedia and uses Markdown for formatting the posts.'
+    },
+    '6': {
         'name': 'Numerical Methods',
         'details': 'Solving Mathematical Problems using Numerical Analysis in Python',
         'github': 'numericalmethods',
+        'img': 'static/numericalmethods.png',
         'description': 'Numerical Methods is my graduation project, which contains programs in python that allows users to solve mathematical problems using numerical analysis. The project includes methods for solving algebraic and transcendental equations, interpolation, and solving differential equations.'
     },
 };
