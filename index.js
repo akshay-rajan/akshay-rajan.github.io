@@ -42,22 +42,26 @@ function displayMain() {
     document.querySelector('main').style.display = "block";
 }
 
-function mouseOverAnimation() {
-    let mainDiv = document.querySelector('.main');
-    mainDiv.addEventListener('mousemove', function(event) {
+function mouseOverAnimation(div) {
+    div.addEventListener('mousemove', function(event) {
         const mouseX = event.clientX / window.innerWidth;
         const mouseY = event.clientY / window.innerHeight;
         
         const angle = mouseX * 360;        
-        mainDiv.style.backgroundImage = `linear-gradient(${angle}deg, #182358  0%, #22133a 46%, #000000 100%)`;
+        div.style.backgroundImage = `linear-gradient(${angle}deg, #182358  0%, #22133a 46%, #000000 100%)`;
     });    
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     // Main Content
-    document.querySelector('.main').style.opacity = 1;
-    mouseOverAnimation();
+    let mainDiv = document.querySelector('.main');
+    mainDiv.style.opacity = 1;
+    mouseOverAnimation(mainDiv);
     
+    // Additional
+    let additionalDiv = document.querySelector('.additional');
+    mouseOverAnimation(additionalDiv);
+
     // Skills
     animateSkills();
 
