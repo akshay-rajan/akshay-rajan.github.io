@@ -1,6 +1,6 @@
 function animateSkills() {
     let skillsDiv = document.querySelector('.skills');
-    let skills = ['Django', 'JavaScript', 'Flask', 'HTML', 'CSS', 'Bootstrap', 'React','SQL', 'Python', 'C++', 'Java', 'Git', 'GitHub', 'Linux', 'Selenium', 'BeautifuSoup'];
+    let skills = ['Django', 'JavaScript', 'Flask', 'Python', 'HTML', 'CSS', 'Bootstrap', 'SQL', 'C', 'Java', 'Git', 'GitHub', 'Linux', 'BeautifuSoup', 'PHP', 'MySQL'];
     let index = 0;
 
     function addSkill() {

@@ -73,6 +73,7 @@ body {
   margin: 20px;
 }
 #dp {
+  padding: 0px;
   border-radius: 50%;
   margin: 0px;
   width: 150px;
