@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient();
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 500px;
+}
+
+.main div {
+  background-size: cover;
+  background-position: center;
+}
+
+.first {
+  background-image: linear-gradient(to right, black, #0d0d0d);
+}
+
+.second {
+  background-image: linear-gradient(to right, #262626, #404040);
+}
+
+.third {
+  background-image: linear-gradient(to right, #262626, #404040);
+}
+
+.fourth {
+  background-image: linear-gradient(to right, black, #0d0d0d);
+}
+
+.name {
+  color: wheat;
+}
