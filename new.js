@@ -69,7 +69,6 @@ document.querySelector('.fourth').innerHTML = linksHTML;
 }
 
 // * Navigation Bar
-
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -77,15 +76,25 @@ function navBar() {
     hamburger.addEventListener('click', () => {
         
         if (hamburger.classList.contains('open')) {
-            // Remove the open class from the hamburger
-            hamburger.classList.remove('open');
-            // Remove the image
-            document.body.removeChild(document.querySelector('.js-nav-bg'));
-
+            
+            // Get the image div
+            const imgDiv = document.querySelector('.js-nav-bg');
+            
+            // Apply the reverse animation
+            // imgDiv.style.animation = 'fadeOutToTopRight 0.5s forwards';
+            
+            // Remove the image after the animation is complete
+            // imgDiv.addEventListener('animationend', () => {
+                document.body.removeChild(imgDiv);
+            // });
+            
             document.body.style.overflow = 'auto';
+            
             // Remove the on-top class from the nav-links
             navLinks.classList.remove('on-top');
-
+            
+            // Remove the open class from the hamburger
+            hamburger.classList.remove('open');
         } else {
             // Add the open class to the hamburger
             hamburger.classList.add('open');
@@ -96,17 +105,22 @@ function navBar() {
             img.src = 'static/blur-bg.jpg';
             imgDiv.appendChild(img);
 
+            // Animation
+            imgDiv.style.width = '0';
+            imgDiv.style.height = '0';
             imgDiv.classList.add('js-nav-bg');
+            imgDiv.style.animation = 'fadeInFromTopRight 0.5s forwards';
+            document.body.appendChild(imgDiv);
             setTimeout(() => {
                 imgDiv.style.width = '100vh';
                 imgDiv.style.height = '100vh';
             }, 0);
-            document.body.appendChild(imgDiv);
-                            
-            // Display the nav links on top of the image
-            navLinks.classList.add('on-top');
-            navLinks.style.zIndex = '1000';
-            
+            imgDiv.addEventListener('animationend', () => {
+                // Display the nav links on top of the image
+                navLinks.classList.add('on-top');
+                navLinks.style.zIndex = '10';
+            });
+
             document.body.style.overflow = 'hidden';
         }
     });
