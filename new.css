@@ -18,7 +18,7 @@ body {
   grid-template-rows: 1fr 1fr;
   height: auto;
   color: white;
-  z-index: 1;
+  z-index: -1;
 }
 .main div {
   background-size: cover;
@@ -129,14 +129,23 @@ body {
 }
 
 /* ! Contents */
-.content {
+
+.about {
   position: relative;
   margin: 20px;
   margin-top: 500px;
   height: 1000px;
   background-color: black;
-  z-index: 2;
+  /* z-index: 2; */
 }
+.content {
+  margin: 20px;
+  position: relative;
+  height: 1000px;
+  background-color: black;
+  /* z-index: 2; */
+}
+
 
 /* ! Header */
 
