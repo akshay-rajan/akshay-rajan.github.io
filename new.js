@@ -3,12 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Skills
     animateSkills();
 
+    // Personal links
+    window.onload = addLinks;
+
+
 });
 
 // * Animate Skill display below name
 function animateSkills() {
     let skillsDiv = document.querySelector('.skills');
-    let skills = ['Django', 'JavaScript', 'Flask', 'Python', 'HTML', 'CSS', 'Bootstrap', 'SQL', 'C', 'Java', 'Git', 'GitHub', 'Linux', 'BeautifuSoup', 'PHP', 'MySQL'];
+    let skills = ['Django', 'Flask', 'Python', 'JavaScript','Bootstrap', 'SQL', 'HTML', 'CSS', 'C', 'Java', 'Git', 'Linux', 'Web Scraping', 'PHP', 'CyberSecruity', 'AI', 'Machine Learning'];
     let index = 0;
 
     function addSkill() {
@@ -61,7 +65,4 @@ function addLinks() {
     // For large Screens
         document.querySelector('.fourth').innerHTML = linksHTML;    
 }
-
-window.onload = addLinks;
-window.onresize = addLinks;
 
