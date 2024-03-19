@@ -126,7 +126,7 @@ body {
   padding: 5px;
   text-align: left;
   color: beige;
-  border: solid 0.5px beige;
+  border: solid 0.5px rgba(245, 245, 220, 0.466);
   border-radius: 5px;
   z-index: 1;
 }

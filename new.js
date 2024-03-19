@@ -33,23 +33,23 @@ function animateSkills() {
 function addLinks() {
     let linksHTML = `<div class="links">
         <div class="link-1">
-            <a href="#">
-            <img src="static/linkedin-icon.png" alt="">
+            <a href="https://www.linkedin.com/in/akshayrajan1/">
+                <img src="static/linkedin-icon.png" alt="">
             </a>
         </div>
         <div class="link-2">
-            <a href="#">
-            <img src="static/github-icon.png" alt="">
+            <a href="https://www.github.com/akshay-rajan">
+                <img src="static/github-icon.png" alt="">
             </a>
         </div>
         <div class="link-3">
-            <a href="#">
-            <img src="static/email-icon.png" alt="">
+            <a href="https://www.leetcode.com/akshayrajan">
+                <img src="static/leetcode-icon.png" alt="">
             </a>
         </div>
         <div class="link-4">
-            <a href="#">
-            <img src="static/phone-icon.png" alt="">
+            <a href="mailto:akshayrajan345@gmail.com">
+                <img src="static/email-icon.png" alt="">
             </a>
         </div>
     </div>`;
