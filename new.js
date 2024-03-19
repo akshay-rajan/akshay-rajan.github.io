@@ -85,16 +85,23 @@ function navBar() {
             document.body.style.overflow = 'auto';
             // Remove the on-top class from the nav-links
             navLinks.classList.remove('on-top');
-            
+
         } else {
             // Add the open class to the hamburger
             hamburger.classList.add('open');
 
             // Create the image and append it to the body
+            const imgDiv = document.createElement('div');
             const img = document.createElement('img');
-            img.src = 'static/space.jpg';
-            img.classList.add('js-nav-bg');
-            document.body.appendChild(img);
+            img.src = 'static/blur-bg.jpg';
+            imgDiv.appendChild(img);
+
+            imgDiv.classList.add('js-nav-bg');
+            setTimeout(() => {
+                imgDiv.style.width = '100vh';
+                imgDiv.style.height = '100vh';
+            }, 0);
+            document.body.appendChild(imgDiv);
                             
             // Display the nav links on top of the image
             navLinks.classList.add('on-top');
