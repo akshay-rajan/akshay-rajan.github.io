@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
 }
 
+/* ! Main */
 .main {
   position: fixed;
   top: 0;
@@ -88,6 +89,7 @@ body {
   }
 }
 
+/* ! Skills */
 .skills {
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
@@ -115,7 +117,6 @@ body {
     border: 1px solid beige;
   }
 }
-
 @keyframes fadeInOut {
   0%, 100% {
     opacity: 0;
@@ -127,6 +128,7 @@ body {
   }
 }
 
+/* ! Contents */
 .content {
   position: relative;
   margin: 20px;
@@ -140,4 +142,60 @@ body {
     margin-top: 500px;
   }
   
+}
+
+/* ! Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* Background -> image, size cover, position center */
+  z-index: 3;
+}
+.head-container {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 10vh;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #feffa8;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
 }
