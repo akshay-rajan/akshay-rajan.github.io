@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Skills
+    animateSkills();
+
+});
+
+
 function animateSkills() {
     let skillsDiv = document.querySelector('.skills');
     let skills = ['Django', 'JavaScript', 'Flask', 'Python', 'HTML', 'CSS', 'Bootstrap', 'SQL', 'C', 'Java', 'Git', 'GitHub', 'Linux', 'BeautifuSoup', 'PHP', 'MySQL'];
@@ -21,11 +29,8 @@ function animateSkills() {
     addSkill();
 };
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Skills
-    animateSkills();
-
+document.querySelector('.dropdown-btn').addEventListener('click', function() {
+    document.querySelector('.dropdown-menu').classList.add('show');
 });
+
+
