@@ -226,19 +226,23 @@ nav ul li a:hover::after {
 }
 
 #hamburger {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
-  color: black;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
   z-index: 3;
 }
-@media (min-width: 600px) {
-  .hamburger {
-    display: none;
+@media (max-width: 600px) {
+  #hamburger {
+    display: block;
   }
   .nav-links {
     display: none;
