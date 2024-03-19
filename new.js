@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Personal links
     window.onload = addLinks;
 
+    // Navigation Bar
+    navBar();
 
 });
 
@@ -63,8 +65,46 @@ function addLinks() {
         document.querySelector('.second').innerHTML = linksHTML;
     else
     // For large Screens
-        document.querySelector('.fourth').innerHTML = linksHTML;    
+document.querySelector('.fourth').innerHTML = linksHTML;    
 }
 
 // * Navigation Bar
+
 const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+function navBar() {
+    hamburger.addEventListener('click', () => {
+        
+        if (hamburger.classList.contains('open')) {
+            // Remove the open class from the hamburger
+            hamburger.classList.remove('open');
+            // Remove the image
+            document.body.removeChild(document.querySelector('.js-nav-bg'));
+        } else {
+            // Add the open class to the hamburger
+            hamburger.classList.add('open');
+
+            // Create the image and append it to the body
+            const img = document.createElement('img');
+            img.src = 'static/space.jpg';
+            img.classList.add('js-nav-bg');
+            document.body.appendChild(img);
+                
+            // Get the navLinks element
+            // const navLinks = document.querySelector('.nav-links');
+            
+            // Add a class to the navLinks for styling
+            // navLinks.classList.add('on-top');
+            // navLinks.style.zIndex = '1000';
+            
+            
+            // Disable scrolling when nav is open
+            // if (navLinks.classList.contains('')) {
+            //     document.body.style.overflow = 'hidden';
+            // } else {
+            //     document.body.style.overflow = 'auto';
+            // }
+        }
+    });
+}

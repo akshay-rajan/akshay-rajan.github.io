@@ -238,7 +238,11 @@ nav ul li a:hover::after {
   color: white;
   background-color: transparent;
   border: none;
-  z-index: 3;
+  z-index: 6;
+}
+#hamburger:hover {
+  color: wheat;
+  transform: scale(1.1);
 }
 @media (max-width: 600px) {
   #hamburger {
@@ -247,5 +251,26 @@ nav ul li a:hover::after {
   .nav-links {
     display: none;
   }
-  
+}
+
+
+.js-nav-bg {
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  object-fit: cover;
+  /* transition: all 2s ease-in-out; */
+}
+
+.on-top {
+  position: fixed;
+  opacity: 1;
+  background-color: rgb(25, 0, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
 }
