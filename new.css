@@ -14,7 +14,6 @@ body {
   height: 600px;
   color: white;
 }
-
 .main div {
   background-size: cover;
   background-position: center;
@@ -43,12 +42,58 @@ body {
   color: wheat;
   font-size: 20px;
   margin-top: 20px;
-
+  
 }
 
 .name-container {
   display: block;
   margin: 50px;
-  margin-top: 100px;
+  margin-top: 150px;
   height: 100%;
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+  }
+  .first {
+    background-image: url(static/personal-grainy.jpg);
+  }  
+  .second {
+    background-image: url(static/leaves-moody.jpg);
+  }
+  
+}
+
+
+
+.content {
+  height: 1000px;
+  background-color: black;
+}
+
+.skills {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+
+.skill {
+  opacity: 1;
+  margin: 5px;
+  text-align: left;
+  color: beige;
+  z-index: 1;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
