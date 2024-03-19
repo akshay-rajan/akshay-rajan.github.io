@@ -81,6 +81,11 @@ function navBar() {
             hamburger.classList.remove('open');
             // Remove the image
             document.body.removeChild(document.querySelector('.js-nav-bg'));
+
+            document.body.style.overflow = 'auto';
+            // Remove the on-top class from the nav-links
+            navLinks.classList.remove('on-top');
+            
         } else {
             // Add the open class to the hamburger
             hamburger.classList.add('open');
@@ -90,21 +95,12 @@ function navBar() {
             img.src = 'static/space.jpg';
             img.classList.add('js-nav-bg');
             document.body.appendChild(img);
-                
-            // Get the navLinks element
-            // const navLinks = document.querySelector('.nav-links');
+                            
+            // Display the nav links on top of the image
+            navLinks.classList.add('on-top');
+            navLinks.style.zIndex = '1000';
             
-            // Add a class to the navLinks for styling
-            // navLinks.classList.add('on-top');
-            // navLinks.style.zIndex = '1000';
-            
-            
-            // Disable scrolling when nav is open
-            // if (navLinks.classList.contains('')) {
-            //     document.body.style.overflow = 'hidden';
-            // } else {
-            //     document.body.style.overflow = 'auto';
-            // }
+            document.body.style.overflow = 'hidden';
         }
     });
 }

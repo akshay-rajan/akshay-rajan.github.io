@@ -256,21 +256,30 @@ nav ul li a:hover::after {
 
 .js-nav-bg {
   position: fixed;
-  opacity: 0.5;
   top: 0;
   left: 0;
   width: 100vh;
   height: 100vh;
   object-fit: cover;
-  /* transition: all 2s ease-in-out; */
+  transition: all 2s ease-in-out;
 }
 
 .on-top {
+  display: block;
+  text-align: center;
   position: fixed;
-  opacity: 1;
-  background-color: rgb(25, 0, 255);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
+  margin: 0 0 0 0;
+}
+.on-top a {
+  margin: 0 0 0 0;
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
