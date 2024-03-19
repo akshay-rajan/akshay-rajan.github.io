@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // * Animate Skill display below name
 function animateSkills() {
     let skillsDiv = document.querySelector('.skills');
-    let skills = ['Django', 'Flask', 'Python', 'JavaScript','Bootstrap', 'SQL', 'HTML', 'CSS', 'C', 'Java', 'Git', 'Linux', 'Web Scraping', 'PHP', 'CyberSecruity', 'AI', 'Machine Learning'];
+    let skills = ['Django', 'Flask', 'Python', 'JavaScript','Bootstrap', 'SQL', 'HTML & CSS', 'C', 'Java', 'Linux', 'Web Scraping', 'Git', 'PHP', 'CyberSecruity', 'AI', 'Machine Learning'];
     let index = 0;
 
     function addSkill() {
@@ -59,10 +59,17 @@ function addLinks() {
     </div>`;
 
     // For smartphones
-    if (window.innerWidth <= 768)
+    if (window.innerWidth <= 600)
         document.querySelector('.second').innerHTML = linksHTML;
     else
     // For large Screens
         document.querySelector('.fourth').innerHTML = linksHTML;    
 }
 
+// * Navigation Bar
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show-nav');
+});
