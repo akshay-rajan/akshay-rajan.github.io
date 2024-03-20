@@ -6,6 +6,13 @@ body {
   color: white;
   overflow-x: hidden;
 }
+@media (max-width: 600px) {
+  body {
+    background-image: url(static/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 /* ! Main */
 .main {
