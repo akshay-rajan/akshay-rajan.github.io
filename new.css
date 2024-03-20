@@ -161,11 +161,19 @@ body {
 /* ! Contents */
 
 .about {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: 20px;
+  padding: 20px;
   margin-top: 90vh;
   height: 1000px;
+  color: white;
   background-color: black;
+}
+.about h2 {
+  color: wheat;
+  margin-bottom: 30px;
 }
 @media (max-width: 600px) {
   .about {

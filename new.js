@@ -130,3 +130,19 @@ function navBar() {
         }
     });
 }
+
+window.onscroll = function() {
+    let aboutDiv = document.querySelector('.about');
+    let children = navLinks.children;
+    if (window.scrollY >= aboutDiv.getBoundingClientRect().top + window.scrollY) {
+        // The user has scrolled to the element
+        for (let i = 0; i < children.length; i++) {
+            children[i].style.backgroundColor = 'black';
+        }
+    } else {
+        // The user has not scrolled to the element
+        for (let i = 0; i < children.length; i++) {
+            children[i].style.backgroundColor = 'transparent';
+        }
+    }
+};
