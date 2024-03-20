@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation Bar
     navBar();
 
+    // Home button
+    enableHome();
+
 });
 
 // * Animate Skill display below name
@@ -117,7 +120,7 @@ function navBar() {
             imgDiv.style.animation = 'fadeIn 0.5s forwards';
             document.body.appendChild(imgDiv);
             setTimeout(() => {
-                imgDiv.style.width = '100vh';
+                imgDiv.style.width = '100vw';
                 imgDiv.style.height = '100vh';
             }, 0);
             imgDiv.addEventListener('animationend', () => {
@@ -146,3 +149,14 @@ window.onscroll = function() {
         }
     }
 };
+
+function enableHome () {
+    let homeButton = document.querySelector('#home-button');
+    homeButton.addEventListener('click', () => {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
+}
+
