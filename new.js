@@ -103,7 +103,7 @@ function navBar() {
             // Create the image and append it to the body
             const imgDiv = document.createElement('div');
             const img = document.createElement('img');
-            img.src = 'static/blur-bg.jpg';
+            img.src = 'static/leaves-nav-bg.jpg';
             imgDiv.appendChild(img);
 
             // Animation

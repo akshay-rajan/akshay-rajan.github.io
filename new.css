@@ -279,6 +279,9 @@ nav ul li a:hover::after {
   z-index: 5;
   margin: 0 0 0 0;
 }
+.on-top li {
+  padding: 10px;
+}
 .on-top a {
   margin: 0 auto;
   opacity: 1;
