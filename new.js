@@ -151,7 +151,7 @@ window.onscroll = function() {
     }
 };
 
-// * Navigation Bar Buttons
+// * Navigation Bar Buttons: JQuery
 function enableHome () {
     let homeButton = document.querySelector('#home-button');
     homeButton.addEventListener('click', () => {
@@ -163,7 +163,7 @@ function enableHome () {
 }
 function enableAbout() {
     let aboutButton = document.querySelector('#about-button');
-    aboutButton.addEventListener('click', (event) => {
+    aboutButton.addEventListener('click', () => {
         event.preventDefault();
         let aboutDiv = document.querySelector('#about');
         $('html, body').animate({

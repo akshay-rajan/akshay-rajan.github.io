@@ -178,7 +178,6 @@ body {
 }
 .projects, .contact {
   display: flex;
-  justify-content: center;
   position: relative;
   margin: 20px;
   padding: 20px;
@@ -190,6 +189,7 @@ body {
 .about h2, .projects h2, .contact h2 {
   color: wheat;
   margin-bottom: 30px;
+  text-align: left;
 }
 /* ! Header */
 
