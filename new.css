@@ -326,3 +326,8 @@ nav ul li a:hover::after {
     opacity: 0;
   }
 }
+
+.js-enabled {
+  display: block;
+  
+}

@@ -72,7 +72,7 @@ function addLinks() {
 document.querySelector('.fourth').innerHTML = linksHTML;    
 }
 
-// * Navigation Bar
+// * Navigation Bar Action (Mobile)
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -135,18 +135,25 @@ function navBar() {
     });
 }
 
+// * Navigation Bar Action after Scrolling (Desktop)
 window.onscroll = function() {
-    let aboutDiv = document.querySelector('.about');
-    let children = navLinks.children;
-    if (window.scrollY >= aboutDiv.getBoundingClientRect().top + window.scrollY) {
-        // The user has scrolled to the element
-        for (let i = 0; i < children.length; i++) {
-            children[i].style.backgroundColor = 'black';
-        }
-    } else {
-        // The user has not scrolled to the element
-        for (let i = 0; i < children.length; i++) {
-            children[i].style.backgroundColor = 'transparent';
+    if (window.matchMedia("(min-width: 601px)").matches) {
+        let aboutDiv = document.querySelector('.about');
+        let children = navLinks.children;
+        if (window.scrollY >= aboutDiv.getBoundingClientRect().top + window.scrollY) {
+            // The user has scrolled to the about section
+            navLinks.style.display = 'none';
+            hamburger.style.display = 'block';
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.backgroundColor = 'black';
+            }
+        } else {
+            // The user has not scrolled to the element
+            navLinks.style.display = 'block';
+            hamburger.style.display = 'none';
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.backgroundColor = 'transparent';
+            }
         }
     }
 };
