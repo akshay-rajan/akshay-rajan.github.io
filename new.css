@@ -251,6 +251,9 @@ nav ul li a:hover::after {
   color: wheat;
   transform: scale(1.1);
 }
+#hamburger:focus {
+  outline: none;
+}
 @media (max-width: 600px) {
   #hamburger {
     display: block;
