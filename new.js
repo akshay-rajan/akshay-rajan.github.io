@@ -76,6 +76,8 @@ function navBar() {
     hamburger.addEventListener('click', () => {
         
         if (hamburger.classList.contains('open')) {
+            // Change back icon to hamburger icon
+            hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
             
             // Get the image div
             const imgDiv = document.querySelector('.js-nav-bg');
@@ -93,10 +95,12 @@ function navBar() {
             
             document.body.style.overflow = 'auto';
             
-            
             // Remove the open class from the hamburger
             hamburger.classList.remove('open');
         } else {
+            // Change hamburger icon to back icon
+            hamburger.innerHTML = `<i class="fas fa-less-than"></i>`;
+
             // Add the open class to the hamburger
             hamburger.classList.add('open');
 
