@@ -81,17 +81,18 @@ function navBar() {
             const imgDiv = document.querySelector('.js-nav-bg');
             
             // Apply the reverse animation
-            // imgDiv.style.animation = 'fadeOutToTopRight 0.5s forwards';
+            imgDiv.style.animation = 'fadeOut 0.5s forwards';
+            navLinks.classList.remove('on-top');
             
             // Remove the image after the animation is complete
-            // imgDiv.addEventListener('animationend', () => {
+            imgDiv.addEventListener('animationend', () => {
                 document.body.removeChild(imgDiv);
-            // });
+                // Remove the on-top class from the nav-links
+                navLinks.classList.remove('on-top');
+            });
             
             document.body.style.overflow = 'auto';
             
-            // Remove the on-top class from the nav-links
-            navLinks.classList.remove('on-top');
             
             // Remove the open class from the hamburger
             hamburger.classList.remove('open');
@@ -109,7 +110,7 @@ function navBar() {
             imgDiv.style.width = '0';
             imgDiv.style.height = '0';
             imgDiv.classList.add('js-nav-bg');
-            imgDiv.style.animation = 'fadeInFromTopRight 0.5s forwards';
+            imgDiv.style.animation = 'fadeIn 0.5s forwards';
             document.body.appendChild(imgDiv);
             setTimeout(() => {
                 imgDiv.style.width = '100vh';
