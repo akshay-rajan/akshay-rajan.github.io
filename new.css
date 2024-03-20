@@ -167,6 +167,11 @@ body {
   height: 1000px;
   background-color: black;
 }
+@media (max-width: 600px) {
+  .about {
+    margin-top: 80vh;
+  }
+}
 .content {
   margin: 20px;
   position: relative;
