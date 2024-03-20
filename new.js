@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navigation Bar
     navBar();
-
-    // Home button
     enableHome();
+    enableAbout();
+    enableProjects();
+    enableContact();
 
 });
 
@@ -150,6 +151,7 @@ window.onscroll = function() {
     }
 };
 
+// * Navigation Bar Buttons
 function enableHome () {
     let homeButton = document.querySelector('#home-button');
     homeButton.addEventListener('click', () => {
@@ -159,4 +161,35 @@ function enableHome () {
         }, 800);
     });
 }
+function enableAbout() {
+    let aboutButton = document.querySelector('#about-button');
+    aboutButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        let aboutDiv = document.querySelector('#about');
+        $('html, body').animate({
+            scrollTop: $(aboutDiv).offset().top
+        }, 800);
+    });
+}
 
+function enableProjects() {
+    let projectsButton = document.querySelector('#projects-button');
+    projectsButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        let projectsDiv = document.querySelector('#projects');
+        $('html, body').animate({
+            scrollTop: $(projectsDiv).offset().top
+        }, 800);
+    });
+}
+
+function enableContact() {
+    let contactButton = document.querySelector('#contact-button');
+    contactButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        let contactDiv = document.querySelector('#contact');
+        $('html, body').animate({
+            scrollTop: $(contactDiv).offset().top
+        }, 800);
+    });
+}

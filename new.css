@@ -171,23 +171,26 @@ body {
   color: white;
   background-color: black;
 }
-.about h2 {
-  color: wheat;
-  margin-bottom: 30px;
-}
 @media (max-width: 600px) {
   .about {
     margin-top: 80vh;
   }
 }
-.content {
-  margin: 20px;
+.projects, .contact {
+  display: flex;
+  justify-content: center;
   position: relative;
+  margin: 20px;
+  padding: 20px;
   height: 1000px;
+  color: white;
   background-color: black;
-  /* z-index: 2; */
 }
 
+.about h2, .projects h2, .contact h2 {
+  color: wheat;
+  margin-bottom: 30px;
+}
 /* ! Header */
 
 .header {
