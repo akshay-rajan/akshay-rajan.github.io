@@ -72,7 +72,7 @@ function addLinks() {
 document.querySelector('.fourth').innerHTML = linksHTML;    
 }
 
-// * Navigation Bar Action (Mobile)
+// * Navigation Bar Button Action 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -89,12 +89,14 @@ function navBar() {
             // Apply the reverse animation
             imgDiv.style.animation = 'fadeOut 0.5s forwards';
             navLinks.classList.remove('on-top');
+            navLinks.style.display = 'none';
             
             // Remove the image after the animation is complete
             imgDiv.addEventListener('animationend', () => {
                 document.body.removeChild(imgDiv);
                 // Remove the on-top class from the nav-links
                 navLinks.classList.remove('on-top');
+                navLinks.style.display = 'none';
             });
             
             document.body.style.overflow = 'auto';
@@ -102,6 +104,7 @@ function navBar() {
             // Remove the open class from the hamburger
             hamburger.classList.remove('open');
         } else {
+
             // Change hamburger icon to back icon
             hamburger.innerHTML = `<i class="fas fa-less-than"></i>`;
 
@@ -126,6 +129,7 @@ function navBar() {
             }, 0);
             imgDiv.addEventListener('animationend', () => {
                 // Display the nav links on top of the image
+                navLinks.style.display = 'block';
                 navLinks.classList.add('on-top');
                 navLinks.style.zIndex = '10';
             });
@@ -144,16 +148,11 @@ window.onscroll = function() {
             // The user has scrolled to the about section
             navLinks.style.display = 'none';
             hamburger.style.display = 'block';
-            for (let i = 0; i < children.length; i++) {
-                children[i].style.backgroundColor = 'black';
-            }
         } else {
             // The user has not scrolled to the element
             navLinks.style.display = 'block';
             hamburger.style.display = 'none';
-            for (let i = 0; i < children.length; i++) {
-                children[i].style.backgroundColor = 'transparent';
-            }
+            
         }
     }
 };

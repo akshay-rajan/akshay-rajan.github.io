@@ -356,8 +356,29 @@ nav ul li a:hover::after {
     opacity: 0;
   }
 }
-
 .js-enabled {
   display: block;
-  
+}
+/* For Large Screens */
+@media (min-width: 600px) {
+  .js-enabled {
+    width: 100px;
+  }
+  .hamburger {
+    width: 100%;
+  }
+  .js-nav-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .on-top {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
