@@ -162,7 +162,7 @@ body {
 
 .about {
   margin: 20px;
-  padding: 50px 0;
+  padding: 25px 0;
   margin-top: 90vh;
   height: 1000px;
   color: white;
@@ -171,6 +171,7 @@ body {
 @media (max-width: 600px) {
   .about {
     margin-top: 80vh;
+    padding: 2px 0;
   }
 }
 .about-row {

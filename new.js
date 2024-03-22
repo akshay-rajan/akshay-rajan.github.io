@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onload = addLinks;
 
     // Navigation Bar
-    navBar();
     enableHome();
     enableAbout();
     enableProjects();
@@ -76,68 +75,74 @@ document.querySelector('.fourth').innerHTML = linksHTML;
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-function navBar() {
-    hamburger.addEventListener('click', () => {
+function navBar(key) {
+    
+    if (hamburger.classList.contains('open')) {
+        // Change back icon to hamburger icon
+        hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
         
-        if (hamburger.classList.contains('open')) {
-            // Change back icon to hamburger icon
-            hamburger.innerHTML = `<i class="fas fa-bars"></i>`;
-            
-            // Get the image div
-            const imgDiv = document.querySelector('.js-nav-bg');
-            
-            // Apply the reverse animation
-            imgDiv.style.animation = 'fadeOut 0.5s forwards';
+        // Get the image div
+        const imgDiv = document.querySelector('.js-nav-bg');
+        
+        // Apply the reverse animation
+        imgDiv.style.animation = 'fadeOut 0.5s forwards';
+        navLinks.classList.remove('on-top');
+        navLinks.style.display = 'none';
+        
+        // Remove the image after the animation is complete
+        imgDiv.addEventListener('animationend', () => {
+            document.body.removeChild(imgDiv);
+            // Remove the on-top class from the nav-links
             navLinks.classList.remove('on-top');
             navLinks.style.display = 'none';
-            
-            // Remove the image after the animation is complete
-            imgDiv.addEventListener('animationend', () => {
-                document.body.removeChild(imgDiv);
-                // Remove the on-top class from the nav-links
-                navLinks.classList.remove('on-top');
-                navLinks.style.display = 'none';
-            });
-            
-            document.body.style.overflow = 'auto';
-            
-            // Remove the open class from the hamburger
-            hamburger.classList.remove('open');
-        } else {
+        });
+        
+        document.body.style.overflow = 'auto';
+        
+        // Remove the open class from the hamburger
+        hamburger.classList.remove('open');
+    } else {
+        
+        // ? Special Command
+        if (key === "click") return;
 
-            // Change hamburger icon to back icon
-            hamburger.innerHTML = `<i class="fas fa-less-than"></i>`;
+        // Change hamburger icon to back icon
+        hamburger.innerHTML = `<i class="fas fa-less-than"></i>`;
 
-            // Add the open class to the hamburger
-            hamburger.classList.add('open');
+        // Add the open class to the hamburger
+        hamburger.classList.add('open');
 
-            // Create the image and append it to the body
-            const imgDiv = document.createElement('div');
-            const img = document.createElement('img');
-            img.src = 'static/leaves-nav-bg.jpg';
-            imgDiv.appendChild(img);
+        // Create the image and append it to the body
+        const imgDiv = document.createElement('div');
+        const img = document.createElement('img');
+        img.src = 'static/leaves-nav-bg.jpg';
+        imgDiv.appendChild(img);
 
-            // Animation
-            imgDiv.style.width = '0';
-            imgDiv.style.height = '0';
-            imgDiv.classList.add('js-nav-bg');
-            imgDiv.style.animation = 'fadeIn 0.5s forwards';
-            document.body.appendChild(imgDiv);
-            setTimeout(() => {
-                imgDiv.style.width = '100vw';
-                imgDiv.style.height = '100vh';
-            }, 0);
-            imgDiv.addEventListener('animationend', () => {
-                // Display the nav links on top of the image
-                navLinks.style.display = 'block';
-                navLinks.classList.add('on-top');
-                navLinks.style.zIndex = '10';
-            });
+        // Animation
+        imgDiv.style.width = '0';
+        imgDiv.style.height = '0';
+        imgDiv.classList.add('js-nav-bg');
+        imgDiv.style.animation = 'fadeIn 0.5s forwards';
+        document.body.appendChild(imgDiv);
+        setTimeout(() => {
+            imgDiv.style.width = '100vw';
+            imgDiv.style.height = '100vh';
+        }, 0);
+        imgDiv.addEventListener('animationend', () => {
+            // Display the nav links on top of the image
+            navLinks.style.display = 'block';
+            navLinks.classList.add('on-top');
+            navLinks.style.zIndex = '10';
+        });
 
-            document.body.style.overflow = 'hidden';
-        }
-    });
+        document.body.style.overflow = 'hidden';
+    }
 }
+
+hamburger.addEventListener('click', () => {
+    navBar();
+});
+
 
 // * Navigation Bar Action after Scrolling (Desktop)
 window.onscroll = function() {
@@ -161,7 +166,11 @@ window.onscroll = function() {
 function enableHome () {
     let homeButton = document.querySelector('#home-button');
     homeButton.addEventListener('click', () => {
+        // Hide navigation bar
+        navBar("click");
+        // Prevent directly going to the position without displaying the animation
         event.preventDefault();
+        // JQuery Animation
         $('html, body').animate({
             scrollTop: 0
         }, 800);
@@ -170,6 +179,7 @@ function enableHome () {
 function enableAbout() {
     let aboutButton = document.querySelector('#about-button');
     aboutButton.addEventListener('click', () => {
+        navBar("click");
         event.preventDefault();
         let aboutDiv = document.querySelector('#about');
         $('html, body').animate({
@@ -181,6 +191,7 @@ function enableAbout() {
 function enableProjects() {
     let projectsButton = document.querySelector('#projects-button');
     projectsButton.addEventListener('click', (event) => {
+        navBar("click");
         event.preventDefault();
         let projectsDiv = document.querySelector('#projects');
         $('html, body').animate({
@@ -192,6 +203,7 @@ function enableProjects() {
 function enableContact() {
     let contactButton = document.querySelector('#contact-button');
     contactButton.addEventListener('click', (event) => {
+        navBar("click");
         event.preventDefault();
         let contactDiv = document.querySelector('#contact');
         $('html, body').animate({
