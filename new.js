@@ -107,7 +107,7 @@ function navBar(key) {
         if (key === "click") return;
 
         // Change hamburger icon to back icon
-        hamburger.innerHTML = `<i class="fas fa-less-than"></i>`;
+        hamburger.innerHTML = `<i class="fas fa-x"></i>`;
 
         // Add the open class to the hamburger
         hamburger.classList.add('open');
