@@ -164,7 +164,7 @@ body {
   margin: 20px;
   padding: 25px 0;
   margin-top: 90vh;
-  min-height: 1000px;
+  min-height: 800px;
   color: white;
   background-color: black;
 }
@@ -261,6 +261,56 @@ body {
   flex: 0 0 auto;
   width: 5px;
   height: 220px;
+}
+.about-contents .skill {
+  margin: 10px;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+}
+.about-contents .skill:hover {
+  color: black;
+  background-color: wheat;
+}
+.achievement {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid transparent;
+}
+.achievement:hover {
+  border-radius: 8px;
+  border: 1px solid wheat;
+  box-shadow: 0px 4px 8px wheat;
+}
+.certificates {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  color: black;
+  background-color: wheat;
+  /* border: 1px solid transparent; */
+  transition: 0.2s;
+}
+.certificates span {
+  color: black!important;
+  font-weight: 600!important;
+}
+.certificates:hover {
+  border: 1px solid wheat;
+  transform: scale(1.03);
+}
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+  list-style: none;
+  padding: 0; 
+}
+.certificates-grid li {
+  padding: 20px; /* Padding inside each grid item */
+}
+.certificates-grid li a:hover {
+  color: rgb(148, 30, 30);
 }
 
 /* ! Content */
