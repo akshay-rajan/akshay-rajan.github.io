@@ -233,3 +233,31 @@ function displayAbout(div) {
     });
     myDiv.style.display = 'block';  
 }
+
+// * Education Section Animation
+window.addEventListener('scroll', function() {
+    let educationCol1 = document.querySelector('.education-col-1');
+    let aboutSection = document.querySelector('#about');
+
+    // Get the top and bottom positions of the about section
+    let sectionTop = aboutSection.offsetTop;
+    let sectionBottom = sectionTop + aboutSection.offsetHeight;
+
+    // Get the current scroll position
+    let scrollPosition = window.scrollY;
+
+    // Calculate the percentage scrolled within the about section
+    let scrollValue = (((scrollPosition - sectionTop) / (sectionBottom - sectionTop)) * 100);
+    function mapRange(number, inMin, inMax, outMin, outMax) {
+        return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
+    }
+    
+    // Set the color of education-col-1 based on the scroll percentage
+    if (window.innerWidth > 600)
+        scrollValue = mapRange(scrollValue, 13, 53, 1, 100);
+    else
+        scrollValue = mapRange(scrollValue, 13, 53, 1, 100) - 25;
+    
+    educationCol1.style.background = `linear-gradient(to bottom, rgb(252, 179, 90) ${scrollValue}%, white ${100 - scrollValue}%)`;
+});
+

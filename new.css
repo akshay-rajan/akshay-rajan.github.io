@@ -251,6 +251,17 @@ body {
 .about-contents.active-tab {
   display: block;
 }
+.education {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.education-col-1 {
+  background: linear-gradient(to bottom, rgb(252, 179, 90) 80%, white 20%);
+  flex: 0 0 auto;
+  width: 5px;
+  height: 220px;
+}
 
 /* ! Content */
 .projects, .contact {
