@@ -290,6 +290,7 @@ body {
   background-color: wheat;
   /* border: 1px solid transparent; */
   transition: 0.2s;
+  min-height: 150px;
 }
 .certificates span {
   color: black!important;
@@ -306,12 +307,14 @@ body {
   list-style: none;
   padding: 0; 
 }
-.certificates-grid li {
-  padding: 20px; /* Padding inside each grid item */
-}
-.certificates-grid li a:hover {
-  color: rgb(148, 30, 30);
-}
+@media (max-width: 600px) {
+  .certificates-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+} 
 
 /* ! Content */
 .projects, .contact {
