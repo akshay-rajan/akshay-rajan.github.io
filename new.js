@@ -211,3 +211,20 @@ function enableContact() {
         }, 800);
     });
 }
+
+function displayAbout(div) {
+    let thisLink = event.target;
+    thisLink.classList.add('active-link');
+    let aboutLinks = document.querySelectorAll('.about-links');
+    aboutLinks.forEach(link => {
+        if (link != thisLink) {
+            if (link.classList.contains('active-link')) {
+                link.classList.remove('active-link');
+            }
+        }
+    });
+    console.log(thisLink);
+    let myDiv = document.querySelector(`#${div}`);
+    console.log(myDiv);
+
+}

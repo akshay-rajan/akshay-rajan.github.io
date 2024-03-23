@@ -61,12 +61,12 @@
                     I am currently working on my skills in Machine Learning and Cybersecurity.
 
                     <div class="about-titles">
-                        <div class="about-links active-link">Education</div>
-                        <div class="about-links">Skills</div>
-                        <div class="about-links">Achievements</div>
-                        <div class="about-links">Certifications</div>
+                        <div class="about-links active-link" onclick="displayAbout('education')">Education</div>
+                        <div class="about-links" onclick="displayAbout('skills')">Skills</div>
+                        <div class="about-links" onclick="displayAbout('achievements')">Achievements</div>
+                        <div class="about-links" onclick="displayAbout('certifications')">Certifications</div>
                     </div>
-                    <div class="about-contents active-tab">
+                    <div class="about-contents active-tab" id="education">
                         <ul>
                             <li><span>College of Engineering, Trivandrum</span><br>
                                 (2023-25) Masters in Computer Applications
@@ -82,7 +82,7 @@
                             </li>
                           </ul>
                     </div>
-                    <div class="about-contents">
+                    <div class="about-contents" id="skills">
                         <ul>
                             <li>Django</li>
                             <li>Flask</li>
@@ -101,7 +101,7 @@
                             <li>Mathematics</li>
                           </ul>
                     </div>
-                    <div class="about-contents">
+                    <div class="about-contents" id="achievements">
                         <ul>
                             <li><span>IIT JAM</span><br>
                                 <b>Rank 1778</b> in Mathematical Sciences, Qualified (2023)
@@ -117,7 +117,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="about-contents">
+                    <div class="about-contents" id="certifications">
                         <ul>
                             <li><span>CS50W - Harvard's Web Programming with Python and JavaScript</span><br>
                                 HarvardX (2023) <a href="https://cs50.harvard.edu/certificates/44b617f4-166c-442b-807d-84f1d12c0628"><icon class="fas fa-link"></icon></a>
