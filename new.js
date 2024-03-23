@@ -212,10 +212,13 @@ function enableContact() {
     });
 }
 
+// * About Page Links Functionality
+const aboutLinks = document.querySelectorAll('.about-links');
+const aboutDivs = document.querySelectorAll('.about-contents');
+
 function displayAbout(div) {
     let thisLink = event.target;
     thisLink.classList.add('active-link');
-    let aboutLinks = document.querySelectorAll('.about-links');
     aboutLinks.forEach(link => {
         if (link != thisLink) {
             if (link.classList.contains('active-link')) {
@@ -223,8 +226,10 @@ function displayAbout(div) {
             }
         }
     });
-    console.log(thisLink);
     let myDiv = document.querySelector(`#${div}`);
-    console.log(myDiv);
-
+    aboutDivs.forEach(div => {
+        if (div != myDiv)
+            div.style.display = 'none';
+    });
+    myDiv.style.display = 'block';  
 }
