@@ -236,6 +236,21 @@ body {
 .about-links.active-link::after {
   width: 50%;
 }
+.about-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.about-contents ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(252, 179, 90);
+}
+.about-contents {
+  display: none;
+}
+.about-contents.active-tab {
+  display: block;
+}
 
 /* ! Content */
 .projects, .contact {
