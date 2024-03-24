@@ -131,7 +131,8 @@ body {
   opacity: 1;
   margin: 5px;
   padding: 5px;
-  text-align: left;
+  min-width: 100px;
+  text-align: center;
   color: beige;
   border: solid 0.5px rgba(245, 245, 220, 0.466);
   border-radius: 5px;
