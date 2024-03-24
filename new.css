@@ -344,9 +344,9 @@ body {
   height: 200px;
   margin: 5px;
   background-color: #d8d8d8;
-  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+  background-image: linear-gradient(43deg, rgb(255, 248, 235) 0%, wheat 46%, rgb(199, 154, 70) 100%);
   border-radius: 8px;
-  color: white;
+  color: black;
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
@@ -362,7 +362,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: white;
+  color: black;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -398,11 +398,9 @@ body {
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   z-index: 1;
 }
-
 .card:hover:before {
   transform: translateX(-100%);
 }
-
 .card:after {
   content: "";
   position: absolute;
@@ -414,22 +412,19 @@ body {
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   z-index: 1;
 }
-
 .card:hover:after {
   transform: translateX(100%);
 }
-
 .card-expanded {
   width: 93%;
   height: 100%!important;
 }
-
 .github-link {
-  color: white!important;
+  color: black;
   text-decoration: none!important;
   font-weight: bold;
   font-size: 16px;
-  background-image: linear-gradient(43deg, #1f064d 0%, #41266e 46%, #6908d8 100%);
+  background-image: linear-gradient(43deg, wheat 0%, wheat 46%, wheat 100%);
   padding: 5px;
   border-radius: 5px;
   /* border: none; */
@@ -437,15 +432,17 @@ body {
   width: 50%;
 }
 .github-link:hover {
-  background-image: linear-gradient(43deg, #431057 0%, #6306f8 46%, #c752f5 100%);
+  background-image:none;
+  background-color: black;
   transform: rotate();
-  color: white;
+  color: wheat;
   cursor: pointer;
 }
-
 .card-expanded {
   animation: none;
-  background-image: linear-gradient(43deg, #4d0c34 0%, #7b31f3 46%, #9903fd 100%);
+  background-color: rgba(245, 222, 179, 0.3);
+  /* background-image: linear-gradient(43deg, #4d0c34 0%, #7b31f3 46%, #9903fd 100%); */
+  /* background-image: linear-gradient(43deg, wheat 0%, wheat 46%, wheat 100%); */
 
 }
 
