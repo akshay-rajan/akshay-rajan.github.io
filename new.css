@@ -316,9 +316,177 @@ body {
     height: auto;
   }
 } 
+/* ! Projects */
+.projects {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  color: black;
+  background: url(./static/beach.jpg);
+  background-color: rgba(185, 145, 69, 0.2);
+}
+.projects h2 {
+  text-align: center;
+  margin: 20px;
+  color: wheat;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-/* ! Content */
-.projects, .contact {
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  background-color: #d8d8d8;
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.card-content .card-para {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:before {
+  transform: translateX(-100%);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.card:hover:after {
+  transform: translateX(100%);
+}
+
+.card-expanded {
+  width: 93%;
+  height: 100%!important;
+}
+
+.github-link {
+  color: white!important;
+  text-decoration: none!important;
+  font-weight: bold;
+  font-size: 16px;
+  background-image: linear-gradient(43deg, #1f064d 0%, #41266e 46%, #6908d8 100%);
+  padding: 5px;
+  border-radius: 5px;
+  /* border: none; */
+  margin: 5px;
+  width: 50%;
+}
+.github-link:hover {
+  background-image: linear-gradient(43deg, #431057 0%, #6306f8 46%, #c752f5 100%);
+  transform: rotate();
+  color: white;
+  cursor: pointer;
+}
+
+.card-expanded {
+  animation: none;
+  background-image: linear-gradient(43deg, #4d0c34 0%, #7b31f3 46%, #9903fd 100%);
+
+}
+
+@keyframes zoomOut {
+  0% {
+      width: 300px;
+      height: 200px;
+      opacity: 0;
+  } 10%, 100% {
+      width: 90%;
+      height: 500px;
+      opacity: 1;
+  } 
+}
+@keyframes zoomIn {
+  0% {
+      width: 700px;
+      height: 500px;
+  } 10%, 100% {
+      width: 300px;
+      height: 200px;
+  }
+}
+
+.card-img {
+  /* max-height: 400px; */
+  /* width: auto!important; */
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ? Styles for PC and Laptop */
+@media only screen and (min-width: 1024px) {
+  .card-img {
+      max-height: 400px;
+      width: auto!important;
+  }
+}
+
+
+/* ! --- ! */
+.contact {
   display: flex;
   position: relative;
   margin: 20px;
@@ -328,7 +496,7 @@ body {
   background-color: black;
 }
 
-.about h2, .projects h2, .contact h2 {
+.about h2, .contact h2 {
   color: wheat;
   margin-bottom: 30px;
   text-align: left;
