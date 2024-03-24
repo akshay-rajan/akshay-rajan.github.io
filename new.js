@@ -363,4 +363,14 @@ function displayProject(project, cardDiv) {
                             <p class='card-desc'>${project['description']}</p>
                             <button class='github-link' onclick="window.location.href='https://www.github.com/akshay-rajan/${project['github']}'"><icon class="fab fa-github"></icon> View on GitHub</button>
                         </div>`;
+    
+    // Scroll to the opened card
+    const cardRect = cardDiv.getBoundingClientRect();
+    const cardTop = cardRect.top + window.scrollY;
+    const cardLeft = cardRect.left + window.scrollX;
+    window.scrollTo({
+        top: cardTop + 65,
+        left: cardLeft,
+        behavior: 'smooth'
+    });
 }
