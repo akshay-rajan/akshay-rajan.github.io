@@ -327,8 +327,7 @@ function displayCard() {
         });
     });
 }
-
-// * Display a Project when clicked
+// Display a Project when clicked
 function displayProject(project, cardDiv) {
     // * If the project is displayed, hide it
     if (cardDiv.classList.contains('card-expanded')) {
@@ -338,6 +337,8 @@ function displayProject(project, cardDiv) {
         cardDiv.style.animation = 'zoomIn 1s forwards';
         cardDiv.classList.add('card');
         cardDiv.classList.remove('card-expanded');
+        // Display the hidden cards
+        hideCards();
         return;
     }
     // * Hide any other project that is displayed
@@ -355,6 +356,8 @@ function displayProject(project, cardDiv) {
     cardDiv.classList.remove('card');
     cardDiv.style.animation = 'zoomOut 1s forwards';
     cardDiv.classList.add('card-expanded');
+    hideCards(cardDiv);
+
     
     cardDiv.innerHTML = `<div class='card-content'>
                             <img class='card-img' src='${project['img']}' alt='Project Image'>
@@ -372,5 +375,19 @@ function displayProject(project, cardDiv) {
         top: cardTop + 65,
         left: cardLeft,
         behavior: 'smooth'
+    });
+}
+// Hide all cards except one
+function hideCards(current=null) {
+    console.log("heyy");
+    // Hide all cards except current card
+    Array.from(cardsDiv.children).forEach(card => {
+        if (current) {
+            // Hide the card 
+            if (card != current)
+                card.style.display = 'none';
+        } else {
+            card.style.display = 'flex';
+        }
     });
 }
