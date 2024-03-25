@@ -417,7 +417,7 @@ body {
 }
 .card-expanded {
   width: 93%;
-  height: 100%!important;
+  height: 90vh!important;
 }
 .github-link {
   color: black;
@@ -465,8 +465,7 @@ body {
 }
 
 .card-img {
-  /* max-height: 400px; */
-  /* width: auto!important; */
+  max-height: 45vh!important;
   border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
