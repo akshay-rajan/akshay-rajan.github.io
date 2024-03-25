@@ -372,7 +372,7 @@ function displayProject(project, cardDiv) {
     const cardTop = cardRect.top + window.scrollY;
     const cardLeft = cardRect.left + window.scrollX;
     window.scrollTo({
-        top: cardTop + 65,
+        top: cardTop,
         left: cardLeft,
         behavior: 'smooth'
     });
