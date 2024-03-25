@@ -270,6 +270,14 @@ body {
   min-width: 100px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .about-contents .skill {
+    margin: 2px;
+    min-width: 20px;
+
+  }
+  
+}
 .about-contents .skill:hover {
   color: black;
   background-color: wheat;
