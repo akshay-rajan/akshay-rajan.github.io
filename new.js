@@ -339,6 +339,12 @@ function displayProject(project, cardDiv) {
         cardDiv.classList.remove('card-expanded');
         // Display the hidden cards
         hideCards();
+        // Scroll to the top of the div
+        const distanceToTop = document.querySelector('#projects').getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: distanceToTop,
+            behavior: "smooth"
+        });
         return;
     }
     // * Hide any other project that is displayed
