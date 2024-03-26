@@ -401,8 +401,3 @@ function hideCards(current=null) {
         }
     });
 }
-
-// Prevent scrolling if the document is not fully loaded
-if (!document.body.classList.contains('.loaded')) {
-    document.body.style.overflow = 'hidden';
-}
