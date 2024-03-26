@@ -668,3 +668,40 @@ nav ul li a:hover::after {
   }
 
 }
+
+/* ! Loader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader img {
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body.loaded {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+body:not(.loaded) {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+
