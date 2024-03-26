@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hide Preloader
     document.body.classList.add('loaded');
-    // document.getElementById('preloader').style.display = 'none';
+    document.getElementById('preloader').style.display = 'none';
     
     // Skills
     animateSkills();
@@ -400,4 +400,9 @@ function hideCards(current=null) {
             card.style.display = 'flex';
         }
     });
+}
+
+// Prevent scrolling if the document is not fully loaded
+if (!document.body.classList.contains('.loaded')) {
+    document.body.style.overflow = 'hidden';
 }

@@ -514,7 +514,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /* Background -> image, size cover, position center */
   z-index: 3;
 }
 .head-container {
@@ -669,7 +668,7 @@ nav ul li a:hover::after {
 
 }
 
-/* ! Loader */
+/* ! Preloader */
 #preloader {
   position: fixed;
   top: 0;
@@ -682,6 +681,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;  
 }
 #preloader img {
   width: 100px;
@@ -698,11 +698,11 @@ nav ul li a:hover::after {
 }
 body.loaded {
   opacity: 1;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 body:not(.loaded) {
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
 
