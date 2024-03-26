@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hide Preloader
     document.body.classList.add('loaded');
-    // document.getElementById('preloader').style.display = 'none';
+    document.getElementById('preloader').style.display = 'none';
     
     // Skills
     animateSkills();
