@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Hide Preloader
+    console.log("loaded>>>>>>>>>>>>>");
     document.body.classList.add('loaded');
     document.getElementById('preloader').style.display = 'none';
     
