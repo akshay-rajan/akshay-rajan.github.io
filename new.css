@@ -4,7 +4,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #0d0d0d;
   color: white;
-  overflow-x: hidden;
+  overflow: hidden;
+
 }
 @media (max-width: 600px) {
   body {
@@ -698,6 +699,8 @@ nav ul li a:hover::after {
 }
 body.loaded {
   opacity: 1;
+  overflow: visible;
+  overflow-x: hidden;
 }
 body:not(.loaded) {
   opacity: 0;

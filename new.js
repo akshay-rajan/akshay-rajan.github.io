@@ -18,10 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // * Preloader
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-    document.getElementById('preloader').style.display = 'none';
+// window.addEventListener('load', () => {
+//     document.body.classList.add('loaded');
+//     document.getElementById('preloader').style.display = 'none';
+// });
+$(document).ready(function() {
+    $('body').addClass('loaded');
+    $('#preloader').fadeOut();
 });
+
 
 // * Animate Skill display below name
 function animateSkills() {
