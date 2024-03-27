@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // * Preloader
-$(document).ready(function() {
-    $('#preloader').fadeIn();
-});
 $(window).on('load', function() {
     $('body').addClass('loaded');
     $('#preloader').fadeOut();
