@@ -50,16 +50,6 @@ body {
   display: flex;
   background-image: url(static/keyboard-hue.jpg);
 }
-.quote1 {
-  opacity: 0.6;
-  font-size: 30px;
-}
-.quote2 {
-  display: none;
-  opacity: 0.6;
-  font-size: 25px;
-}
-
 .name {
   color: wheat;
 }
@@ -109,6 +99,9 @@ body {
 .links div:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+.links div:active {
+  transform: scale(0.9);
 }
 @media (max-width: 600px) {
   .links {
@@ -543,6 +536,9 @@ body {
 .contact-links div p:hover {
   border: 2px solid wheat;
   transform: scale(1.1);
+}
+.contact-links a:active {
+  color: wheat;
 }
 
 @media (max-width: 600px) {
