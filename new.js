@@ -12,20 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     enableProjects();
     enableContact();
 
-    // Projects
-    displayCard();
-
 });
 
 // * Preloader
-// window.addEventListener('load', () => {
-//     document.body.classList.add('loaded');
-//     document.getElementById('preloader').style.display = 'none';
-// });
-$(document).ready(function() {
+$(window).on('load', function() {
     $('body').addClass('loaded');
     $('#preloader').fadeOut();
 });
+
 
 
 // * Animate Skill display below name
@@ -322,6 +316,9 @@ let projects = {
         'description': 'Numerical Methods is my graduation project, which contains programs in python that allows users to solve mathematical problems using numerical analysis. The project includes methods for solving algebraic and transcendental equations, interpolation, and solving differential equations.'
     },
 };
+document.addEventListener('DOMContentLoaded', () => {
+    displayCard();
+});
 
 // * Display the projects
 function displayCard() {
