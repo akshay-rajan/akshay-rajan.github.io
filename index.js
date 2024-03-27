@@ -372,10 +372,11 @@ function displayProject(project, cardDiv) {
     hideCards(cardDiv);
 
     // Create a loader element and display it
-    let loader = `<div class='loader'>Loading...</div>`;
+    let loader = `<div class='loader'></div>`;
 
     // Create an img element with the project image
     let img = `<img class='card-img' src='${project['img']}' onload="this.previousElementSibling.style.display='none'" alt='Project Image'>`;
+    // let img = `<img class='card-img' src='${project['img']}' alt='Project Image'>`;
 
     cardDiv.innerHTML = `<div class='card-content' style='position: relative;'>
                             ${loader}
