@@ -371,9 +371,15 @@ function displayProject(project, cardDiv) {
     cardDiv.classList.add('card-expanded');
     hideCards(cardDiv);
 
-    
-    cardDiv.innerHTML = `<div class='card-content'>
-                            <img class='card-img' src='${project['img']}' alt='Project Image'>
+    // Create a loader element and display it
+    let loader = `<div class='loader'>Loading...</div>`;
+
+    // Create an img element with the project image
+    let img = `<img class='card-img' src='${project['img']}' onload="this.previousElementSibling.style.display='none'" alt='Project Image'>`;
+
+    cardDiv.innerHTML = `<div class='card-content' style='position: relative;'>
+                            ${loader}
+                            ${img}
                             <p class='card-title'>${project['name']}</p>
                             <p class='card-para'>${project['details']}</p>
                             <p class='card-desc'>${project['description']}</p>
