@@ -21,7 +21,6 @@ $(window).on('load', function() {
 });
 
 
-
 // * Animate Skill display below name
 function animateSkills() {
     let skillsDiv = document.querySelector('.skills');
