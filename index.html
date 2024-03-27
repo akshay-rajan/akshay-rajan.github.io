@@ -5,159 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshay Rajan</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="portfolio.css">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="shortcut icon" href="static/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="static/favicon2.png" type="image/x-icon">
 </head>
 <body>
-  <main>
+
+    <div id="preloader">
+        <img src="static/loader.jpg" alt="Loading...">
+    </div>
+
+    <div class="header" id="home">
+        <div class="head-container">            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" id="home-button">Home</a></li>
+                    <li><a href="#about" id="about-button">About</a></li>
+                    <li><a href="#projects" id="projects-button">Projects</a></li>
+                    <li><a href="#contact" id="contact-button">Contact</a></li>
+                </ul>
+                <button id="hamburger" class="js-enabled">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
     <div class="main">
-      <div class="dp">
-        <img src="static/dp.jpeg" alt="dp" id="dp">
-      </div>      
-      <div class="name-container">
-        <div class="namediv">
-          <div class="namehead">
-             Hey, I'm 
-          </div>
-          <div class="name">
-            Akshay R
-          </div>
-          <div class="skills">
+        <div class="first quarter">
+            <div class="name-container">
+                <div class="name-intro">
+                    Hey, I'm
+                </div>
+                <h1 class="name">
+                    Akshay Rajan
+                </h1>
+                <div class="skills"></div>
+            </div>
+        </div>
+        <div class="second quarter"></div>
+        <div class="third quarter"></div>
+        <div class="fourth quarter"></div>
+    </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="buttons">
-      <button class="btn btn-dark" id="js-profile">Profile</button>
-      <button class="btn btn-dark" id="js-portfolio">Portfolio</button>
-    </div>
-    <div class="additional">
-      <div class="quote-div">
-        <div class="quote">
-          "Technology like art is a soaring exercise of the human imagination" <br>
-        </div>
-        <div class="author" style="text-align: right;">
-          - Daniel Bell
-        </div>
-      </div>
-    </div>
-  </main>
-  <div class="profile">
-    <div class="back">
-      <button class="js-main-btn btn-dark" display="block"><i class="fa-solid fa-backward"></i></button>
-    </div>
-    <div class="resume-download">
-      <a href="static/akshayrajan-resume.pdf" class="contact-link" download><button class="resume-download-button"><icon class="fas fa-download"></icon> Resume</button></a>
-    </div>
-    <div class="profile-content">
-      <div class="profile-container">
-        
-        <div class="summary">
-          <p class="summary-p">
-            As an aspiring programmer with a passion for technology, I am committed to continuous learning and professional growth.
-            My goal is to build a robust career in Computer Science, where I can contribute to and make a significant impact in various innovative fields. <br>
-            My interests span across a diverse range of disciplines within technology, including Web Programming, App Development, Artificial Intelligence, Data Science, and Cyber Security.
-            With each day, I strive to enhance my skills and knowledge, staying abreast of the latest trends and advancements in technology.
-            I am currently working on my skills in Machine Learning.
-          </p>
-        </div>
+    <div class="about" id="about">
+        <div class="about-container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <div class="about-img">
+                        <img src="static/keyboard-wp.jpg" alt="Temp">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    As an aspiring programmer with a passion for technology, I am committed to continuous learning and professional growth.
+                    My goal is to build a robust career in Computer Science, where I can contribute to and make a significant impact in various innovative fields. <br>
+                    My interests span across a diverse range of disciplines within technology, including Web Programming, App Development, Artificial Intelligence, Data Science, and Cyber Security.
+                    With each day, I strive to enhance my skills and knowledge, staying abreast of the latest trends and advancements in technology.
+                    I am currently working on my skills in Machine Learning and Cybersecurity.
 
-        <div class="edu">
-          <h3>Education</h3>
-          <ul>
-            <li>College of Engineering, Trivandrum</li>
-            2023-25 - Masters in Computer Applications
-            <li>University College, Trivandrum</li>
-            2020-23 - B Sc. Mathematics <b>(96.3% (Core))</b>
-            <li>St Joseph's Higher Secondary School, Trivandrum</li>
-            2018-20 - Higher Secondary <b>(94%)</b>
-            <li>Tenth</li>
-            2017-18 - <b>100% (A+)</b>
-          </ul>
-        </div>
+                    <div class="about-titles">
+                        <div class="about-links active-link" onclick="displayAbout('education')">Education</div>
+                        <div class="about-links" onclick="displayAbout('skills')">Skills</div>
+                        <div class="about-links" onclick="displayAbout('achievements')">Achievements</div>
+                        <div class="about-links" onclick="displayAbout('certifications')">Certifications</div>
+                    </div>
+                    <div class="about-contents active-tab" id="education">
+                        <div class="education">
+                            <div class="education-col-1">
 
-        <div class="skills-blocks">
-          <h3>Skills</h3>
-          <div class="skill-name">Django</div>
-          <div class="skill-name">Flask</div>
-          <div class="skill-name">Python</div>
-          <div class="skill-name">C</div>
-          <!-- <div class="skill-name">C++</div> -->
-          <div class="skill-name">Java</div>
-          <div class="skill-name">HTML</div>
-          <div class="skill-name">CSS</div>
-          <div class="skill-name">Bootstrap</div>
-          <div class="skill-name">JavaScript</div>
-          <div class="skill-name">PHP</div>
-          <div class="skill-name">unittest</div>
-          <div class="skill-name">BeautifulSoup</div>
-          <div class="skill-name">SQL</div>
-          <div class="skill-name">Linux</div>
-          <div class="skill-name">Git</div>
-          <div class="skill-name">Data Structures</div>
-          <div class="skill-name">Machine Learning</div>
-          <div class="skill-name">Mathematics</div>
+                            </div>
+                            <div class="education-col-2">
+                                <ul>
+                                    <li><span>College of Engineering, Trivandrum</span><br>
+                                        (2023-25) Masters in Computer Applications
+                                    </li>
+                                    <li><span>University College, Trivandrum</span><br>
+                                        (2020-23) B Sc. Mathematics <b>(96.3% (Core))</b>
+                                    </li>
+                                    <li><span>St Joseph's Higher Secondary School, Trivandrum</span><br>
+                                        (2018-20) Higher Secondary <b>(94%)</b>
+                                    </li>
+                                    <li><span>St Joseph's Higher Secondary School, Trivandrum</span><br>
+                                        (2017-18) Tenth <b>100% (A+)</b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-contents" id="skills">
+                        <ul>
+                            <li class="skill">Django</li>
+                            <li class="skill">Flask</li>
+                            <li class="skill">Python</li>
+                            <li class="skill">C</li>
+                            <li class="skill">Java</li>
+                            <li class="skill">HTML & CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">Bootstrap</li>
+                            <li class="skill">PHP</li>
+                            <li class="skill">SQL</li>
+                            <li class="skill">Linux</li>
+                            <li class="skill">Cybersecurity</li>
+                            <li class="skill">Git</li>
+                            <li class="skill">Data Structures</li>
+                            <li class="skill">Machine Learning</li>
+                            <li class="skill">Mathematics</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="about-contents" id="achievements">
+                        <ul>
+                            <li class="achievement"><span>IIT JAM</span><br>
+                                <b>Rank 1778</b> in Mathematical Sciences, Qualified (2023)
+                            </li>
+                            <li class="achievement"><span>Kerala MCA Entrance</span><br>
+                                Rank 20
+                            </li>
+                            <li class="achievement"><span>Kerala University Entrance</span><br>
+                                Rank 16
+                            </li>
+                            <li class="achievement"><span>Degree in Mathematics</span><br>
+                                Kerala University, <b>96.3% (Core)</b>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div class="about-contents" id="certifications">
+                        <ul class="certificates-grid">
+                            <li class="certificates">
+                                <span>CS50W - Harvard's Web Programming with Python and JavaScript</span><br>
+                                HarvardX (2023) <a href="https://cs50.harvard.edu/certificates/44b617f4-166c-442b-807d-84f1d12c0628"><icon class="fas fa-link"></icon></a>
+                            </li>
+                            <li class="certificates">
+                                <span>CS50X - Harvard's Introduction to Computer Science</span><br>
+                                HarvardX (2023) <a href="https://cs50.harvard.edu/certificates/ef9f708d-1561-4825-bd6f-9c488c9e3c7f"><icon class="fas fa-link"></icon></a>
+                            </li>
+                            <li class="certificates">
+                                <span>Machine Learning Using Python</span><br>
+                                Association of Computing Machinery (2024) <a href="static/machine_learning.png"><icon class="fas fa-link"></icon></a>
+                            </li>
+                            <li class="certificates">
+                                <span>Programming, Data Structures and Algorithms in Python</span><br>
+                                NPTEL, Chennai Mathematical Institute
+                            </li>
+                            <li class="certificates">
+                                <span>Linux Fundamentals</span><br>
+                                HackTheBox
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="achievements">
-          <h3>Achievements</h3>
-          <ul>
-            <li>IIT JAM</li>
-            <b>Rank 1778</b> in Mathematical Sciences, Qualified (2023)
-            <li>Kerala MCA Entrance</li>
-            Rank 20
-            <li>Degree in Mathematics</li>
-            Kerala University, <b>96.3% (Core)</b>
-          </ul>          
-        </div>
-
-        <div class="certifications">
-          <h3>Certifications</h3>
-          <ul>
-            <li>CS50W - Harvard's Web Programming with Python and JavaScript</li>
-            HarvardX (2023) <a href="https://cs50.harvard.edu/certificates/44b617f4-166c-442b-807d-84f1d12c0628"><icon class="fas fa-link"></icon></a>
-            <li>CS50X - Harvard's Introduction to Computer Science</li>
-            HarvardX (2023) <a href="https://cs50.harvard.edu/certificates/ef9f708d-1561-4825-bd6f-9c488c9e3c7f"><icon class="fas fa-link"></icon></a>
-            <li>Machine Learning Using Python</li>
-            Association of Computing Machinery, Kollam Professional Chapter (2024) <a href="static/machine_learning.png"><icon class="fas fa-link"></icon></a>
-            <li>Programming, Data Structures and Algorithms in Python</li>
-            NPTEL, Chennai Mathematical Institute (Ongoing)
-            <li>Linux Fundamentals</li>
-            HackTheBox
-        </div>
-
-        <div class="contact">
-          <h3>My Links</h3>
-          <div class="contact-links">
-            <p><icon class="fas fa-download"></icon><a href="static/akshayrajan-resume.pdf" class="contact-link" download> Resume</a></p>
-            <p><icon class="fab fa-github"></icon><a href="https://www.github.com/akshay-rajan" class="contact-link"> Github</a></p>
-            <p><icon class="fab fa-linkedin"></icon><a href="https://www.linkedin.com/in/akshayrajan1/" class="contact-link"> LinkedIn</a></p>
-            <p><icon class="fas fa-l"></icon><a href="https://www.leetcode.com/akshayrajan" class="contact-link"> LeetCode </a></p>
-            <p><icon class="fas fa-envelope"></icon><a href="mailto:akshayrajan345@gmail.com" class="contact-link"> Email </a></p>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
-  <div class="portfolio">
-    <div class="back">
-      <button class="js-main-btn btn-dark"><i class="fa-solid fa-backward"></i></button>
+
+    <div class="projects" id="projects">
+        <h2>My Portfolio</h2>
+        <div class="portfolio">
+            <div class="project-cards"></div>
+        </div>
     </div>
-    <div class="project-cards">
-        <!-- * Cards for each of my projects -->
+    <div class="contact" id="contact">
+        <div>
+            <h2>My Links</h2>
+            <div class="contact-links">
+                <div>
+                    <a href="static/akshayrajan-resume.pdf" class="contact-link" download>
+                        <p>
+                            <img src="static/resume-icon.png" alt="resume-link">
+                        </p>
+                        Resume
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/iamakshayrajan/" class="contact-link">
+                        <p>
+                            <img src="static/icon-ln.png" alt="linkedin-link">
+    
+                        </p>
+                        LinkedIn
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.github.com/akshay-rajan" class="contact-link">
+                        <p>
+                            <img src="static/icon-github.png" alt="github-link">
+                        </p>
+                        Github
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.leetcode.com/akshayrajan" class="contact-link">
+                        <p>
+                            <img src="static/lt-code.png" alt="ltc-link">
+                        </p>
+                        LeetCode 
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:akshayrajan345@gmail.com" class="contact-link">
+                        <p>
+                            <img src="static/mail-icon.png" alt="mail-id">
+                        </p>
+                        Email 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            Akshay R, Trivandrum, Kerala, India •
+            akshayrajan345@gmail.com
+        </div>
     </div>
-  </div>
-  <script src="index.js"></script>
-  <script src="profile.js"></script>
-  <script src="portfolio.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

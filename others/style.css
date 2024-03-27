@@ -1,0 +1,250 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+  margin: 20px;
+  padding: 20px;
+  color: white!important;
+  background-image: url(static/dark-floral.jpg);
+  background-color: rgb(0, 0, 0)!important;
+  border: none;
+}
+
+.name-container {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  height: 200px;
+}
+
+.namediv {
+  font-family: "brush script mt";
+}
+.namehead {
+  font-weight: 200;
+  font-family: "Kaushan Script";
+  font-family: "brush script mt";
+  font-size: 30px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.name {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  text-decoration: 1px solid underline;
+}
+
+.container {
+  margin: 10px;
+  padding: 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 2s ease;
+  color: white;
+  background-image: linear-gradient(43deg, #182358 0%, #22133a 46%, #000000 100%);
+}
+.main:hover {
+  background-image: linear-gradient(43deg, #2b1758 0%, #101a46 46%, #000000 100%);
+}
+@media (max-width: 600px) {
+  .main {
+    height: 430px;
+  }
+}
+
+.dp {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  height: 200px;
+  margin: 20px;
+}
+#dp {
+  padding: 0px;
+  border-radius: 50%;
+  margin: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.skills {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.skill {
+  opacity: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+}
+.buttons button {
+  margin: 10px;
+  width: 150px;
+  /* width: 100%; */
+}
+button {
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+}
+button:hover {
+  background-image: linear-gradient(43deg, #072ff8 0%, #48249c 46%, #be1fee 100%);
+}
+
+.portfolio, .profile {
+  display: none;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+  height: 400px;
+}
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+}
+
+.profile-container {
+  width: 800px;
+}
+
+.profile-container div {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+}
+/* .profile-container div:hover {
+  background-image: linear-gradient(43deg, #4158D0 0%, #3e1f70 46%, #000000 100%);
+} */
+
+.summary {
+  text-align: left;
+}
+.summary-p {
+  padding: 5px!important;
+  margin: 5px!important;
+}
+
+.skill-name {
+  display: inline-block;
+  padding: 10px;
+  margin: 2px!important;
+  background-image: linear-gradient(43deg, #000000 0%, #3e1f70 46%, #4158D0 100%)!important;
+}
+.skill-name:hover {
+  background-image: linear-gradient(43deg, #6a82fa 0%, #7842f5 46%, #d152f8 100%)!important;
+  border: none;
+  color: white!important;
+}
+
+
+.back {
+  display: block!important;
+  /* position: absolute; */
+  top: 10px;
+  margin: 5px;
+  z-index: 1;
+}
+
+.js-main-btn {
+  width: 100px;
+  height: 40px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.contact p {
+  display: inline-block;
+  flex: 1;
+  margin: 5px;
+}
+
+.contact-link {
+  color: white!important;
+}
+
+.edu ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+.achievements ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+.certifications ul li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.resume-download-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  width: 75px;
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.additional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: linear-gradient(43deg, #182358  0%, #22133a 46%, #000000 100%);
+  padding: 10px;
+  margin: 10px;
+}
+@media (max-width: 600px) {
+  .additional {
+    padding: 20px;
+    height: 400px;
+  }
+}
