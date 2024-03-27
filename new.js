@@ -129,7 +129,7 @@ function navBar(key) {
         imgDiv.style.width = '0';
         imgDiv.style.height = '0';
         imgDiv.classList.add('js-nav-bg');
-        imgDiv.style.animation = 'fadeIn 0.5s forwards';
+        imgDiv.style.animation = 'fadeIn 0.2s forwards';
         document.body.appendChild(imgDiv);
         setTimeout(() => {
             imgDiv.style.width = '100vw';
@@ -312,7 +312,7 @@ let projects = {
         'details': 'Solving Mathematical Problems using Numerical Analysis in Python',
         'github': 'numericalmethods',
         'img': 'static/numericalmethods.png',
-        'description': 'Numerical Methods is my graduation project, which contains programs in python that allows users to solve mathematical problems using numerical analysis. The project includes methods for solving algebraic and transcendental equations, interpolation, and solving differential equations.'
+        'description': 'Graduation project, containing programs in python that allows users to solve mathematical problems like solving algebraic and transcendental equations, interpolation, and solving differential equations using numerical analysis.'
     },
 };
 document.addEventListener('DOMContentLoaded', () => {
