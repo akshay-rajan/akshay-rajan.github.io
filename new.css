@@ -67,20 +67,6 @@ body {
   height: 100%;
 }
 
-@media (max-width: 600px) {
-  .main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 600px;
-  }
-  .first {
-    background-image: url(static/personal-grainy.jpg);
-  }  
-  .second {
-    background-image: url(static/leaves-moody.jpg);
-  }
-}
-
 .links {
   display: flex; 
   width: 100%;
@@ -103,7 +89,19 @@ body {
 .links div:active {
   transform: scale(0.9);
 }
+
 @media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+  }
+  .first {
+    background-image: url(static/personal-grainy.jpg);
+  }  
+  .second {
+    background-image: url(static/leaves-moody.jpg);
+  }
   .links {
     margin: 10px 0 10px 0;
   }
@@ -163,12 +161,6 @@ body {
   color: white;
   background-color: black;
 }
-@media (max-width: 600px) {
-  .about {
-    margin-top: 80vh;
-    padding: 2px 0;
-  }
-}
 .about-row {
   display: flex;
   justify-content: space-between;
@@ -189,17 +181,6 @@ body {
   flex-basis: 60%;
   padding: 20px;
 }
-@media (max-width: 600px) {
-  .about-img img {
-    display: none;
-  }
-  .about-col-1 {
-    flex-basis: 100%;
-  }
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-}
 
 .about-titles {
   display: flex;
@@ -213,11 +194,6 @@ body {
   font-weight: 500;
   cursor: pointer;
   position: relative;
-}
-@media (max-width: 600px) {
-  .about-links {
-    margin: 10px;
-  }
 }
 .about-links::after {
   content: '';
@@ -264,14 +240,6 @@ body {
   min-width: 100px;
   text-align: center;
 }
-@media (max-width: 600px) {
-  .about-contents .skill {
-    margin: 2px;
-    min-width: 20px;
-
-  }
-  
-}
 .about-contents .skill:hover {
   color: black;
   background-color: wheat;
@@ -315,6 +283,26 @@ body {
   padding: 0; 
 }
 @media (max-width: 600px) {
+  .about {
+    margin-top: 80vh;
+    padding: 2px 0;
+  }
+  .about-img img {
+    display: none;
+  }
+  .about-col-1 {
+    flex-basis: 100%;
+  }
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-links {
+    margin: 10px;
+  }
+  .about-contents .skill {
+    margin: 2px;
+    min-width: 20px;
+  }
   .certificates-grid {
     display: flex;
     flex-wrap: wrap;
