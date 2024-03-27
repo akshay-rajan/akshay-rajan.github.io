@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Hide Preloader
-    console.log("loaded>>>>>>>>>>>>>");
-    document.body.classList.add('loaded');
-    document.getElementById('preloader').style.display = 'none';
     
     // Skills
     animateSkills();
@@ -20,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects
     displayCard();
 
+});
+
+// * Preloader
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+    document.getElementById('preloader').style.display = 'none';
 });
 
 // * Animate Skill display below name
@@ -402,3 +403,4 @@ function hideCards(current=null) {
         }
     });
 }
+
