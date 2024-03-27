@@ -493,20 +493,64 @@ body {
 
 /* ! Contact */
 .contact {
-  display: flex;
+  /* display: flex; */
   position: relative;
   margin: 20px;
   padding: 20px;
-  min-height: 1000px;
+  min-height: 100vh;
   color: white;
   background-color: black;
 }
+.contact h2 {
+  text-align: center;
+  margin: 20px;
+  color: wheat;
+  margin-bottom: 30px;
+  text-align: left;
+}
 .contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-links a {
+  text-decoration: none;
+  color: transparent;
+}
+.contact-links a:hover {
+  text-decoration: none;
+  color: rgb(252, 179, 90);
+
+}
+.contact-links div {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.contact-links div p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 20px;
+}
+.contact-links div p img {
+  width: 60%;
+}
+.contact-links div p:hover {
+  border: 2px solid wheat;
+  transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+  .contact-links {
+    justify-content: center;
+    margin: auto;
+  }
+} 
 .about h2, .contact h2 {
   color: wheat;
   margin-bottom: 30px;
@@ -711,5 +755,3 @@ body:not(.loaded) {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
-
-
