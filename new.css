@@ -491,7 +491,7 @@ body {
 }
 
 
-/* ! --- ! */
+/* ! Contact */
 .contact {
   display: flex;
   position: relative;
@@ -500,6 +500,11 @@ body {
   min-height: 1000px;
   color: white;
   background-color: black;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about h2, .contact h2 {
