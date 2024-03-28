@@ -496,9 +496,6 @@ body:not(.loaded) {
 }
 
 /* ? Loader for images */
-#preloader {
-  z-index: 3;
-}
 .loader {
   position: absolute;
   top: 0;
@@ -510,6 +507,7 @@ body:not(.loaded) {
   align-items: center;
   /* background-image: url(static/loader.gif); */
   background-size: cover;
+  z-index: 3;
 }
 .card-img {
   max-height: 45vh!important;
