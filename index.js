@@ -82,6 +82,8 @@ document.querySelector('.fourth').innerHTML = linksHTML;
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+const preloadImage = new Image();
+preloadImage.src = 'static/leaves-nav-bg.jpg';
 function navBar(key) {
     
     if (hamburger.classList.contains('open')) {
@@ -122,7 +124,7 @@ function navBar(key) {
         // Create the image and append it to the body
         const imgDiv = document.createElement('div');
         const img = document.createElement('img');
-        img.src = 'static/leaves-nav-bg.jpg';
+        img.src = preloadImage.src;
         imgDiv.appendChild(img);
 
         // Animation
