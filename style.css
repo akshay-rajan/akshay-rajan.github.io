@@ -310,6 +310,9 @@ body:not(.loaded) {
   background-color: wheat;
   transform: scale(1.03);
 }
+.certificates a:hover {
+  text-decoration: none;
+}
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
