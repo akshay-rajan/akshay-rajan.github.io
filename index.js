@@ -425,10 +425,17 @@ function hideCards(current=null) {
 // * Contact Form - Connect to Sheets
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzks4jFjaFkVQEuvAHol0hJmw86jni2yFubSw-wmSZtgIViK-Kb7VwTFXWA0bfBXng/exec'
 const form = document.forms['submit-to-google-sheet']
+const alert = document.getElementById('alert');
 
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+        alert.innerHTML = 'Message Sent Successfully!';
+        setTimeout(() => {
+            alert.innerHTML = '';
+        }, 5000);
+        form.reset();
+    })
     .catch(error => console.error('Error!', error.message))
 })

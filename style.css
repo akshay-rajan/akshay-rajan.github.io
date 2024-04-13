@@ -686,6 +686,17 @@ body:not(.loaded) {
   background-color: black;
   color: rgb(252, 179, 90);
 }
+.contact-form button:active {
+  border: 2px solid rgb(253, 194, 85);
+  border: 2px solid black;
+  background-color: rgb(253, 194, 85);
+  color: black;
+}
+#alert {
+  background-color: rgba(45, 240, 45, 0.2);
+  text-align: center;
+  color: white;
+}
 @media (max-width: 600px) {
   .contact-links {
     justify-content: center;
