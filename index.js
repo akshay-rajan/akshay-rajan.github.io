@@ -274,10 +274,8 @@ window.addEventListener('scroll', function() {
     scrollValue = scrollValue > 0 ? scrollValue : 0;
     scrollValue = scrollValue < 100 ? scrollValue : 100;
     
-    // educationCol1.style.background = `linear-gradient(to bottom, rgb(252, 179, 90) ${scrollValue}%, white ${100 - scrollValue}%)`;
     edu1.style.height = `${scrollValue}%`;
     edu2.style.height = `${100 - scrollValue}%`;
-    console.log(scrollValue);
 });
 
 // * Project Cards
