@@ -264,10 +264,21 @@ body:not(.loaded) {
   align-items: center;
 }
 .education-col-1 {
-  background: linear-gradient(to bottom, rgb(252, 179, 90) 80%, white 20%);
   flex: 0 0 auto;
   width: 5px;
   height: 220px;
+}
+.edu-1-1 {
+  background-color: rgb(252, 179, 90);
+  flex: 0 0 auto;
+  width: 5px;
+  height: 50%;
+}
+.edu-1-2 {
+  background-color: white;
+  flex: 0 0 auto;
+  width: 5px;
+  height: 50%;
 }
 .about-contents .skill {
   margin: 3px;

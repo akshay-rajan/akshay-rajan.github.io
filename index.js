@@ -245,13 +245,17 @@ function displayAbout(div) {
 
 // * Education Section Animation
 window.addEventListener('scroll', function() {
+    
+    // Select the div
     let educationCol1 = document.querySelector('.education-col-1');
+    let edu1 = educationCol1.querySelector('.edu-1-1');
+    let edu2 = educationCol1.querySelector('.edu-1-2');
+    
+    // Measure the scroll position
     let aboutSection = document.querySelector('#about');
-
     // Get the top and bottom positions of the about section
     let sectionTop = aboutSection.offsetTop;
     let sectionBottom = sectionTop + aboutSection.offsetHeight;
-
     // Get the current scroll position
     let scrollPosition = window.scrollY;
 
@@ -263,11 +267,17 @@ window.addEventListener('scroll', function() {
     
     // Set the color of education-col-1 based on the scroll percentage
     if (window.innerWidth > 600)
-        scrollValue = mapRange(scrollValue, 13, 53, 1, 100);
+        scrollValue = (mapRange(scrollValue, -66, 122, 0, 100) - 35) * 2.593 + 15;
     else
         scrollValue = mapRange(scrollValue, 13, 53, 1, 100) - 25;
     
-    educationCol1.style.background = `linear-gradient(to bottom, rgb(252, 179, 90) ${scrollValue}%, white ${100 - scrollValue}%)`;
+    scrollValue = scrollValue > 0 ? scrollValue : 0;
+    scrollValue = scrollValue < 100 ? scrollValue : 100;
+    
+    // educationCol1.style.background = `linear-gradient(to bottom, rgb(252, 179, 90) ${scrollValue}%, white ${100 - scrollValue}%)`;
+    edu1.style.height = `${scrollValue}%`;
+    edu2.style.height = `${100 - scrollValue}%`;
+    console.log(scrollValue);
 });
 
 // * Project Cards
