@@ -648,7 +648,6 @@ body:not(.loaded) {
 }
 
 .contact-form {
-  background: url(./static/rainy-bg.jpg);
   background-size: cover;
   display: flex;
   margin: 20px;
@@ -663,30 +662,30 @@ body:not(.loaded) {
 .contact-form form {
   width: 100%;
 }
-.contact-form input {
+.contact-form input, .contact-form textarea{
   background-color: black;
   color: white;
   border: 1px solid rgb(253, 194, 85);
-  /* border-radius: 5px; */
   display: inline-block;
   width: 100%;
   margin-bottom: 2px;
+  padding: 10px;
 }
-.contact-form textarea {
+.contact-form input:focus, .contact-form textarea:focus {
   background-color: black;
   color: white;
-  border: 1px solid rgb(253, 194, 85);
-  /* border-radius: 5px; */
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2px;
+  border: 3px solid rgb(253, 194, 85);
 }
 .contact-form button {
-  border: 1px solid rgb(0, 110, 255);
+  border: 1px solid black;
   background-color: rgb(253, 194, 85);
   color: black;
 }
-
+.contact-form button:hover {
+  border: 1px solid rgb(253, 194, 85);
+  background-color: black;
+  color: rgb(252, 179, 90);
+}
 @media (max-width: 600px) {
   .contact-links {
     justify-content: center;
