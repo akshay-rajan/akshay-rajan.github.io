@@ -668,7 +668,7 @@ body:not(.loaded) {
   border: 1px solid rgb(253, 194, 85);
   display: inline-block;
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   padding: 10px;
 }
 .contact-form input:focus, .contact-form textarea:focus {
@@ -677,12 +677,12 @@ body:not(.loaded) {
   border: 3px solid rgb(253, 194, 85);
 }
 .contact-form button {
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: rgb(253, 194, 85);
   color: black;
 }
 .contact-form button:hover {
-  border: 1px solid rgb(253, 194, 85);
+  border: 2px solid rgb(253, 194, 85);
   background-color: black;
   color: rgb(252, 179, 90);
 }
