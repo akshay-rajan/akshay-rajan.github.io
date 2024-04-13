@@ -647,10 +647,56 @@ body:not(.loaded) {
   color: wheat;
 }
 
+.contact-form {
+  background: url(./static/rainy-bg.jpg);
+  background-size: cover;
+  display: flex;
+  margin: 20px;
+  min-height: 50vh;
+}
+.form-left {
+  flex-basis: 50%;
+}
+.form-right {
+  flex-basis: 60%;
+}
+.contact-form form {
+  width: 100%;
+}
+.contact-form input {
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(253, 194, 85);
+  /* border-radius: 5px; */
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2px;
+}
+.contact-form textarea {
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(253, 194, 85);
+  /* border-radius: 5px; */
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2px;
+}
+.contact-form button {
+  border: 1px solid rgb(0, 110, 255);
+  background-color: rgb(253, 194, 85);
+  color: black;
+}
+
 @media (max-width: 600px) {
   .contact-links {
     justify-content: center;
     margin: auto;
+  }
+  .form-left {
+    flex-basis: 100%;
+  }
+  .form-right {
+    flex-basis: 0%;
   }
 } 
 .about h2, .contact h2 {
