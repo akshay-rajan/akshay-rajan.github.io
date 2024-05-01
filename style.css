@@ -46,6 +46,7 @@ body:not(.loaded) {
     background-image: url(static/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -373,6 +374,9 @@ body:not(.loaded) {
     height: auto;
     margin: 10px 0;
   
+  }
+  .about-titles {
+    display: block!important;
   }
 } 
 /* ! Projects */
