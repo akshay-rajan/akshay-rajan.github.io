@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
+import "../styles/Header.css";
+
 import { Home, Info, Engineering, Work, Contacts } from '@mui/icons-material';
 
 export default function Header() {
