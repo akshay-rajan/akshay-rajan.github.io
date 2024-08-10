@@ -57,6 +57,10 @@
   color: wheat;
 }
 
+.hamburger-icon {
+  display: none;
+}
+
 /* .mobile-navbar {
   display: none;
   position: fixed;
@@ -158,17 +162,7 @@
 .scrolled .navigation-links a:hover {
   color: tan;
 }
-.scrolled #hamburger {
-  margin-top: 1rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
-.scrolled #hamburger i {
-  font-size: 1.5rem;
-  color: #000; 
-}
 .light .navigation-links a {
   color: wheat;
 }
@@ -178,15 +172,20 @@
 }
 
 @media screen and (max-width: 798px) {
-  .myheader {
-    display: none;
-  }
-  /* .mynavbar {
+  .mynavbar {
     display: none;
   }
   .hamburger-icon {
     display: block;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    padding: 0;
   }
+  /*
   .navigation-links {
     z-index: 100;
     position: fixed;

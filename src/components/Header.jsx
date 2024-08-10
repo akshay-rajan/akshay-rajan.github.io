@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import "../styles/Header.css";
 
 import { Home, Info, Engineering, Work, Contacts } from '@mui/icons-material';
+import Hamburger from './Hamburger';
 
 export default function Header() {
 
@@ -13,6 +14,7 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
 
+  // Change scroll offset for about section based on scroll position
   const [aboutOffset, setOffset] = useState(0);
   const updateOffset = () => {
     const newOffset = window.scrollY > 100 ? 20 : 0;
@@ -98,7 +100,7 @@ export default function Header() {
         </nav>
 
         <span className="hamburger-icon" onClick={toggleNavbar}>
-          <i className="fa fa-bars"></i>
+          <Hamburger />
         </span>
 
         {/* <div className={`mobile-navbar ${isOpen ? 'open' : ''}`} style={window.innerWidth < 798 && {display: 'block'}}>
