@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Tooltip } from "@nextui-org/tooltip";
-import ProfileIcon from '../assets/dp_cartoon.jpeg';
+import dpIcon from '../assets/dp_icon.jpg';
 
 export default function ContactLinks() {
   return window.innerWidth >= 798 && (
@@ -31,7 +31,7 @@ export default function ContactLinks() {
         <div className="icon myicon">
           <Tooltip content="Resume" placement="bottom" color="success" style={{color: 'white'}}>
             <a href="https://drive.google.com/file/d/1OAndl2Vdgvz096IhcTUArfRPpG7oadOm/view?usp=sharing">
-              <img src={ProfileIcon} alt="DP" />
+              <img src={dpIcon} alt="DP" />
             </a>
           </Tooltip>
         </div>
