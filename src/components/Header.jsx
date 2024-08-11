@@ -8,9 +8,11 @@ import Hamburger from './Hamburger';
 
 export default function Header() {
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
+  // Handle hamburger menu toggle
   const toggleNavbar = () => {
+    document.body.style.overflow = isOpen ? 'auto' : 'hidden';
     setIsOpen(!isOpen);
   };
 
@@ -28,13 +30,16 @@ export default function Header() {
     };
   }, []);
 
+  const iconStyle = { 
+    verticalAlign: 'sub',
+  };
+
   return (
     <div className="myheader" id="nav">
 
       <div className="head-container">
         <nav className="mynavbar" style={window.innerWidth < 798 ? {display: 'none'} : {}}>
           <ul className="navigation-links">
-            {}
             <li>
               <Link 
                 to="" 
@@ -44,7 +49,7 @@ export default function Header() {
                 id="home-button"
                 onClick={() => scroll.scrollToTop()}
               >
-                <Home style={{verticalAlign: 'sub'}} />
+                <Home style={iconStyle} />
                 <div className="help">Home</div>
               </Link>
             </li>
@@ -56,7 +61,7 @@ export default function Header() {
                 offset={aboutOffset}
                 id="about-button"
               >
-                <Info style={{verticalAlign: 'sub'}} />
+                <Info style={iconStyle} />
                 <div className="help">About Me</div>
               </Link>
             </li>
@@ -68,7 +73,7 @@ export default function Header() {
                 offset={20}
                 id="projects-button"
               >
-                <Engineering style={{verticalAlign: 'sub'}} />
+                <Engineering style={iconStyle} />
                 <div className="help">Projects</div>
               </Link>
             </li>
@@ -80,7 +85,7 @@ export default function Header() {
                 offset={20}
                 id="experience-button"
               >
-                <Work style={{verticalAlign: 'sub'}} />
+                <Work style={iconStyle} />
                 <div className="help">Experience</div>
               </Link>
             </li>
@@ -92,70 +97,82 @@ export default function Header() {
                 offset={20}
                 id="contact-button"
               >
-                <Contacts style={{verticalAlign: 'sub'}} />
+                <Contacts style={iconStyle} />
                 <div className="help">Contact Me</div>
               </Link>
             </li>
           </ul>
         </nav>
 
-        <span className="hamburger-icon" onClick={toggleNavbar}>
-          <Hamburger />
+        <span className="hamburger-icon">
+          <Hamburger isOpen={isOpen} toggle={toggleNavbar} />
         </span>
 
-        {/* <div className={`mobile-navbar ${isOpen ? 'open' : ''}`} style={window.innerWidth < 798 && {display: 'block'}}>
-          <span className="closebtn" onClick={toggleNavbar}>&times;</span>
-          <Link 
-            to="" 
-            smooth={true} 
-            duration={800} 
-            offset={-70}
-            id="home-button"
-            onClick={() => { scroll.scrollToTop(); toggleNavbar(); }}
-          >
-            <Home />
-          </Link>
-          <Link 
-            to="about" 
-            smooth={true} 
-            duration={800} 
-            offset={10}
-            id="about-button"
-            onClick={toggleNavbar}
-          >
-            <Info />
-          </Link>
-          <Link 
-            to="projects" 
-            smooth={true} 
-            duration={800} 
-            offset={20}
-            id="projects-button"
-            onClick={toggleNavbar}
-          >
-            <Engineering />
-          </Link>
-          <Link 
-            to="experience" 
-            smooth={true} 
-            duration={800} 
-            offset={20}
-            id="experience-button"
-            onClick={toggleNavbar}
-          >
-            <Work />
-          </Link>
-          <Link 
-            to="contact" 
-            smooth={true} 
-            duration={800} 
-            offset={20}
-            id="contact-button"
-            onClick={toggleNavbar}
-          >
-            <Message />
-          </Link>
-        </div> */}
+        <div className={`mobile-navbar ${isOpen ? 'open' : ''}`}>
+          <ul>
+            <li>
+              <Link 
+                to="" 
+                smooth={true} 
+                duration={800} 
+                offset={-70}
+                id="home-button"
+                onClick={() => { scroll.scrollToTop(); toggleNavbar(); }}
+              >
+                <Home style={iconStyle} /> <div className="help">Home</div> 
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="about" 
+                smooth={true} 
+                duration={800} 
+                offset={10}
+                id="about-button"
+                onClick={toggleNavbar}
+              >
+                <Info style={iconStyle} /> <div className="help">About Me</div>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="projects" 
+                smooth={true} 
+                duration={800} 
+                offset={20}
+                id="projects-button"
+                onClick={toggleNavbar}
+              >
+                <Engineering style={iconStyle} /> <div className="help">Projects</div>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="experience" 
+                smooth={true} 
+                duration={800} 
+                offset={20}
+                id="experience-button"
+                onClick={toggleNavbar}
+              >
+                <Work style={iconStyle} /> <div className="help">Experience</div>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="contact" 
+                smooth={true} 
+                duration={800} 
+                offset={20}
+                id="contact-button"
+                onClick={toggleNavbar}
+              >
+                <Contacts style={iconStyle} /> <div className="help">Contact Me</div>
+              </Link>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   );
