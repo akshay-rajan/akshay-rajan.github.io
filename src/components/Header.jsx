@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import "../styles/Header.css";
 
 import { Home, Info, Engineering, Work, Contacts } from '@mui/icons-material';
@@ -119,7 +121,8 @@ export default function Header() {
                 id="home-button"
                 onClick={() => { scroll.scrollToTop(); toggleNavbar(); }}
               >
-                <Home style={iconStyle} /> <div className="help">Home</div> 
+                <div className="help">Home</div>
+                <Home style={iconStyle} />
               </Link>
             </li>
             <li>
@@ -131,7 +134,8 @@ export default function Header() {
                 id="about-button"
                 onClick={toggleNavbar}
               >
-                <Info style={iconStyle} /> <div className="help">About</div>
+                <div className="help">About</div>
+                <Info style={iconStyle} />
               </Link>
             </li>
             <li>
@@ -143,7 +147,8 @@ export default function Header() {
                 id="projects-button"
                 onClick={toggleNavbar}
               >
-                <Engineering style={iconStyle} /> <div className="help">Projects</div>
+                <div className="help">Projects</div>
+                <Engineering style={iconStyle} />
               </Link>
             </li>
             <li>
@@ -155,7 +160,8 @@ export default function Header() {
                 id="experience-button"
                 onClick={toggleNavbar}
               >
-                <Work style={iconStyle} /> <div className="help">Experience</div>
+                <div className="help">Experience</div>
+                <Work style={iconStyle} />
               </Link>
             </li>
             <li>
@@ -167,8 +173,14 @@ export default function Header() {
                 id="contact-button"
                 onClick={toggleNavbar}
               >
-                <Contacts style={iconStyle} /> <div className="help">Contact</div>
+                <div className="help">Contact</div>
+                <Contacts style={iconStyle} />
               </Link>
+            </li>
+            <li className="resume-link-li">
+              <a href="https://drive.google.com/file/d/1OAndl2Vdgvz096IhcTUArfRPpG7oadOm/view?usp=sharing" className="nav-resume-link">
+                <div>Resume</div> <AccountCircleIcon style={iconStyle} />
+              </a>
             </li>
           </ul>
         </div>
