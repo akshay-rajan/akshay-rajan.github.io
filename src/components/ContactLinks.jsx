@@ -4,7 +4,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 import ProfileIcon from '../assets/dp_cartoon.jpeg';
 
 export default function ContactLinks() {
-  return (
+  return window.innerWidth >= 798 && (
     <div className='link-container'>
       <div className="mylinks">
         <div className="icon linkedin-icon">

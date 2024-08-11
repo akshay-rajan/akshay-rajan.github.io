@@ -61,51 +61,6 @@
   display: none;
 }
 
-/* .mobile-navbar {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  z-index: 1;
-}
-
-.mobile-navbar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.mobile-navbar a:hover {
-  color: #f1f1f1;
-}
-
-.mobile-navbar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.hamburger-icon {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  z-index: 3;
-} */
-
 /* <<<<<<<<<<<<<<<Nav to Right>>>>>>>>>>>>>> */
 
 .scrolled.myheader {
@@ -130,7 +85,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 0 10px 0 0;
   height: auto;
   background-color: transparent;
 }
@@ -140,13 +95,14 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  width: 50px;
+  overflow: visible;
+  z-index: 3;
 }
 
 .scrolled .navigation-links li {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
   margin: 30px 0 30px 0;
 }
 .scrolled .experience-button {
@@ -160,7 +116,7 @@
   vertical-align: top ;
   font-size: 12px;
   padding: 4px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .scrolled .navigation-links a svg:hover + .help {
   opacity: 1;
@@ -220,6 +176,11 @@
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.9);
   }
+  .mobile-navbar.open ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .mobile-navbar.open ul li {
     display: flex;
     flex-wrap: nowrap;
@@ -248,7 +209,7 @@
         width: 0;
     }
     to {
-        width: 40%;
+        width: 35%;
     }
   }
   .mobile-navbar.open ul li a {

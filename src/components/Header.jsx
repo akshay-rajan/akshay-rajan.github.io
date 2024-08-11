@@ -62,7 +62,7 @@ export default function Header() {
                 id="about-button"
               >
                 <Info style={iconStyle} />
-                <div className="help">About Me</div>
+                <div className="help">About</div>
               </Link>
             </li>
             <li>
@@ -98,7 +98,7 @@ export default function Header() {
                 id="contact-button"
               >
                 <Contacts style={iconStyle} />
-                <div className="help">Contact Me</div>
+                <div className="help">Contact</div>
               </Link>
             </li>
           </ul>
@@ -131,7 +131,7 @@ export default function Header() {
                 id="about-button"
                 onClick={toggleNavbar}
               >
-                <Info style={iconStyle} /> <div className="help">About Me</div>
+                <Info style={iconStyle} /> <div className="help">About</div>
               </Link>
             </li>
             <li>
@@ -167,7 +167,7 @@ export default function Header() {
                 id="contact-button"
                 onClick={toggleNavbar}
               >
-                <Contacts style={iconStyle} /> <div className="help">Contact Me</div>
+                <Contacts style={iconStyle} /> <div className="help">Contact</div>
               </Link>
             </li>
           </ul>

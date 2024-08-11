@@ -4,9 +4,11 @@ import "../styles/Contact.css";
 
 import ContactForm from './ContactForm';
 import EmailIcon from '@mui/icons-material/Email';
-import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactLinks from './ContactLinks';
+import CodeIcon from '@mui/icons-material/Code';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Contact = () => {
 
@@ -18,6 +20,7 @@ const Contact = () => {
       <div className="contact-container">
         
         <div className="contact-title">Contact Me</div>
+
         <div className="contact-row">
           <div className="contact-col-1"></div>
           <div className="contact-col-2"></div>
@@ -34,9 +37,23 @@ const Contact = () => {
             </div>
             <div>
               <a href="https://www.google.com/maps/place/Thiruvananthapuram,+Kerala/">
-                <HomeIcon />
+                <LocationOnIcon />
               </a>
             </div>
+            {window.innerWidth < 798 && 
+              <>
+                <div>
+                  <a href="https://github.com/akshay-rajan" >
+                    <GitHubIcon />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://leetcode.com/u/akshayrajan/" >
+                    <CodeIcon />
+                  </a>
+                </div>
+              </>
+            }
           </address>
         </div>
         
