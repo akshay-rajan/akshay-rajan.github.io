@@ -144,17 +144,34 @@
 }
 
 .scrolled .navigation-links li {
+  display: flex;
+  flex-direction: column;
   margin: 1rem 0;
   margin: 30px 0 30px 0;
 }
+.scrolled .experience-button {
+  display: flex;
+}
 
 .scrolled .navigation-links li .help {
-  display: none;
+  order: -1;
+  opacity: 0;
+  color: wheat;
+  vertical-align: top ;
+  font-size: 12px;
+  padding: 4px;
+  margin-right: 20px;
+}
+.scrolled .navigation-links li:hover .help {
+  opacity: 1;
 }
 
 .scrolled .navigation-links a {
   /* transform: rotate(90deg); */
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  align-items: right;
+  justify-content: right;
   text-decoration: none;
   color: #000;
   font-size: 1.2rem;
