@@ -77,6 +77,14 @@ export default function AboutCard(props) {
     return color;
   };
 
+  // Scroll to About section when clicked on a card (only on small screens)
+  const handleClick = () => {
+    const div = document.getElementById('about');
+    if (div) {
+      div.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div 
@@ -84,8 +92,9 @@ export default function AboutCard(props) {
         onMouseEnter={() => {
           props.setExpanded(true);
           props.setHovering(props.title);
-        }
-      }>
+        }}
+        onClick={handleClick}
+      >
         <div style={title}>{props.title}</div>
         <div style={desc}>
           {props.description}
