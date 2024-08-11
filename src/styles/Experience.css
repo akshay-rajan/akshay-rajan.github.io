@@ -186,7 +186,7 @@
   }
   
   .exp-timeline-event-copy {
-    padding: 2em;
+    padding: 0;
     position: relative;
     top: -1.875em;
     left: 4em;
@@ -204,10 +204,12 @@
   
   .exp-timeline-event-copy strong {
     font-weight: 700;
+    padding-right: 5px;
   }
 
   .exp-timeline-event-copy div ul li {
     display: flex;
+    padding-right: 5px;
     flex-wrap: wrap;
     list-style: square;
   }
