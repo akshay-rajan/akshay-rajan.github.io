@@ -66,6 +66,9 @@
 .exp-timeline-event:hover .exp-timeline-event-thumbnail {
   box-shadow: inset 40em 0 0 0 var(--exp-color-1);
 }
+.exp-timeline-event:hover .job-title {
+  color: var(--exp-color-3);
+}
 
 .exp-timeline-event-copy {
   padding: 2em;
@@ -126,7 +129,8 @@
     padding: 5px;
     padding-left: 0px;
     min-height: 70vh;
-    width: 80vw;
+    width: 90%;
+    overflow: hidden;
     
   }
   .exp-title {
@@ -200,6 +204,12 @@
   
   .exp-timeline-event-copy strong {
     font-weight: 700;
+  }
+
+  .exp-timeline-event-copy div ul li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: square;
   }
   
   .exp-timeline-event-copy p:not(.exp-timeline-event-thumbnail) {
