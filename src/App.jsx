@@ -17,8 +17,10 @@ function App() {
   useEffect(() => {
     const preloader = document.getElementById('preloader');
     if (preloader) {
-      preloader.style.display = 'none';
-      setLoading(false);
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        setLoading(false);
+      }, 1000);
     }
   }, []);
 
