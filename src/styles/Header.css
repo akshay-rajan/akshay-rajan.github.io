@@ -162,7 +162,7 @@
   padding: 4px;
   margin-right: 20px;
 }
-.scrolled .navigation-links li:hover .help {
+.scrolled .navigation-links a svg:hover + .help {
   opacity: 1;
 }
 
