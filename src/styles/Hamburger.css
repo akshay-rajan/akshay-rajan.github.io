@@ -1,5 +1,5 @@
 #nav-icon2 {
-  width: 40px; /* Reduced width */
+  width: 35px; /* Reduced width */
   height: 25px; /* Reduced height */
   position: relative;
   margin: 15px auto;
@@ -17,9 +17,9 @@
 #nav-icon2 span {
   display: block;
   position: absolute;
-  height: 6px; /* Reduced height of each span */
+  height: 5px; /* Reduced height of each span */
   width: 50%;
-  background: wheat;
+  background: white;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
