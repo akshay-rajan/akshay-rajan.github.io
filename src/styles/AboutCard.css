@@ -1,0 +1,50 @@
+.about-card-container {
+  font-size: 15px;
+  padding: 15px;
+  padding-top: 15px;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  display: block;
+  background-color: black;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+  background: #000;
+  border: 0.1px solid rgb(100, 100, 100);
+  border-radius: 10px;
+}
+.card-item {
+  display: inline;
+  font: monospace;
+  color: white;
+  font-size: 15px;
+  margin: 2px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+.points {
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 798) {
+  .about-card-container {
+    font-size: 15px;
+    margin-left: 0;
+    text-align: left;
+    display: block;
+    background-color: black;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+    background: #000;
+    border: 0.1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}

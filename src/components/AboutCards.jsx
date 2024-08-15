@@ -112,13 +112,24 @@ export default function AboutCards({ isExpanded, setExpanded }) {
     }
   }, []);
 
+  // Change the active card every 2 seconds
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive(active => (active + 1) % 4);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div ref={topElement} style={container}>
       <div 
         className="expandedDiv"
         style={isExpanded ? (window.innerWidth < 798 ? smallWidth.expanded : expanded) : {display: 'none'}}
-        onMouseLeave={() => setExpanded(false)
-      }>
+        onMouseLeave={() => setExpanded(false)}
+      >
         {hovering == "Education" && <Education {...education} setExpanded={setExpanded} />}
         {hovering == "Skills" && <Skills {...Skills} setExpanded={setExpanded} />}
         {hovering == "Achievements" && <Achievements {...achievements} setExpanded={setExpanded} />}
@@ -127,10 +138,34 @@ export default function AboutCards({ isExpanded, setExpanded }) {
 
       <div style={window.innerWidth < 798 ? smallWidth.cards : cards } className="more-details">
 
-        <AboutCard {...education} isExpanded={isExpanded} setExpanded={setExpanded} setHovering={setHovering} />
-        <AboutCard {...skills}  isExpanded={isExpanded} setExpanded={setExpanded} setHovering={setHovering} />
-        <AboutCard {...certifications} isExpanded={isExpanded} setExpanded={setExpanded} setHovering={setHovering} />
-        <AboutCard {...achievements} isExpanded={isExpanded} setExpanded={setExpanded} setHovering={setHovering} />
+        <AboutCard 
+          {...education} 
+          isExpanded={isExpanded} 
+          setExpanded={setExpanded} 
+          setHovering={setHovering} 
+          isActive={active === 0}
+        />
+        <AboutCard 
+          {...skills}  
+          isExpanded={isExpanded} 
+          setExpanded={setExpanded} 
+          setHovering={setHovering} 
+          isActive={active === 1} 
+        />
+        <AboutCard 
+          {...certifications} 
+          isExpanded={isExpanded} 
+          setExpanded={setExpanded} 
+          setHovering={setHovering} 
+          isActive={active === (window.innerWidth < 798 ? 2 : 3)} 
+        />
+        <AboutCard 
+          {...achievements} 
+          isExpanded={isExpanded} 
+          setExpanded={setExpanded} 
+          setHovering={setHovering} 
+          isActive={active === (window.innerWidth < 798 ? 3 : 2)} 
+        />
 
       </div>
     </div>
