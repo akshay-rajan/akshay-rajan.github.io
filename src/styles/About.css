@@ -9,6 +9,7 @@
   left: 90%;
   color: white;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .close-btn:hover {
   color: wheat;
