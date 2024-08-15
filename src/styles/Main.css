@@ -76,18 +76,22 @@
 }
 
 .name-intro.imgDiv {
-  display: block;
-  position: fixed;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
   margin: 0;
   padding: 0;
   z-index: 2;
   opacity: 1;
   overflow: hidden;
-  opacity: 0.999;
+  opacity: 1;
 }
 .main-img {
   height: 90vh;
+  position: fixed;
+  bottom: 0;
 }
 
 @media screen and (max-width: 798px) {
@@ -110,6 +114,7 @@
     color: white;
     font-size: 250px;
     height: 60vh;
+    width: auto;
     animation: marquee 12s linear infinite;
     padding: 40px;
     padding-top: 10px;
@@ -125,13 +130,12 @@
     margin: 0;
     padding: 0;
     z-index: 2;
-    opacity: 1;
     overflow: hidden;
   }
   .main-img {
+    position: relative;
     width: 100vw;
     margin-top: 25vh;
-    left: 0;
     height: auto;
   }
 }
