@@ -39,7 +39,7 @@ export default function AboutCard(props) {
     <>
       <div 
         style={props.isExpanded ? {display: 'none'} : {display: 'block'}}
-        className="about-card-container"
+        className={props.isActive ? 'about-card-active' : 'about-card-container'}
         onClick={() => {
             props.setExpanded(true);
             props.setHovering(props.title);
