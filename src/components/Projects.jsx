@@ -30,7 +30,7 @@ const Projects = () => {
       key: 2,
       title: 'DeviceDash: Smartphone Recommendation Website',
       image: devicedashimg,
-      description: 'A smartphone recommendation website in Django, designed to significantly reduce the time required for an average person to choose a smartphone by 90%. Implemented an API to fetch data from `gsmarena.com` by web scraping using BeautifulSoup.',
+      description: 'A smartphone recommendation website in Django. Implemented a Django REST API to fetch data from `gsmarena.com` by web scraping using BeautifulSoup.',
       techStack: [
         'https://www.svgrepo.com/show/353657/django-icon.svg',
         'https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png?f=webp&w=256',
@@ -42,7 +42,7 @@ const Projects = () => {
       key: 3,
       title: 'Timer for Chrome',
       image: timerforchrome,
-      description: 'A Timer chrome extension using JavaScript, designed to track time during browsing or tests, boosting focus and time management of an individual by 50%. Enhanced proficiency in DOM manipulation, event handling and asynchronous operations. Studied Chrome extension architecture, including background scripts, content scripts, and popup pages.',
+      description: 'A Timer Chrome Extension using JavaScript, designed to track time during browsing or tests. Enhanced proficiency in DOM manipulation, event handling and asynchronous operations. Studied Chrome extension architecture, including background scripts, content scripts, and popup pages.',
       techStack: [
         'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
         'https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png', 
@@ -56,7 +56,7 @@ const Projects = () => {
       key: 4,
       title: 'Auctions',
       image: auctions,
-      description: 'An online auction website in Django and Bootstrap, designed to facilitate the buying and selling of products. Implemented a bidding system, user authentication, and a user-friendly interface.',
+      description: 'An online auction platform in Django and Bootstrap, enabling seamless buying and selling of products. Implemented a bidding system, user authentication, and a user-friendly interface.',
       techStack: [
         'https://www.svgrepo.com/show/353657/django-icon.svg',
         'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png',
