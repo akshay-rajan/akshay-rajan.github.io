@@ -11,8 +11,8 @@ import badge3 from "../assets/badge3.png";
 export default function Achievements(props) {
   const container = {
     display: 'block',
-    font: `monospace`,
     position: 'relative',
+    width: '100%',
     margin: '10px',
     padding: '10px',
   };
@@ -33,11 +33,11 @@ export default function Achievements(props) {
           <div>Achievements</div>
           <div className="close-btn" onClick={() => props.setExpanded(false)}><CloseIcon /></div>
         </div>
-          <div className="achievements-list">
-            {props.content.map((achievement, index) => {
-              return <Badge key={index} logo={logo[index]} content={achievement} />
-            })}
-          </div>        
+        <div className="achievements-list">
+          {props.content.map((achievement, index) => {
+            return <Badge key={index} logo={logo[index]} content={achievement} />
+          })}
+        </div>
       </div>
     </>
   );
