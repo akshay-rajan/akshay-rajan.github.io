@@ -91,7 +91,7 @@ export default function Certifications(props) {
           <div>Certifications</div>
           <div className="close-btn" onClick={() => props.setExpanded(false)}><CloseIcon /></div>
         </div>
-          <div style={certificates} classname="certificates-div">
+          <div style={certificates} className="certificates-div">
             {certifications.content.map((certification, index) => 
               <Certificate key={index} index={index} certification={certification} />
             )}
