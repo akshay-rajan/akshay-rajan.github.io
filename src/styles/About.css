@@ -10,6 +10,10 @@
   color: white;
   cursor: pointer;
 }
+.close-btn:hover {
+  color: wheat;
+  padding-left: 3px;
+}
 
 /* Education */
 .svg-edu {

@@ -29,9 +29,9 @@ export default function Achievements(props) {
   return (
     <>
       <div style={container}>
-        <div style={title} onMouseEnter={() => props.setExpanded(false)}>
+        <div style={title}>
           <div>Achievements</div>
-          <div className="close-btn"><CloseIcon /></div>
+          <div className="close-btn" onClick={() => props.setExpanded(false)}><CloseIcon /></div>
         </div>
           <div className="achievements-list">
             {props.content.map((achievement, index) => {

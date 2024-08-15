@@ -70,9 +70,9 @@ export default function Skills(props) {
   return (
     <>
       <div className="skill-container">
-        <div style={title} onMouseEnter={() => props.setExpanded(false)}>
+        <div style={title}>
           <div>Skills</div>
-          <div className="close-btn"><CloseIcon /></div>
+          <div className="close-btn" onClick={() => props.setExpanded(false)}><CloseIcon /></div>
         </div>
         <div style={window.innerWidth < 798 ? small.skillData : skillData}>
 
