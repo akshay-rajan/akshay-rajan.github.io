@@ -132,12 +132,23 @@
   color: #000;
   font-size: 1.2rem;
 }
+.navigation-links a svg {
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+.scrolled .navigation-links a svg {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
 .scrolled .navigation-links a:hover {
   color: tan;
 }
 
 .light .navigation-links a {
   color: wheat;
+}
+.light .navigation-links a svg {
+  background-color: transparent;
 }
 .light .navigation-links a:hover {
   color: tan;
