@@ -4,7 +4,7 @@ import react from "react";
 export default function SvgComponent2(props) {
   
   const svgStyle = {
-    stroke: (props.currentEdu == 1 || props.currentEdu == 2) ? "#4493f8" : "grey",
+    stroke: (props.currentEdu == 0 || props.currentEdu == 1) ? "#4493f8" : "grey",
     strokeWidth: "4px",
     fill: "transparent",
   };
