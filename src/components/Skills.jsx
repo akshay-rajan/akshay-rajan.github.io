@@ -27,6 +27,7 @@ export default function Skills(props) {
     borderRadius: '10px',
     overflow: 'visible', 
     zIndex: '-1',
+    marginRight: '35px',
   };
   const skillsList = {
     display: 'flex',

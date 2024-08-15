@@ -11,16 +11,14 @@ export default function Pie({ setInfo }) {
       name: 'Software', 
       skills: [
         { name: 'Django', logo: "https://www.svgrepo.com/show/353657/django-icon.svg" },
-        { name: 'React', logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-RS3Oeb0xs2q4aJmYZ4FGWnFuPnn4yFNHg&s" },
         { name: 'Python', logo: "https://i.pinimg.com/originals/2f/9c/11/2f9c11f9e55efbf1791f12c06d60729b.jpg" },
         { name: 'Java', logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" },
+        { name: 'React', logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-RS3Oeb0xs2q4aJmYZ4FGWnFuPnn4yFNHg&s" },
         { name: 'JavaScript', logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
         { name: 'C', logo: "https://cdn.iconscout.com/icon/free/png-256/free-c-58-1175247.png" },
         { name: 'PHP', logo: "https://pngimg.com/uploads/php/small/php_PNG7.png" },
-        { name: 'Motoko', logo: "https://images.squarespace-cdn.com/content/v1/54437e21e4b048c830a0cff1/1582790973231-Y6Y49DRMFQTDOL5F9T32/motoko-master-01.png?format=2500w" },
         { name: 'Rust', logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rustacean-orig-noshadow.svg/1200px-Rustacean-orig-noshadow.svg.png" },
         { name: 'Anchor', logo: "https://cryptologos.cc/logos/solana-sol-logo.png" },
-        { name: 'Sass', logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" },
         { name: 'TypeScript', logo: "https://cdn-icons-png.flaticon.com/256/919/919832.png" },
         { name: 'Postman', logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" },
         { name: 'SQL', logo: "https://icons.veryicon.com/png/o/application/designer-icon/sql-5.png" },
@@ -30,7 +28,6 @@ export default function Pie({ setInfo }) {
         { name: 'XAMPP', logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeBr8B8nBG3QP5UIoWaS7xNXhXHrKAkmLsZA&s" },
         { name: 'Bootstrap', logo: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png" },
         { name: 'Flask', logo: "https://cms-assets.tutsplus.com/uploads/users/30/posts/16037/preview_image/flask.png" },
-        { name: 'Haskell', logo: "https://i.pinimg.com/originals/06/53/a2/0653a2a7b86d7be59dd1738c4ce88096.png" },
       ]
     },
     { 
