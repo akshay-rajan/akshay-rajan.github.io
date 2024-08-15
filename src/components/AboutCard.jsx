@@ -79,6 +79,7 @@ export default function AboutCard(props) {
 
   // Scroll to About section when clicked on a card (only on small screens)
   const handleClick = () => {
+    if (window.innerWidth > 798) return;
     const div = document.getElementById('about');
     if (div) {
       div.scrollIntoView({ behavior: 'smooth' });
@@ -89,11 +90,12 @@ export default function AboutCard(props) {
     <>
       <div 
         style={props.isExpanded ? {display: 'none'} : (window.innerWidth < 798 ? smallContainer : container)} 
-        onMouseEnter={() => {
-          props.setExpanded(true);
-          props.setHovering(props.title);
-        }}
-        onClick={handleClick}
+        onClick={() => {
+            props.setExpanded(true);
+            props.setHovering(props.title);
+            handleClick();
+          }
+        }
       >
         <div style={title}>{props.title}</div>
         <div style={desc}>
