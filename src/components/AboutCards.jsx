@@ -45,20 +45,6 @@ export default function AboutCards({ isExpanded, setExpanded }) {
     content: [],
   };
 
-  // const experience = {
-  //   title: "Experience",
-  //   description: "This is the description for experience",
-  //   points: ["Solana", "Internet Computer", "Rust", "TypeScript..."],
-  //   content: [
-  //     {
-  //       "job": "Software Developer Intern",
-  //       "company": "XTG Technologies",
-  //       "year": "May 2024 - Present",
-  //       "desc": "Developed a full-stack web application for managing employee data using React, Node.js, and MongoDB.",
-  //     },
-  //   ],
-  // };
-
   const certifications = {
     title: "Certifications",
     description: "Proofs of sacrifices and dedication",
