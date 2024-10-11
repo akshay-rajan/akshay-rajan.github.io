@@ -140,7 +140,7 @@ export default function AboutProfile() {
             <h3 style={flexLeft.greyFont}>akshay-rajan</h3>
           </div>
           <div style={window.innerWidth < 798 ? smallScreen.details : flexLeft.desc}>
-            Software Developer | MCA 25' @ College of Engineering, Trivandrum
+            Software Developer | MCA'25 @ College of Engineering, Trivandrum
             <div style={window.innerWidth ? smallScreen.buttonDiv : flexLeft.buttonDiv}>
               <a href="https://github.com/akshay-rajan">
                 <button style={flexLeft.mainButton}>Github</button>
