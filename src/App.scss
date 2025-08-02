@@ -1,0 +1,8 @@
+$primary-color: #000000; // Green
+$secondary-color: #d9eeff; // Blue
+
+body {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-family: 'Arial', sans-serif;
+}
