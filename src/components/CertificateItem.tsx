@@ -1,0 +1,16 @@
+import React from "react";
+
+const Certificate: React.FC<{
+  title: string;
+  link: string;
+}> = ({ title, link }) => {
+  return (
+    <li className="certificate-item">
+      <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
+        {title}
+      </a>
+    </li>
+  );
+};
+
+export default Certificate;
