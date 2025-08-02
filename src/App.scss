@@ -1,12 +1,20 @@
-$primary-color: #000000;
+$primary-color: #d0d7ff;
 $secondary-color: #d9eeff;
-$background-color: #d3feff;
+$background-color: rgb(9, 26, 58);
+$font-family: 'Inter', sans-serif;
+$link-color: #a0aeff;
+
 
 body {
   background-color: $background-color;
   color: $primary-color;
-  font-family: 'Arial', sans-serif;
+  font-family: $font-family;
   padding: 2px;
+}
+
+body a {
+  color: $link-color;
+  text-decoration: none;
 }
 
 .resume-container {
@@ -14,8 +22,46 @@ body {
   flex-wrap: wrap;
 }
 
+// Name and Contact
+
 .header {
-  padding: 20px;
+  padding: 25px;
+  position: fixed;
+  z-index: -1;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.my-name {
+  font-size: 2.9em;
+  color: $primary-color;
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.my-title {
+  font-size: 1.8em;
+  color: $secondary-color;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  letter-spacing: -0.01em;
+}
+
+.my-location {
+  font-size: 1em;
+  color: $secondary-color;
+  margin-top: 5px;
+}
+
+.my-location svg {
+  color: $secondary-color;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
 }
 
 .contact-links {
@@ -26,6 +72,8 @@ body {
   padding: 10px;
   padding-left: 0;
   margin-bottom: 10px;
+  display: flex;
+  z-index: 100;
 }
 
 .contact-item a {
@@ -37,9 +85,30 @@ body {
   width: 16px;
 }
 
+// Resume Sections
+
 .content {
   padding: 20px;
-  max-width: 60vw;
+  width: 100%;
+}
+
+.content-children {
+  padding-left: 35vw;
+  max-height: 95vh;
+  min-width: 50vw;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.experience-description {
+  margin-top: 5px;
+  max-width: 35em;
+}
+
+.skill-description {
+  margin-top: 5px;
+  max-width: 35em;
 }
 
 .skill-category {
@@ -68,4 +137,31 @@ body {
 
 .project-links a {
   margin-right: 10px;
+}
+
+.project-description {
+  margin-top: 5px;
+  max-width: 35em;
+}
+
+.certifications {
+  margin-top: 10px;
+  max-width: 35em;
+}
+
+.achievements {
+  margin-top: 10px;
+  max-width: 35em;
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    position: relative;
+    z-index: auto;
+  }  
+  .content-children {
+    padding-left: 10px;
+    width: 100%;
+    max-height: none;
+  }
 }

@@ -6,12 +6,14 @@ import { ADDRESS, NAME, TITLE } from "../config";
 const Heading: React.FC = () => {
   return (
     <header className="header">
-      <h1>{NAME}</h1>
-      <p>{TITLE}</p>
-      <p>
-        <FaMapMarkerAlt /> {ADDRESS}
-      </p>
-      <Contact />
+      <div className="header-content">
+        <h1 className="my-name">{NAME}</h1>
+        <div className="my-title">{TITLE}</div>
+        <div className="my-location">
+          <FaMapMarkerAlt /> {ADDRESS}
+        </div>
+        <Contact />
+      </div>
     </header>
   );
 }

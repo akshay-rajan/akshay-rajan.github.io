@@ -9,11 +9,13 @@ import Additional from "./Additional";
 const Content: React.FC = () => {
   return (
     <main className="content">
-      <Education />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Additional />
+      <div className="content-children">
+        <Education />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Additional />
+      </div>
     </main>
   );
 }
