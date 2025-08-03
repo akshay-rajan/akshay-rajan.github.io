@@ -1,13 +1,11 @@
-$primary-color: #FFFFFF;
-$secondary-color: #b2bec0;
-$background-color: #01172F;
-$font-color: #b2bec0;
-$highlight-color: #FC9E4F;
-
-$link-color: $secondary-color;
-$skill-border: rgba(178, 190, 192, 0.2);
-$font-family: 'Inter', sans-serif;
-
+@use "variables" as *;
+@use "education";
+@use "experience";
+@use "skills";
+@use "projects";
+@use "certifications";
+@use "achievements";
+@use "contact";
 
 body {
   background-color: $background-color;
@@ -60,7 +58,9 @@ section {
   margin-bottom: 50px;
 }
 
-// Name and Contact
+li {
+  list-style-type:square;
+}
 
 .header {
   position: fixed;
@@ -86,7 +86,7 @@ section {
 
 .my-title {
   font-size: 1.6em;
-  color: $highlight-color;
+  color: $secondary-color;
   margin-top: 5px;
   margin-bottom: 0px;
   letter-spacing: -0.01em;
@@ -107,40 +107,6 @@ section {
   vertical-align: top;
 }
 
-.contact-links {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-
-.contact-item {
-  padding: 10px;
-  padding-left: 0;
-  margin-bottom: 10px;
-  display: flex;
-  z-index: 100;
-}
-
-.contact-item svg {
-  width: 30px;
-  height: 30px;
-}
-
-.contact-item a {
-  color: $primary-color;
-  text-decoration: none;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-}
-.icon:hover {
-  color: $highlight-color;
-}
-
-// Resume Sections
 
 .content {
   margin-top: 50px;
@@ -156,84 +122,6 @@ section {
   -ms-overflow-style: none;
 }
 
-.education-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.education-item {
-  margin-bottom: 20px;
-  display: flex;
-}
-.education-item .left {
-  width: 30%;
-}
-.education-item .grade {
-  font-style: italic;
-  color: $secondary-color;
-}
-
-.experience-description {
-  margin-top: 5px;
-  max-width: 35em;
-}
-
-.skill-description {
-  margin: 20px;
-  max-width: 35em;
-}
-
-.skill-category {
-  margin: 2px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.skill-category .category-name {
-  font-weight: bold;
-  margin-right: 10px;
-  min-width: 20%;
-}
-
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skill-item {
-  border: 0.5px solid $skill-border;
-  margin: 2px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.project-links {
-  margin-top: 10px;
-}
-
-.project-links a {
-  margin-right: 10px;
-}
-
-.project-description {
-  margin-top: 5px;
-  max-width: 35em;
-}
-
-// .additional-description {
-//   margin: 20px;
-// }
-
-.certifications {
-  margin-top: 10px;
-  max-width: 35em;
-}
-
-.achievements {
-  margin-top: 10px;
-  max-width: 35em;
-}
 
 @media screen and (max-width: 1080px) {
   .my-name {
@@ -268,18 +156,5 @@ section {
     padding-left: 10px;
     width: 100%;
     max-height: none;
-  }
-  .education-item {
-    flex-direction: column;
-  }
-  .education-item .left {
-    width: auto;
-  }
-  .contact-links {
-    justify-content: left;
-  }
-  .contact-item svg {
-    width: 24px;
-    height: 24px;
   }
 }

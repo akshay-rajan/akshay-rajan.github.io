@@ -1,4 +1,4 @@
-import './App.scss'
+import './styles/main.scss'
 import Heading from './components/Heading'
 import Content from './components/Content'
 

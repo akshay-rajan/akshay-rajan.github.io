@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  margin-right: 10px;
+}
+
+.project-description {
+  margin-top: 5px;
+  max-width: 35em;
+}

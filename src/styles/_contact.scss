@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.contact-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.contact-item {
+  padding: 10px;
+  padding-left: 0;
+  margin-bottom: 10px;
+  display: flex;
+  z-index: 100;
+}
+
+.contact-item {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.contact-item a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.icon:hover {
+  color: $highlight-color;
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-links {
+    justify-content: left;
+  }
+  .contact-item svg {
+    width: 24px;
+    height: 24px;
+  }
+}

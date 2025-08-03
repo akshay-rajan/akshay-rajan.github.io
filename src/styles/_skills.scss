@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+.skill-description {
+  margin: 20px;
+  max-width: 35em;
+}
+
+.skill-category {
+  margin: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-category .category-name {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 20%;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  border: 0.5px solid $skill-border;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 5px;
+}

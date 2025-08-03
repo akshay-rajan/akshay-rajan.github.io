@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 
 import ContactItem from "./ContactItem";
 import { CONTACT } from "../config";
@@ -19,6 +19,10 @@ const Contact: React.FC = () => {
         <ContactItem
           icon={<FaGithub />}
           link={CONTACT.github}
+        />
+        <ContactItem
+          icon={<FaFileDownload />}
+          link={CONTACT.resume}
         />
       </div>
     </section>

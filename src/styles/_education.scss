@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  display: flex;
+}
+.education-item .left {
+  width: 30%;
+}
+.education-item .grade {
+  font-style: italic;
+  color: $secondary-color;
+}
+
+@media screen and (max-width: 1080px) {
+  .education-item {
+    flex-direction: column;
+  }
+  .education-item .left {
+    width: auto;
+  }
+}
