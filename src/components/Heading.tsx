@@ -5,16 +5,20 @@ import { ADDRESS, NAME, TITLE } from "../config";
 
 const Heading: React.FC = () => {
   return (
-    <header className="header">
+    <div className="header">
       <div className="header-content">
-        <h1 className="my-name">{NAME}</h1>
-        <div className="my-title">{TITLE}</div>
-        <div className="my-location">
-          <FaMapMarkerAlt /> {ADDRESS}
+        <div className="first">
+          <h1 className="my-name">{NAME}</h1>
+          <div className="my-title">{TITLE}</div>
+          <div className="my-location">
+            <FaMapMarkerAlt /> {ADDRESS}
+          </div>
         </div>
-        <Contact />
+        <div className="second">
+          <Contact />
+        </div>
       </div>
-    </header>
+    </div>
   );
 }
 

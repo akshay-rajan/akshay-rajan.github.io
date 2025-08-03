@@ -40,9 +40,17 @@ body a:hover {
   font-weight: 520;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .resume-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 // Name and Contact
@@ -50,12 +58,15 @@ body a:hover {
 .header {
   padding: 25px;
   position: fixed;
-  z-index: 0;
+  min-height: 80vh;
+  flex: 1;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
+  height: 90vh;
+  justify-content: space-between;
   padding: 25px;
 }
 
@@ -89,7 +100,10 @@ body a:hover {
 }
 
 .contact-links {
+  width: 60%;
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .contact-item {
@@ -100,13 +114,23 @@ body a:hover {
   z-index: 100;
 }
 
+.contact-item svg {
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s ease;
+}
+
 .contact-item a {
   color: $primary-color;
   text-decoration: none;
 }
 
 .icon {
-  width: 16px;
+  width: 30px;
+  height: 30px;
+}
+.icon:hover {
+  color: $highlight-color;
 }
 
 // Resume Sections
@@ -114,11 +138,11 @@ body a:hover {
 .content {
   padding: 20px;
   width: 100%;
+  flex: 5;
 }
 
 .content-children {
   padding-left: 35vw;
-  min-width: 50vw;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -213,6 +237,7 @@ body a:hover {
   .header {
     position: relative;
     z-index: auto;
+    min-height: auto;
   }  
   .header-content {
     padding: 10px;
