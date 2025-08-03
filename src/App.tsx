@@ -1,14 +1,14 @@
 import './styles/main.scss'
-import Heading from './components/Heading'
-import Content from './components/Content'
+import Left from './components/Left'
+import Right from './components/Right'
 
 
 function App() {
 
   return (
     <div className="resume-container">
-      <Heading />
-      <Content />
+      <Left />
+      <Right />
     </div>
   )
 }

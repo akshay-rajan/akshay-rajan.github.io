@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import Contact from "./Contact";
 import { ADDRESS, NAME, TITLE } from "../config";
 
-const Heading: React.FC = () => {
+const Left: React.FC = () => {
   return (
     <div className="header">
       <div className="header-content">
@@ -22,4 +22,4 @@ const Heading: React.FC = () => {
   );
 }
 
-export default Heading;
+export default Left;

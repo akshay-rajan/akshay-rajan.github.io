@@ -10,3 +10,4 @@ export const SKILLS = config.skills;
 export const PROJECTS = config.projects;
 export const CERTIFICATIONS = config.certifications;
 export const ACHIEVEMENTS = config.achievements;
+export const BUILT_AT = config.builtAt;

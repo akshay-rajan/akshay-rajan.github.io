@@ -5,11 +5,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "add:build-time": "node scripts/add-build-time.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run add:build-time && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

@@ -5,8 +5,9 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Additional from "./Additional";
+import Footer from "./Footer";
 
-const Content: React.FC = () => {
+const Right: React.FC = () => {
   return (
     <main className="content">
       <div className="content-children">
@@ -15,9 +16,10 @@ const Content: React.FC = () => {
         <Skills />
         <Projects />
         <Additional />
+        <Footer />
       </div>
     </main>
   );
 }
-
-export default Content;
+  
+export default Right;
