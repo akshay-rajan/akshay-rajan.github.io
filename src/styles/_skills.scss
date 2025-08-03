@@ -20,12 +20,30 @@
 
 .skill-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
+  flex-basis: 100%;
+  
+  .skill-item {
+    border: 0.5px solid $skill-border;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-item:hover {
+    width: 100%;
+    background-color: $hover-background;
+    transition: 0.1s ease-in;
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    color: $highlight-color;
+  }
 
-.skill-item {
-  border: 0.5px solid $skill-border;
-  margin: 2px;
-  border-radius: 5px;
-  padding: 5px;
-}
+}  
+

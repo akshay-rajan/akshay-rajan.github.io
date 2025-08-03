@@ -31,15 +31,15 @@
   ],
   "experience": [
     {
-      "title": "Software Engineer",
+      "title": "Software Developer",
       "company": "Quantiphi",
       "year": "2025 July - Present",
       "description": [
-        "Developing web applications using Python."
+        "Building APIs using Python."
       ]
     },
     {
-      "title": "Software Engineer",
+      "title": "Software Developer, Data Engineering",
       "role": "Internship",
       "company": "Quantiphi",
       "year": "2025 Jan - 2025 June",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "title": "Software Engineer Intern",
+      "title": "Software Engineer",
       "role": "Internship",
       "company": "XTG Technologies",
       "year": "2024 May - 2024 Nov",

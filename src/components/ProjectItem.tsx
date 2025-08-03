@@ -18,11 +18,11 @@ const ProjectItem: React.FC<{
         {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>}
       </div>
       {description && 
-        <ul className="project-description">
+        <div className="project-description">
           {description.map((desc, index) => 
-            <li key={index}>{desc}</li>
+            <span key={index}>{desc}</span>
           )}
-        </ul>
+        </div>
       }
     </div>
   );

@@ -1,14 +1,21 @@
 @use "variables" as *;
 
-.project-links {
-  margin-top: 10px;
+.project-item {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+  .project-links {
+    margin-top: 10px;
+  
+    a {
+      margin-right: 10px;
+    }
+  }
+  
+  .project-description {
+    margin-top: 5px;
+    max-width: 35em;
+  }
 }
 
-.project-links a {
-  margin-right: 10px;
-}
-
-.project-description {
-  margin-top: 5px;
-  max-width: 35em;
-}
