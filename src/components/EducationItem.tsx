@@ -13,8 +13,8 @@ const EducationItem: React.FC<{
         <div>{year}</div>
       </div>
       <div className="right">
-        <strong>{degree}</strong>
-        <div>{institution}</div>
+        <strong>{institution}</strong>
+        <div>{degree}</div>
         {grade && <div className="grade">{grade}</div>}
       </div>
     </div>

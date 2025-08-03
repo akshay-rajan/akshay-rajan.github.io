@@ -3,25 +3,54 @@
 .education-list {
   display: flex;
   flex-direction: column;
-}
 
-.education-item {
-  margin-bottom: 20px;
-  display: flex;
-}
-.education-item .left {
-  width: 30%;
-}
-.education-item .grade {
-  font-style: italic;
-  color: $secondary-color;
+  .education-item {
+    margin-bottom: 20px;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+
+    .left {
+      width: 30%;
+      font-size: 12px;
+      div {
+        height: 100%;
+        line-height: 2;
+        vertical-align: bottom;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .grade {
+        font-style: italic;
+        font-size: 14px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .education-item:hover {
+    background-color: $hover-background;
+    transition: 0.1s ease-in;
+    
+    .grade {
+      color: $highlight-color;
+      font-weight: 200;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1080px) {
   .education-item {
     flex-direction: column;
-  }
-  .education-item .left {
-    width: auto;
+    padding: 0px;
+
+    .left {
+      width: auto;
+    }
   }
 }
