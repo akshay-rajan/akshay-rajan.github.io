@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectItem: React.FC<{
   title: string;
@@ -9,18 +10,20 @@ const ProjectItem: React.FC<{
 }> = ({ title, technologies, link, github, description }) => {
   return (
     <div className="project-item">
-      <strong>{title}</strong>
-      <div className="project-technologies">
-        {technologies.join(", ")}
+      <div className="project-title">
+        <strong className="name">{title}</strong>
+        <div className="technologies">
+          {technologies.join(", ")}
+        </div>
       </div>
       <div className="project-links">
-        {link && <a href={link} target="_blank" rel="noopener noreferrer">View Project</a>}
-        {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>}
+        {link && <a href={link} target="_blank" rel="noopener noreferrer">View Project <FaExternalLinkAlt /></a>}
+        {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub <FaExternalLinkAlt /></a>}
       </div>
       {description && 
         <div className="project-description">
           {description.map((desc, index) => 
-            <span key={index}>{desc}</span>
+            <span key={index}>{desc} </span>
           )}
         </div>
       }

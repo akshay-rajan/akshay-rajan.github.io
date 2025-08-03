@@ -2,20 +2,67 @@
 
 .project-item {
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
+
+  .project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: $primary-color;
+
+    .name {
+      font-weight: bold;
+    }
+
+    .technologies {
+      font-size: 14px;
+      font-weight: 550;
+      color: $secondary-color;
+    }
+  }
 
   .project-links {
     margin-top: 10px;
   
     a {
       margin-right: 10px;
+      color: $primary-color;
+
+      svg {
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+    }
+    a:hover {
+      color: $highlight-color;
+      text-decoration: none;
+
+      svg {
+        margin-bottom: 7px;
+        transition: 0.1s ease-in-out;
+      }
     }
   }
   
   .project-description {
     margin-top: 5px;
     max-width: 35em;
+  }
+}
+
+.project-item:hover {
+  background-color: $hover-background;
+  transition: 0.1s ease-in;
+  border-radius: 5px;
+
+  .project-title {
+    color: $highlight-color;
+    transition: all 0.2s ease-in-out;
   }
 }
 
