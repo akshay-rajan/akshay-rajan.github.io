@@ -27,7 +27,6 @@ body h2 {
   font-size: 1.3em;
   font-weight: 600;
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 body h3 {
@@ -56,11 +55,16 @@ body a:hover {
   justify-content: space-between;
 }
 
+section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 // Name and Contact
 
 .header {
-  padding: 25px;
   position: fixed;
+  margin-top: 50px;
   min-height: 80vh;
   flex: 1;
 }
@@ -82,7 +86,7 @@ body a:hover {
 
 .my-title {
   font-size: 1.6em;
-  color: $secondary-color;
+  color: $highlight-color;
   margin-top: 5px;
   margin-bottom: 0px;
   letter-spacing: -0.01em;
@@ -121,7 +125,6 @@ body a:hover {
 .contact-item svg {
   width: 30px;
   height: 30px;
-  transition: fill 0.3s ease;
 }
 
 .contact-item a {
@@ -140,6 +143,7 @@ body a:hover {
 // Resume Sections
 
 .content {
+  margin-top: 50px;
   padding: 20px;
   width: 100%;
   flex: 5;
@@ -238,13 +242,27 @@ body a:hover {
   .my-title {
     font-size: 1.5em;
   }
+
+  section {
+    margin-bottom: 30px;
+  }
+
   .header {
+    margin-top: 20px;
     position: relative;
     z-index: auto;
     min-height: auto;
-  }  
+    padding: 5px;
+  }
   .header-content {
+    height: auto;
     padding: 10px;
+  }
+  .content {
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+    flex: 1;
   }
   .content-children {
     padding-left: 10px;
@@ -256,5 +274,12 @@ body a:hover {
   }
   .education-item .left {
     width: auto;
+  }
+  .contact-links {
+    justify-content: left;
+  }
+  .contact-item svg {
+    width: 24px;
+    height: 24px;
   }
 }
