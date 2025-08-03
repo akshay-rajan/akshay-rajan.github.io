@@ -3,4 +3,11 @@
 .certifications {
   margin-top: 10px;
   max-width: 35em;
+
+  .certificate-item:hover {
+    svg {
+      margin-left: 5px;
+      transition: 0.1s ease-in-out;
+    }
+  }
 }

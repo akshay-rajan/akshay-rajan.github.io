@@ -122,6 +122,17 @@ li {
   -ms-overflow-style: none;
 }
 
+footer {
+  text-align: center;
+
+  em {
+    color: $highlight-color;
+  }
+  
+  .last-updated {
+    font-style: italic;
+  }
+}
 
 @media screen and (max-width: 1080px) {
   .my-name {

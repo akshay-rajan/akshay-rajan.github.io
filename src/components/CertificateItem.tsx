@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Certificate: React.FC<{
   title: string;
@@ -7,7 +8,7 @@ const Certificate: React.FC<{
   return (
     <li className="certificate-item">
       <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
-        {title}
+        {title} <FaExternalLinkAlt />
       </a>
     </li>
   );

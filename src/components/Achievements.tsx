@@ -1,5 +1,6 @@
 import React from "react";
 import { ACHIEVEMENTS } from "../config";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Achievements: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Achievements: React.FC = () => {
           <li key={index} className="achievement-item">
             {achievement.link ? (
               <a href={achievement.link} target="_blank" rel="noopener noreferrer">
-                {achievement.description}
+                {achievement.description} <FaExternalLinkAlt />
               </a>
             ) : (
               <span>{achievement.description}</span>
