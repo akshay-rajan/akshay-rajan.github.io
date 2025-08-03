@@ -9,10 +9,14 @@ const EducationItem: React.FC<{
 }> = ({ degree, institution, year, grade }) => {
   return (
     <div className="education-item">
-      <strong>{degree}</strong>
-      <div>{institution}</div>
-      <div>{year}</div>
-      {grade && <div>{grade}</div>}
+      <div className="left">
+        <div>{year}</div>
+      </div>
+      <div className="right">
+        <strong>{degree}</strong>
+        <div>{institution}</div>
+        {grade && <div className="grade">{grade}</div>}
+      </div>
     </div>
   );
 }

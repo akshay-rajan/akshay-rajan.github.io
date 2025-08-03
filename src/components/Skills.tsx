@@ -5,7 +5,7 @@ import { SKILLS } from "../config";
 const Skills: React.FC = () => {
   return (
     <section className="skills">
-      <h2>Skills</h2>
+      <h2>SKILLS</h2>
       <div className="skill-description">
         {Object.entries(SKILLS).map(([category, skills]) => (
             <SkillCategory key={category} category={category} skills={skills} />

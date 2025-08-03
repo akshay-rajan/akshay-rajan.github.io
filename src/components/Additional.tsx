@@ -5,9 +5,11 @@ import Achievements from "./Achievements";
 const Additional: React.FC = () => {
   return (
     <div className="additional">
-      <h2>Additional</h2>
-      <Certifications />
-      <Achievements />
+      <h2>ADDITIONAL</h2>
+      <div className="additional-description">
+        <Certifications />
+        <Achievements />
+      </div>
     </div>
   );
 }

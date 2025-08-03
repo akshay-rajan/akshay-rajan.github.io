@@ -1,20 +1,43 @@
-$primary-color: #d0d7ff;
+$primary-color: #e6e6ff;
 $secondary-color: #d9eeff;
 $background-color: rgb(9, 26, 58);
 $font-family: 'Inter', sans-serif;
 $link-color: #a0aeff;
+$highlight-color: #00ffdd;
 
 
 body {
   background-color: $background-color;
   color: $primary-color;
   font-family: $font-family;
+  line-height: 1.5;
   padding: 2px;
 }
 
 body a {
   color: $link-color;
   text-decoration: none;
+}
+
+body h2 {
+  color: $primary-color;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+body h3 {
+  color: $primary-color;
+  font-size: 1.2em;
+  font-weight: 520;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+body a:hover {
+  color: $highlight-color;
+  font-weight: 520;
 }
 
 .resume-container {
@@ -27,7 +50,7 @@ body a {
 .header {
   padding: 25px;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 .header-content {
@@ -37,18 +60,19 @@ body a {
 }
 
 .my-name {
-  font-size: 2.9em;
-  color: $primary-color;
+  font-size: 3.3em;
+  color: white;
   margin: 0;
   letter-spacing: -0.04em;
 }
 
 .my-title {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: $secondary-color;
   margin-top: 5px;
   margin-bottom: 0px;
   letter-spacing: -0.01em;
+  font-weight: 540;
 }
 
 .my-location {
@@ -94,11 +118,27 @@ body a {
 
 .content-children {
   padding-left: 35vw;
-  max-height: 95vh;
   min-width: 50vw;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  display: flex;
+}
+.education-item .left {
+  width: 30%;
+}
+.education-item .grade {
+  font-style: italic;
+  color: $secondary-color;
 }
 
 .experience-description {
@@ -107,16 +147,18 @@ body a {
 }
 
 .skill-description {
-  margin-top: 5px;
+  margin: 20px;
   max-width: 35em;
 }
 
 .skill-category {
+  margin: 2px;
+  margin-bottom: 10px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.category-name {
+.skill-category .category-name {
   font-weight: bold;
   margin-right: 10px;
   min-width: 20%;
@@ -128,7 +170,10 @@ body a {
 }
 
 .skill-item {
-  margin-left: 10px;
+  border: 1px solid $secondary-color;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .project-links {
@@ -144,6 +189,10 @@ body a {
   max-width: 35em;
 }
 
+.additional-description {
+  margin: 20px;
+}
+
 .certifications {
   margin-top: 10px;
   max-width: 35em;
@@ -155,13 +204,28 @@ body a {
 }
 
 @media screen and (max-width: 1080px) {
+  .my-name {
+    font-size: 2.5em;
+  }
+  .my-title {
+    font-size: 1.5em;
+  }
   .header {
     position: relative;
     z-index: auto;
   }  
+  .header-content {
+    padding: 10px;
+  }
   .content-children {
     padding-left: 10px;
     width: 100%;
     max-height: none;
+  }
+  .education-item {
+    flex-direction: column;
+  }
+  .education-item .left {
+    width: auto;
   }
 }
