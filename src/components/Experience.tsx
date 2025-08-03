@@ -4,7 +4,7 @@ import { EXPERIENCE } from "../config";
 
 const Experience: React.FC = () => {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h2>EXPERIENCE</h2>
       <div className="experience-list">
         {EXPERIENCE.map((item, index) => (

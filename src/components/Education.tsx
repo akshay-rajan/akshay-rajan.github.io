@@ -4,7 +4,7 @@ import { EDUCATION } from "../config";
 
 const Education: React.FC = () => {
   return (
-    <section className="education">
+    <section className="education" id="education">
       <h2>EDUCATION</h2>
       <div className="education-list">
         {EDUCATION.map((item, index) => (

@@ -4,12 +4,12 @@ import ProjectItem from "./ProjectItem";
 
 const Projects: React.FC = () => {
   return (
-    <div className="projects">
+    <section className="projects" id="projects">
       <h2>PROJECTS</h2>
       {PROJECTS.map((project, index) => (
         <ProjectItem key={index} {...project} />
       ))}
-    </div>
+    </section>
   );
 }
 

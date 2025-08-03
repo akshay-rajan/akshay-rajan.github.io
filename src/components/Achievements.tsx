@@ -4,7 +4,7 @@ import { ACHIEVEMENTS } from "../config";
 const Achievements: React.FC = () => {
   return (
     <section className="achievements">
-      <h3>Achievements</h3>
+      <h2>ACHIEVEMENTS</h2>
       <ul>
         {ACHIEVEMENTS.map((achievement, index) => (
           <li key={index} className="achievement-item">

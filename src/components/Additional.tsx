@@ -4,13 +4,12 @@ import Achievements from "./Achievements";
 
 const Additional: React.FC = () => {
   return (
-    <div className="additional">
-      <h2>ADDITIONAL</h2>
+    <section className="additional" id="additional">
       <div className="additional-description">
         <Certifications />
         <Achievements />
       </div>
-    </div>
+    </section>
   );
 }
 

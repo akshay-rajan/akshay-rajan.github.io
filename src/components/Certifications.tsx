@@ -5,7 +5,7 @@ import { CERTIFICATIONS } from "../config";
 const Certifications: React.FC = () => {
   return (
     <section className="certifications">
-      <h3>Certifications</h3>
+      <h2>CERTIFICATIONS</h2>
       <ul>
         {CERTIFICATIONS.map((certification, index) => (
           <Certificate key={index} {...certification} />

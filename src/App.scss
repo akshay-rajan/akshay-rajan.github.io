@@ -1,14 +1,17 @@
-$primary-color: #e6e6ff;
-$secondary-color: #d9eeff;
-$background-color: rgb(9, 26, 58);
+$primary-color: #FFFFFF;
+$secondary-color: #b2bec0;
+$background-color: #01172F;
+$font-color: #b2bec0;
+$highlight-color: #FC9E4F;
+
+$link-color: $secondary-color;
+$skill-border: rgba(178, 190, 192, 0.2);
 $font-family: 'Inter', sans-serif;
-$link-color: #a0aeff;
-$highlight-color: #00ffdd;
 
 
 body {
   background-color: $background-color;
-  color: $primary-color;
+  color: $font-color;
   font-family: $font-family;
   line-height: 1.5;
   padding: 2px;
@@ -72,7 +75,7 @@ body a:hover {
 
 .my-name {
   font-size: 3.3em;
-  color: white;
+  color: $primary-color;
   margin: 0;
   letter-spacing: -0.04em;
 }
@@ -97,6 +100,7 @@ body a:hover {
   width: 14px;
   height: 14px;
   margin-top: 5px;
+  vertical-align: top;
 }
 
 .contact-links {
@@ -194,7 +198,7 @@ body a:hover {
 }
 
 .skill-item {
-  border: 1px solid $secondary-color;
+  border: 0.5px solid $skill-border;
   margin: 2px;
   border-radius: 5px;
   padding: 5px;
@@ -213,9 +217,9 @@ body a:hover {
   max-width: 35em;
 }
 
-.additional-description {
-  margin: 20px;
-}
+// .additional-description {
+//   margin: 20px;
+// }
 
 .certifications {
   margin-top: 10px;
