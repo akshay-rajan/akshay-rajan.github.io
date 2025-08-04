@@ -6,11 +6,11 @@ const Certifications: React.FC = () => {
   return (
     <section className="certifications">
       <h2>CERTIFICATIONS</h2>
-      <ul>
+      <div>
         {CERTIFICATIONS.map((certification, index) => (
           <Certificate key={index} {...certification} />
         ))}
-      </ul>
+      </div>
     </section>
   );
 };

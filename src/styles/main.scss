@@ -134,6 +134,16 @@ footer {
   }
 }
 
+.achievements, .certifications {
+  svg {
+    color: $secondary-color;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
+    // margin-left: 5px;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .my-name {
     font-size: 2.5em;

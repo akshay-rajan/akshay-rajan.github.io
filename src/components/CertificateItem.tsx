@@ -3,14 +3,17 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Certificate: React.FC<{
   title: string;
+  extra?: string;
   link: string;
-}> = ({ title, link }) => {
+}> = ({ title, extra, link }) => {
   return (
-    <li className="certificate-item">
+    <div className="certificate-item">
       <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
-        {title} <FaExternalLinkAlt />
+        <span className="title" dangerouslySetInnerHTML={{ __html: title }} />
+        {extra && <span className="extra" dangerouslySetInnerHTML={{ __html: extra }} />}
+        <FaExternalLinkAlt />
       </a>
-    </li>
+    </div>
   );
 };
 

@@ -140,40 +140,42 @@
   ],
   "certifications": [
     {
-      "title": "Google Cloud Certified Associate Cloud Engineer (GCP ACE)",
+      "title": "Google Cloud Certified <strong>Associate Cloud Engineer</strong>",
+      "extra": " (GCP ACE)",
       "link": "https://www.credly.com/badges/00bfdf9d-d5d9-45ed-94c4-25c66bf3655c"
     },
     {
-      "title": "Harvard University CS50W - Web Programming with Python and JavaScript",
+      "title": "Harvard University <strong>CS50W - Web Programming with Python and JavaScript</strong>",
       "link": "https://drive.google.com/file/d/1Y1jzq23Uk5uMaOsVZqFigbWi2a9nHE42/view?usp=sharing"
     },
     {
-      "title": "Google Cybersecurity Professional Certificate",
+      "title": "<strong>Google Cybersecurity Professional Certificate</strong>",
       "link": "https://drive.google.com/file/d/13VSwRKS6D-GVxx82oiU4sksqZt1xEbPN/view?usp=sharing"
     },
     {
-      "title": "Chennai Mathematical Institute – Programming, Data Structures and Algorithms in Python (Top 2%)",
+      "title": "Chennai Mathematical Institute  <strong>Programming, Data Structures and Algorithms in Python</strong>",
+      "extra": " (Top 2%)",
       "link": "https://drive.google.com/file/d/1DnU2c7LHQSxJendB2Opxc_4goNmWaFUE/view?usp=sharing"
     }
   ],
   "achievements": [
     {
-      "description": "Scored 99.54 percentile in UGC NET (Computer Science), 2025 — ranked among the top 200 nationwide.",
+      "description": "Scored <strong>99.54</strong> percentile in UGC NET (Computer Science), 2025 — ranked among the <strong>top 200</strong> nationwide.",
       "link": "https://drive.google.com/file/d/1xbR91fP3k49jgRb3ddeMMr_EhvrH3g2S/view?usp=sharing"
     },
     {
-      "description": "Rated 1800+ (Knight) on LeetCode, ranked in the top 5% globally, with 750+ problems solved.",
+      "description": "Rated <strong>1800+ (Knight)</strong> on LeetCode, ranked in the <strong>top 5%</strong> globally, with 750+ problems solved.",
       "link": "https://leetcode.com/u/akshayrajan/"
     },
     {
-      "description": "Ranked 1st in college during undergraduate and 3rd in college during postgraduate."
+      "description": "Ranked <strong>1st</strong> in college during undergraduate and <strong>3rd</strong> in college during postgraduate."
     },
     {
-      "description": "Achieved Rank 20 in the Kerala MCA Entrance Examination, 2023."
+      "description": "Achieved Rank <strong>20</strong> in the Kerala MCA Entrance Examination, 2023."
     },
     {
-      "description": "Obtained an All India Rank of 1778 in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
+      "description": "Obtained an All India Rank of <strong>1778</strong> in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
     }
   ],
-  "builtAt": "2025-08-03T18:45:52.584Z"
+  "builtAt": "2025-08-03T19:00:10.308Z"
 }

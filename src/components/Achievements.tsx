@@ -11,10 +11,13 @@ const Achievements: React.FC = () => {
           <li key={index} className="achievement-item">
             {achievement.link ? (
               <a href={achievement.link} target="_blank" rel="noopener noreferrer">
-                {achievement.description} <FaExternalLinkAlt />
+                <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
+                <FaExternalLinkAlt />
               </a>
             ) : (
-              <span>{achievement.description}</span>
+                <>
+                  <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
+                </>
             )}
           </li>
         ))}
