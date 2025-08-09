@@ -9,37 +9,65 @@ const ProjectItem: React.FC<{
   description: string[];
   image?: string;
 }> = ({ title, technologies, link, github, description, image }) => {
+  const handleVisitClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (link) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
-    <div className="project-item">
-      <div className="project-title">
-        <strong className="name">{title}</strong>
-        <div className="technologies">
-          {technologies.join(", ")}
-        </div>
-      </div>
-      <div className="project-links">
-        {link && <a href={link} target="_blank" rel="noopener noreferrer">Visit <FaExternalLinkAlt /></a>}
-        {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub <FaExternalLinkAlt /></a>}
-      </div>
-      <div className="project-description">
-        {image &&
-          <img
-            src={`/resume/${image}`}
-            alt={`${title} screenshot`}
-            className="project-image"
-            onError={(e) => {
-              console.log(`Failed to load image: ${image}`);
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-        }
-        <div className="project-description-desc">
-          {description.map((desc, index) =>
-            <span className="project-description-text" key={index}>{desc} </span>
-          )}
-        </div>
-      </div>
-    </div>
+    <>
+      {github &&
+        <a
+          href={github}
+          target="_blank"
+          className="project-item-link"
+          rel="noopener noreferrer"
+        >
+          <div className="project-item">
+            <div className="project-title">
+              <strong className="name">
+                {title}
+              </strong>
+              <div className="technologies">
+                {technologies.join(", ")}
+              </div>
+            </div>
+            <div className="project-links">
+              {link && (
+                <span 
+                  className="project-link"
+                  onClick={handleVisitClick}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Visit <FaExternalLinkAlt />
+                </span>
+              )}
+            </div>
+            <div className="project-description">
+              {image &&
+                <img
+                  src={`/resume/${image}`}
+                  alt={`${title} screenshot`}
+                  className="project-image"
+                  onError={(e) => {
+                    console.log(`Failed to load image: ${image}`);
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              }
+              <div className="project-description-desc">
+                {description.map((desc, index) =>
+                  <span className="project-description-text" key={index}>{desc} </span>
+                )}
+              </div>
+            </div>
+          </div>
+        </a>
+      }
+    </>
   );
 }
 
