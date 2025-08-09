@@ -1,27 +1,29 @@
 import React from "react";
 import { ACHIEVEMENTS } from "../config";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaCrown } from "react-icons/fa6";
 
 const Achievements: React.FC = () => {
   return (
     <section className="achievements">
       <h2>ACHIEVEMENTS</h2>
-      <ul>
+      <div>
         {ACHIEVEMENTS.map((achievement, index) => (
-          <li key={index} className="achievement-item">
+          <div key={index} className="achievement-item">
+            <FaCrown className="achievement-icon" />
             {achievement.link ? (
-              <a href={achievement.link} target="_blank" rel="noopener noreferrer">
+              <a href={achievement.link} target="_blank" rel="noopener noreferrer" className="achievement-content">
                 <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
                 <FaExternalLinkAlt />
               </a>
             ) : (
-                <>
-                  <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
-                </>
+              <div className="achievement-content">
+                <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
+              </div>
             )}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 };

@@ -17,7 +17,7 @@ const ProjectItem: React.FC<{
         </div>
       </div>
       <div className="project-links">
-        {link && <a href={link} target="_blank" rel="noopener noreferrer">View Project <FaExternalLinkAlt /></a>}
+        {link && <a href={link} target="_blank" rel="noopener noreferrer">Visit <FaExternalLinkAlt /></a>}
         {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub <FaExternalLinkAlt /></a>}
       </div>
       {description && 

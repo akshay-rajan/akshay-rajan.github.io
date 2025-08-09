@@ -144,7 +144,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 798px) {
   .my-name {
     font-size: 2.5em;
   }
@@ -159,6 +159,7 @@ footer {
   .header {
     margin-top: 20px;
     position: relative;
+    display: block;
     z-index: auto;
     min-height: auto;
     padding: 5px;
