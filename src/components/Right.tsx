@@ -11,8 +11,8 @@ const Right: React.FC = () => {
   return (
     <main className="content">
       <div className="content-children">
-        <Education />
         <Experience />
+        <Education />
         <Skills />
         <Projects />
         <Additional />

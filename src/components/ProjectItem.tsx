@@ -6,8 +6,9 @@ const ProjectItem: React.FC<{
   technologies: string[];
   link?: string;
   github?: string;
-  description?: string[];
-}> = ({ title, technologies, link, github, description }) => {
+  description: string[];
+  image?: string;
+}> = ({ title, technologies, link, github, description, image }) => {
   return (
     <div className="project-item">
       <div className="project-title">
@@ -20,13 +21,24 @@ const ProjectItem: React.FC<{
         {link && <a href={link} target="_blank" rel="noopener noreferrer">Visit <FaExternalLinkAlt /></a>}
         {github && <a href={github} target="_blank" rel="noopener noreferrer">GitHub <FaExternalLinkAlt /></a>}
       </div>
-      {description && 
-        <div className="project-description">
-          {description.map((desc, index) => 
-            <span key={index}>{desc} </span>
+      <div className="project-description">
+        {image &&
+          <img
+            src={`/resume/${image}`}
+            alt={`${title} screenshot`}
+            className="project-image"
+            onError={(e) => {
+              console.log(`Failed to load image: ${image}`);
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+        }
+        <div className="project-description-desc">
+          {description.map((desc, index) =>
+            <span className="project-description-text" key={index}>{desc} </span>
           )}
         </div>
-      }
+      </div>
     </div>
   );
 }
