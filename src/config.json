@@ -62,51 +62,80 @@
     }
   ],
   "skills": {
-    "Languages": [
-      "Python",
-      "Java",
-      "JavaScript",
-      "C",
-      "Rust",
-      "SQL",
-      "Bash"
+    "main": [
+      {
+        "title": "Backend",
+        "logo": "/resume/python.png",
+        "description": "Developed microservices in Python (FastAPI, Django). Knowledgeable in advanced SQL and API performance optimization."
+      },
+      {
+        "title": "Frontend",
+        "logo": "/resume/react.png",
+        "description": "Built responsive web applications using React, Bootstrap, Tailwind CSS etc., just like this one."
+      },
+      {
+        "title": "Cloud",
+        "logo": "/resume/gcp.png",
+        "description": "Google Cloud Certified. Worked with GCP APIs, Cloud Functions, VMs etc. Tinkered with AWS services like S3, Lambda."
+      },
+      {
+        "title": "App",
+        "logo": "/resume/phone.jpg",
+        "description": "Explored Android Studio and React Native (Expo) for mobile app development."
+      },
+      {
+        "title": "Data",
+        "logo": "/resume/airflow.png",
+        "description": "Experimented designing data pipelines using Apache Airflow, Snowflake, BigQuery and Redshift. Understanding of basic data processing in PySpark, Pandas etc."
+      }
     ],
-    "Web Development": [
-      "Django",
-      "React",
-      "FastAPI",
-      "Node.js",
-      "MongoDB",
-      "RestAPI",
-      "Bootstrap",
-      "XAMPP"
-    ],
-    "App Development": [
-      "Android Studio",
-      "React Native",
-      "Firebase",
-      "SQLite"
-    ],
-    "Data & ML": [
-      "Apache Airflow",
-      "Snowflake",
-      "BigQuery",
-      "Redshift",
-      "Dataproc",
-      "PySpark",
-      "Tableau",
-      "Excel"
-    ],
-    "Additional": [
-      "GCP",
-      "AWS",
-      "Smart Contracts",
-      "Web Scraping",
-      "Solana",
-      "ETL",
-      "Data Warehousing",
-      "Linux"
-    ]
+    "other": {
+      "Languages": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C",
+        "Rust",
+        "SQL",
+        "Bash"
+      ],
+      "Web Development": [
+        "Django",
+        "React",
+        "FastAPI",
+        "Node.js",
+        "MongoDB",
+        "RestAPI",
+        "Bootstrap",
+        "XAMPP"
+      ],
+      "App Development": [
+        "Android Studio",
+        "React Native",
+        "Firebase",
+        "SQLite"
+      ],
+      "Data & ML": [
+        "Apache Airflow",
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Dataproc",
+        "PySpark",
+        "Tableau",
+        "Excel"
+      ],
+      "Additional": [
+        "GCP",
+        "AWS",
+        "Smart Contracts",
+        "Web Scraping",
+        "Solana",
+        "ETL",
+        "Data Warehousing",
+        "Linux"
+      ]
+    }
   },
   "projects": [
     {
@@ -117,7 +146,7 @@
       ],
       "link": "https://expertsyst.me",
       "github": "https://github.com/akshay-rajan/expertsystem",
-      "image": "expertsystem.png",
+      "image": "/resume/expertsystem.png",
       "description": [
         "A user interface enabling the complete creation of a machine learning pipeline—including data preprocessing, modeling, and evaluation—without writing any code.",
         "Enables users to upload datasets, select from 13 algorithms and generate models directly from the platform, increasing accessibility to ML for over 95% of internet users without any programming knowledge.",
@@ -132,7 +161,7 @@
         "Blockchain"
       ],
       "github": "https://github.com/akshay-rajan/solanavault",
-      "image": "solanavault.png",
+      "image": "/resume/solanavault.png",
       "description": [
         "A decentralized token staking platform built on the Solana blockchain using the Anchor framework.",
         "Implemented features for depositing and withdrawing tokens (SOL & SPL), automated minting and distribution of tokens as rewards, managing vault operations and stringent security protocols to protect user data and transactions.",

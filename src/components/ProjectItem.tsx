@@ -49,7 +49,7 @@ const ProjectItem: React.FC<{
             <div className="project-description">
               {image &&
                 <img
-                  src={`/resume/${image}`}
+                  src={image}
                   alt={`${title} screenshot`}
                   className="project-image"
                   onError={(e) => {
