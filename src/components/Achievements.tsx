@@ -13,8 +13,10 @@ const Achievements: React.FC = () => {
             <FaCrown className="achievement-icon" />
             {achievement.link ? (
               <a href={achievement.link} target="_blank" rel="noopener noreferrer" className="achievement-content">
-                <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
-                <FaExternalLinkAlt />
+                <div>
+                  <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
+                  <FaExternalLinkAlt />
+                </div>
               </a>
             ) : (
               <div className="achievement-content">

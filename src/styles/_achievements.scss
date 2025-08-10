@@ -9,6 +9,10 @@
     padding: 10px;
     display: flex;
     align-items: center;
+
+    &:hover {
+      color: $primary-color;
+    }
     
     a {
       text-decoration: none;
