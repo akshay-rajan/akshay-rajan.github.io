@@ -2,6 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Contact from "./Contact";
 import { ADDRESS, NAME, TITLE } from "../config";
+import Navigation from "./Navigation";
 
 const Left: React.FC = () => {
   return (
@@ -15,6 +16,9 @@ const Left: React.FC = () => {
           </div>
         </div>
         <div className="second">
+          <Navigation />
+        </div>
+        <div className="third">
           <Contact />
         </div>
       </div>

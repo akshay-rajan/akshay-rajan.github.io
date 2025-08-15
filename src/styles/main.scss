@@ -6,6 +6,7 @@
 @use "certifications";
 @use "achievements";
 @use "contact";
+@use "navigation";
 
 body {
   background-color: $background-color;
@@ -59,7 +60,7 @@ section {
 }
 
 li {
-  list-style-type:square;
+  list-style-type: square;
 }
 
 .header {
@@ -67,44 +68,51 @@ li {
   margin-top: 50px;
   min-height: 80vh;
   flex: 1;
-}
 
-.header-content {
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  justify-content: space-between;
-  padding: 25px;
-}
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    padding: 25px;
+  }
 
-.my-name {
-  font-size: 3.3em;
-  color: $primary-color;
-  margin: 0;
-  letter-spacing: -0.04em;
-}
-
-.my-title {
-  font-size: 1.6em;
-  color: $secondary-color;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  letter-spacing: -0.01em;
-  font-weight: 540;
-}
-
-.my-location {
-  font-size: 1em;
-  color: $secondary-color;
-  margin-top: 5px;
-}
-
-.my-location svg {
-  color: $secondary-color;
-  width: 14px;
-  height: 14px;
-  margin-top: 5px;
-  vertical-align: top;
+  .first {
+    .my-name {
+      font-size: 3.3em;
+      color: $primary-color;
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+    
+    .my-title {
+      font-size: 1.6em;
+      color: $secondary-color;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      letter-spacing: -0.01em;
+      font-weight: 540;
+    }
+    
+    .my-location {
+      font-size: 1em;
+      color: $secondary-color;
+      margin-top: 5px;
+      svg {
+        color: $secondary-color;
+        width: 14px;
+        height: 14px;
+        margin-top: 5px;
+        vertical-align: top;
+      }
+    } 
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 
@@ -145,17 +153,9 @@ footer {
 }
 
 @media screen and (max-width: 798px) {
-  .my-name {
-    font-size: 2.5em;
-  }
-  .my-title {
-    font-size: 1.5em;
-  }
-
   section {
-    margin-bottom: 30px;
+    margin-bottom: auto;
   }
-
   .header {
     margin-top: 20px;
     position: relative;
@@ -163,11 +163,25 @@ footer {
     z-index: auto;
     min-height: auto;
     padding: 5px;
+
+    .header-content {
+      height: auto;
+      
+      .first {
+        .my-name {
+          font-size: 2.5em;
+        }
+        .my-title {
+          font-size: 1.5em;
+        }
+      }
+
+      .second {
+        margin-top: 10px;
+      }
+    }
   }
-  .header-content {
-    height: auto;
-    padding: 10px;
-  }
+
   .content {
     margin-top: 0;
     padding: 10px;

@@ -64,18 +64,19 @@
 
 
 @media screen and (max-width: 1080px) {
-  .experience-item {
-    flex-direction: column;
-    max-width: 100%;
-    
-    .left {
-      width: auto;
-      margin-bottom: 10px;
-    }
-    
-    .right {
-      width: auto;
+  .experience-item-link {
+    .experience-item {
+      flex-direction: column;
+      max-width: 100%;
+      
+      .left {
+        width: auto;
+        margin-bottom: 10px;
+      }
+      
+      .right {
+        width: auto;
+      }
     }
   }
-  
 }
