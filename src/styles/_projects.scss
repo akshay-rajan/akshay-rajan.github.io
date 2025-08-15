@@ -42,7 +42,7 @@
         svg {
           width: 12px;
           height: 12px;
-          margin-left: 2px;
+          margin-left: 0;
           margin-right: 10px;
           color: $secondary-color;
         }
@@ -52,7 +52,7 @@
           text-decoration: none;
   
           svg {
-            margin-left: 7px;
+            margin-left: 5px;
             color: $highlight-color;
             transition: 0.2s ease-in-out;
           }
