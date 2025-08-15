@@ -2,7 +2,7 @@
 
 .certifications {
   margin-top: 10px;
-  max-width: 35em;
+  max-width: 40em;
 
   div {
     display: flex;
@@ -12,7 +12,6 @@
   }
   
   .certificate-item {
-    font-size: 14px;
     padding: 10px;
     text-align: left;
     
@@ -20,15 +19,18 @@
       font-style: italic;
       color: $secondary-color;
     }
+
   }
   
-  .certificate-link:hover {
-    svg {
-      margin-left: 5px;
-      opacity: 1;
-      color: $highlight-color;
-      transition: 0.1s ease-in-out;
-    }
+  .certificate-link {
+      &:hover {
+        svg {
+          margin-left: 6px;
+          opacity: 1;
+          color: $highlight-color;
+          transition: 0.2s ease-in-out;
+        }
+      }
   }
 }
 

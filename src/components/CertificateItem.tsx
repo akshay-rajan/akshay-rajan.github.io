@@ -7,13 +7,13 @@ const Certificate: React.FC<{
   link: string;
 }> = ({ title, extra, link }) => {
   return (
-    <div className="certificate-item">
+    <li className="certificate-item">
       <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
         <span className="title" dangerouslySetInnerHTML={{ __html: title }} />
         {extra && <span className="extra" dangerouslySetInnerHTML={{ __html: extra }} />}
         <FaExternalLinkAlt />
       </a>
-    </div>
+    </li>
   );
 };
 
