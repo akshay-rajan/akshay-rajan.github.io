@@ -80,12 +80,12 @@
       },
       {
         "title": "App",
-        "logo": "/resume/phone.jpg",
+        "logo": "/resume/android.png",
         "description": "Explored Android Studio and React Native (Expo) for mobile app development."
       },
       {
         "title": "Data",
-        "logo": "/resume/airflow.png",
+        "logo": "/resume/snowflake.jpg",
         "description": "Experimented designing data pipelines using Apache Airflow, Snowflake, BigQuery and Redshift. Understanding of basic data processing in PySpark, Pandas etc."
       }
     ],
@@ -208,5 +208,5 @@
       "description": "Obtained an All India Rank of <strong>1778</strong> in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
     }
   ],
-  "builtAt": "2025-08-09T17:29:40.670Z"
+  "builtAt": "2025-08-15T06:19:19.106Z"
 }
