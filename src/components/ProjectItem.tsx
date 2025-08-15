@@ -1,5 +1,5 @@
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 
 const ProjectItem: React.FC<{
   title: string;
@@ -42,7 +42,7 @@ const ProjectItem: React.FC<{
                   onClick={handleVisitClick}
                   style={{ cursor: 'pointer' }}
                 >
-                  Visit <FaExternalLinkAlt />
+                  Visit <MdArrowOutward />
                 </span>
               )}
             </div>

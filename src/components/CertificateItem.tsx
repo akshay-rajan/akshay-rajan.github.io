@@ -1,5 +1,5 @@
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 
 const Certificate: React.FC<{
   title: string;
@@ -11,7 +11,7 @@ const Certificate: React.FC<{
       <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
         <span className="title" dangerouslySetInnerHTML={{ __html: title }} />
         {extra && <span className="extra" dangerouslySetInnerHTML={{ __html: extra }} />}
-        <FaExternalLinkAlt />
+        <MdArrowOutward />
       </a>
     </li>
   );

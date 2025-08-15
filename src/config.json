@@ -36,7 +36,8 @@
       "year": "2025 July - Present",
       "description": [
         "Building APIs using Python."
-      ]
+      ],
+      "link": "https://quantiphi.com/"
     },
     {
       "title": "Software Developer, Data Engineering",
@@ -47,7 +48,8 @@
         "Designed scalable REST APIs using FastAPI as part of a large-scale microservices architecture, with deployment on Google Cloud Platform and comprehensive unit test coverage.",
         "Designed and implemented a fully automated data migration pipeline leveraging AWS S3, Snowflake, Google BigQuery, Apache Airflow, and PySpark for seamless data movement, transformation, and orchestration.",
         "Underwent comprehensive training on Data Engineering, guided by experienced leaders and senior developers."
-      ]
+      ],
+      "link": "https://quantiphi.com/"
     },
     {
       "title": "Software Engineer",
@@ -58,7 +60,8 @@
         "Developed 100% on-chain decentralized applications on the Internet Computer blockchain using Motoko and React.",
         "Developed an API to support user authorization to integrate into the company’s microservices architecture.",
         "Collaborated with team members to develop a token-staking platform on the Solana blockchain, using Rust."
-      ]
+      ],
+      "link": "https://xtgtechnologies.com/"
     }
   ],
   "skills": {

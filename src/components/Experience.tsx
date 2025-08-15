@@ -15,6 +15,7 @@ const Experience: React.FC = () => {
             year={item.year}
             description={item.description}
             role={item.role}
+            link={item.link}
           />
         ))}
       </div>

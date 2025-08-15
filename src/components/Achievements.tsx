@@ -1,6 +1,6 @@
 import React from "react";
 import { ACHIEVEMENTS } from "../config";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 import { FaCrown } from "react-icons/fa6";
 
 const Achievements: React.FC = () => {
@@ -15,7 +15,7 @@ const Achievements: React.FC = () => {
               <a href={achievement.link} target="_blank" rel="noopener noreferrer" className="achievement-content">
                 <div>
                   <span dangerouslySetInnerHTML={{ __html: achievement.description }} />
-                  <FaExternalLinkAlt />
+                  <MdArrowOutward />
                 </div>
               </a>
             ) : (
