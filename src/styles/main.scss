@@ -152,6 +152,17 @@ footer {
   }
 }
 
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+
+  &.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 798px) {
   section {
     margin-bottom: auto;
