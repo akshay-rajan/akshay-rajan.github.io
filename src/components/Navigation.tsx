@@ -1,23 +1,26 @@
 import React from "react";
+import { useActiveSectionContext } from "../context/ActiveSectionContext";
 
 const Navigation: React.FC = () => {
+  const activeSection = useActiveSectionContext();
+
+  const navItems = [
+    { href: "#experience", label: "Experience", id: "experience" },
+    { href: "#education", label: "Education", id: "education" },
+    { href: "#skills", label: "Skills", id: "skills" },
+    { href: "#projects", label: "Projects", id: "projects" },
+    { href: "#additional", label: "Additional", id: "additional" }
+  ];
+
   return (
     <nav className="navigation">
-      <a href="#experience"><div >
-        Experience
-      </div></a>
-      <a href="#education"><div>
-        Education
-      </div></a>
-      <a href="#skills"><div>
-        Skills
-      </div></a>
-      <a href="#projects"><div>
-        Projects
-      </div></a>
-      <a href="#additional"><div>
-        Additional
-      </div></a>
+      {navItems.map(({ href, label, id }) => (
+        <a key={id} href={href}>
+          <div className={activeSection === id ? 'active' : ''}>
+            {label}
+          </div>
+        </a>
+      ))}
     </nav>
   );
 }

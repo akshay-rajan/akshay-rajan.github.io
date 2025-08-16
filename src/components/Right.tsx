@@ -42,7 +42,6 @@ const Right: React.FC = () => {
   useEffect(() => {
     // Check if animation has been seen before
     const hasSeenAnimation = getItemWithTTL(ANIMATION_SEEN_KEY);
-    console.log(`Has seen animation: ${hasSeenAnimation}`);
 
     if (hasSeenAnimation) {
       setSkipAnimation(true);

@@ -9,7 +9,6 @@ export const setItemWithTTL = (key: string, value: any, ttlInMs: number) => {
 
 export const getItemWithTTL = (key: string) => {
   const itemStr = localStorage.getItem(key);
-  console.log(`Getting item with key: ${key}, value: ${itemStr}`);
 
   if (!itemStr) {
     return null;

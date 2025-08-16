@@ -1,15 +1,18 @@
 import './styles/main.scss'
 import Left from './components/Left'
 import Right from './components/Right'
+import { ActiveSectionProvider } from './context/ActiveSectionContext'
 
 
 function App() {
 
   return (
-    <div className="resume-container">
-      <Left />
-      <Right />
-    </div>
+    <ActiveSectionProvider>
+      <div className="resume-container">
+        <Left />
+        <Right />
+      </div>
+    </ActiveSectionProvider>
   )
 }
 
