@@ -5,16 +5,52 @@
   padding: 30px;
 
   a {
+    &:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
+
     div {
       opacity: 0.6;
       margin-left: 20px;
+      
+      &::before {
+        content: '';
+        display: inline-block;   // inline so it sits before text
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        margin-right: 8px;
+        vertical-align: middle;  // aligns with text
+        transition: 0.2s ease-in-out;
+      }
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         opacity: 1;
         color: $primary-color;
         transition: opacity 0.2s ease-in-out;
+        
+        &::before {
+          width: 18px;
+          transition: width 0.2s ease-in-out;
+        }
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navigation {
+    padding: 20px;
+    
+    a {
+      div {
+        &::before {
+          content: none;
+        }
       }
     }
   }
-
 }
