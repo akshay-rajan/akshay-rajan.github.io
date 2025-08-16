@@ -104,8 +104,8 @@
 @media screen and (max-width: 1080px) {
   .project-item-link {
     .project-item {
-      flex-direction: column;
       max-width: 100%;
+      margin: 0 0 10px 0;
 
       .project-title {
         flex-direction: column;

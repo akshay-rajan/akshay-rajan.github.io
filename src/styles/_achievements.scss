@@ -51,3 +51,11 @@
     margin-left: 5px;
   }
 }
+
+@media screen and (max-width: 798px) {
+  .achievements {
+    .achievement-item {
+      padding-left: 0;      
+    }
+  }
+}

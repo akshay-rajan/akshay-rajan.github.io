@@ -50,7 +50,18 @@
         &::before {
           content: none;
         }
+        
+        &:hover {
+          opacity: 0.6;
+          color: $secondary-color;
+        }
+
+        &:active {
+          opacity: 1;
+          color: $primary-color;
+        }
       }
+
     }
   }
 }

@@ -52,12 +52,14 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .education-item {
-    flex-direction: column;
-    padding: 0px;
+  .education-list {
+    .education-item {
+      flex-direction: column;
+      margin-bottom: 10px;
 
-    .left {
-      width: auto;
+      .left {
+        width: auto;
+      }
     }
   }
 }

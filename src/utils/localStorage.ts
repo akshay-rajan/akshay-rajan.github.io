@@ -19,7 +19,6 @@ export const getItemWithTTL = (key: string) => {
     const now = new Date();
 
     if (now.getTime() > item.expiry) {
-      console.warn(`Item with key: ${key} has expired, removing from localStorage`);
       localStorage.removeItem(key);
       return null;
     }

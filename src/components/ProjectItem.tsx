@@ -53,7 +53,6 @@ const ProjectItem: React.FC<{
                   alt={`${title} screenshot`}
                   className="project-image"
                   onError={(e) => {
-                    console.log(`Failed to load image: ${image}`);
                     e.currentTarget.style.display = 'none';
                   }}
                 />
