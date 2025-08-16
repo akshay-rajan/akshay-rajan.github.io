@@ -35,7 +35,7 @@
       "company": "Quantiphi",
       "year": "2025 July - Present",
       "description": [
-        "Building APIs using Python."
+        "Designed scalable REST APIs using FastAPI as part of a large-scale microservices architecture, with deployment on Google Cloud Platform and comprehensive unit test coverage."
       ],
       "link": "https://quantiphi.com/"
     },
@@ -45,7 +45,6 @@
       "company": "Quantiphi",
       "year": "2025 Jan - 2025 June",
       "description": [
-        "Designed scalable REST APIs using FastAPI as part of a large-scale microservices architecture, with deployment on Google Cloud Platform and comprehensive unit test coverage.",
         "Designed and implemented a fully automated data migration pipeline leveraging AWS S3, Snowflake, Google BigQuery, Apache Airflow, and PySpark for seamless data movement, transformation, and orchestration.",
         "Underwent comprehensive training on Data Engineering, guided by experienced leaders and senior developers."
       ],
@@ -69,27 +68,27 @@
       {
         "title": "Backend",
         "logo": "/resume/python.png",
-        "description": "Developed microservices in Python (FastAPI, Django). Knowledgeable in advanced SQL and API performance optimization."
+        "description": "Worked on microservices with FastAPI, and also built projects using Django. Comfortable with advanced SQL and tuning APIs for speed."
       },
       {
         "title": "Frontend",
         "logo": "/resume/react.png",
-        "description": "Built responsive web applications using React, Bootstrap, Tailwind CSS etc., just like this one."
+        "description": "Built responsive web applications using React, Bootstrap, Tailwind CSS etc. (this site included)."
       },
       {
         "title": "Cloud",
         "logo": "/resume/gcp.png",
-        "description": "Google Cloud Certified. Worked with GCP APIs, Cloud Functions, VMs etc. Tinkered with AWS services like S3, Lambda."
+        "description": "Google Cloud Certified. Worked with GCP APIs, Cloud Functions, VMs etc. Tinkered with AWS services like S3, Lambda, Redshift etc."
       },
       {
         "title": "App",
         "logo": "/resume/android.png",
-        "description": "Explored Android Studio and React Native (Expo) for mobile app development."
+        "description": "Developed mobile apps with Android Studio and React Native (Expo)."
       },
       {
         "title": "Data",
         "logo": "/resume/snowflake.jpg",
-        "description": "Experimented designing data pipelines using Apache Airflow, Snowflake, BigQuery and Redshift. Understanding of basic data processing in PySpark, Pandas etc."
+        "description": "Learned how to design data pipelines with Apache Airflow, Snowflake, BigQuery, Redshift, etc. Picked up basics of data processing in Pandas and PySpark."
       }
     ],
     "other": {

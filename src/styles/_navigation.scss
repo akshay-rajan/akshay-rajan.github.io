@@ -16,12 +16,12 @@
       
       &::before {
         content: '';
-        display: inline-block;   // inline so it sits before text
+        display: inline-block;
         width: 0;
         height: 2px;
         background-color: $primary-color;
         margin-right: 8px;
-        vertical-align: middle;  // aligns with text
+        vertical-align: middle;
         transition: 0.2s ease-in-out;
       }
 
