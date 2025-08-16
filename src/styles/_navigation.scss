@@ -41,27 +41,74 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
-  .navigation {
-    padding: 20px;
-    
-    a {
-      div {
-        &::before {
-          content: none;
-        }
-        
-        &:hover {
-          opacity: 0.6;
-          color: $secondary-color;
-        }
+@media screen and (max-width: 798px) {
+  .toggle-button {
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    color: $highlight-color;
+    opacity: 0.8;
+    font-size: 24px;
+    top: 20px;
+    right: 20px;
+    z-index: 250;
+  }
 
-        &:active {
-          opacity: 1;
-          color: $primary-color;
-        }
+  #nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 200;
+
+    &.visible {
+      display: none;
+    }
+
+    div {
+      width: 80%;
+      &.hidden {
+        display: none;
       }
 
+      a {
+        div {
+          text-align: center;
+          letter-spacing: 0.1em;
+          padding: 10px;
+          width: auto;
+          margin: 0;
+          border: 0;
+          color: $primary-color;
+          border-radius: 5px;
+          margin-bottom: 10px;
+  
+          &::before {
+            content: none;
+          }
+          
+          &:hover {
+            opacity: 0.6;
+            color: $secondary-color;
+          }
+  
+          &:active {
+            opacity: 1;
+            color: $primary-color;
+          }
+        }
+  
+      }
     }
+
   }
 }
