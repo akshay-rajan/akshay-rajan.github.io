@@ -1,6 +1,6 @@
 import React from "react";
 import { useActiveSectionContext } from "../context/ActiveSectionContext";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { FaChevronRight } from "react-icons/fa";
 
 
@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
           onClick={toggleMobileMenu}
         >
           {isVisible ? 
-            <RxHamburgerMenu className="hamburger-icon" /> :
+            <GiHamburgerMenu className="hamburger-icon" /> :
             <FaChevronRight className="chevron-icon" />
           }
         </button>
