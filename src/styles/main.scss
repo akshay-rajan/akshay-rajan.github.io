@@ -20,34 +20,32 @@ body {
   background: $background-3;
   background: $background-4;
   background: $background-5;
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $highlight-color;
+      font-weight: 520;
+    }
+  }
+  
+  h2 {
+    color: $primary-color;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  h3 {
+    color: $primary-color;
+    font-size: 1.2em;
+    font-weight: 520;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
 }
 
-
-
-body a {
-  color: $link-color;
-  text-decoration: none;
-}
-
-body h2 {
-  color: $primary-color;
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-body h3 {
-  color: $primary-color;
-  font-size: 1.2em;
-  font-weight: 520;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
-body a:hover {
-  color: $highlight-color;
-  font-weight: 520;
-}
 
 #root {
   display: flex;
@@ -133,13 +131,9 @@ li {
 
 .content-children {
   padding-left: 35vw;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 footer {
-  text-align: center;
 
   em {
     font-style: normal;
@@ -147,6 +141,8 @@ footer {
   }
   
   .last-updated {
+    margin: 0;
+    margin-top: -10px;
     font-weight: 200;
     font-size: 14px;
     opacity: 0.6;
@@ -175,6 +171,12 @@ footer {
 }
 
 @media screen and (max-width: 798px) {
+  body {
+    h2 {
+      padding-top: 0;
+    }
+  }
+
   section {
     margin-bottom: auto;
   }
