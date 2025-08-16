@@ -8,3 +8,14 @@ $hover-background: rgba(255, 255, 255, 0.1);
 $link-color: $secondary-color;
 $skill-border: rgba(178, 190, 192, 0.2);
 $font-family: 'Inter', sans-serif;
+
+$background-1: -moz-linear-gradient(-45deg, rgba(1,23,47,0) 0%, rgba(1,23,47,1) 100%), 
+            -moz-linear-gradient(left, rgba(1,23,47,1) 0%, rgba(3,54,73,1) 100%);
+$background-2: -webkit-linear-gradient(-45deg, rgba(1,23,47,0) 0%, rgba(1,23,47,1) 100%), 
+            -webkit-linear-gradient(left, rgba(1,23,47,1) 0%, rgba(3,54,73,1) 100%);
+$background-3: -o-linear-gradient(-45deg, rgba(1,23,47,0) 0%, rgba(1,23,47,1) 100%), 
+            -o-linear-gradient(left, rgba(1,23,47,1) 0%, rgba(3,54,73,1) 100%);
+$background-4: -ms-linear-gradient(-45deg, rgba(1,23,47,0) 0%, rgba(1,23,47,1) 100%), 
+            -ms-linear-gradient(left, rgba(1,23,47,1) 0%, rgba(3,54,73,1) 100%);
+$background-5: linear-gradient(135deg, rgba(1,23,47,0) 0%, rgba(1,23,47,1) 100%), 
+            linear-gradient(to right, rgba(1,23,47,1) 0%, rgba(3,54,73,1) 100%);

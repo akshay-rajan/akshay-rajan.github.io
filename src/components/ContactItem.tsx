@@ -8,7 +8,7 @@ const ContactItem: React.FC<{
   return (
     <div className="contact-item">
       {link ? (
-          <a href={link} className="contact-link">
+          <a href={link} className="contact-link" target="_blank" rel="noopener noreferrer">
           {icon}
           {text}
         </a>

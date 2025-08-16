@@ -9,12 +9,20 @@
 @use "navigation";
 
 body {
-  background-color: $background-color;
   color: $font-color;
   font-family: $font-family;
   line-height: 1.5;
   padding: 2px;
+
+  background: $background-color;
+  background: $background-1;
+  background: $background-2;
+  background: $background-3;
+  background: $background-4;
+  background: $background-5;
 }
+
+
 
 body a {
   color: $link-color;
