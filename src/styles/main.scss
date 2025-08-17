@@ -87,7 +87,7 @@ li {
   .header-content {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    min-height: 90vh;
     justify-content: space-between;
     padding: 25px;
   }
@@ -205,7 +205,7 @@ footer {
 
     .header-content {
       padding: 10px;
-      height: auto;
+      min-height: auto;
       
       .first {
         .my-name {
