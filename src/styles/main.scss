@@ -8,12 +8,19 @@
 @use "contact";
 @use "navigation";
 
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
   color: $font-color;
   font-family: $font-family;
   line-height: 1.5;
-  padding: 2px;
-
   background: $background-color;
   background: $background-1;
   background: $background-2;
@@ -62,6 +69,7 @@ body {
 
 section {
   width: 100%;
+  box-sizing: border-box;
   margin-bottom: 50px;
 }
 
@@ -172,6 +180,7 @@ footer {
 
 @media screen and (max-width: 798px) {
   body {
+    margin: 10px;
     h2 {
       margin-bottom: 10px;
       margin-top: 0;
