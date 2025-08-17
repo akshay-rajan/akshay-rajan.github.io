@@ -1,11 +1,12 @@
 import React from "react";
 import { useActiveSectionContext } from "../context/ActiveSectionContext";
+import { useAnimationContext } from "../context/AnimationContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaChevronRight } from "react-icons/fa";
 
-
 const Navigation: React.FC = () => {
   const activeSection = useActiveSectionContext();
+  const { triggerSkipAnimation } = useAnimationContext();
   const [isMobile, setIsMobile] = React.useState(false);
   const [isVisible, setIsVisible] = React.useState(true);
 
@@ -14,7 +15,7 @@ const Navigation: React.FC = () => {
       setIsMobile(window.innerWidth <= 798);
     };
 
-    handleResize(); // Set initial state
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -27,6 +28,15 @@ const Navigation: React.FC = () => {
     const navElement = document.getElementById('nav');
     navElement?.classList.toggle('hidden', !isVisible);
   }
+
+  const handleNavClick = () => {
+    // Skip animation when navigating
+    triggerSkipAnimation();
+    
+    if (isMobile) {
+      toggleMobileMenu();
+    }
+  };
 
   const navItems = [
     { href: "#experience", label: "Experience", id: "experience" },
@@ -55,7 +65,7 @@ const Navigation: React.FC = () => {
             <a 
               key={id} 
               href={href}
-              onClick={toggleMobileMenu}
+              onClick={handleNavClick}
             >
               <div className={activeSection === id ? 'active' : ''}>
                 {label}
