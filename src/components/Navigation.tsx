@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
   function toggleMobileMenu() {
     setIsVisible(!isVisible);
     const navElement = document.getElementById('nav');
-    navElement?.classList.toggle('visible', !isVisible);
+    navElement?.classList.toggle('hidden', !isVisible);
   }
 
   const navItems = [
@@ -49,7 +49,7 @@ const Navigation: React.FC = () => {
           }
         </button>
       )}
-      <nav className="navigation visible" id="nav">
+      <nav className="navigation hidden" id="nav">
         <div>
           {navItems.map(({ href, label, id }) => (
             <a 

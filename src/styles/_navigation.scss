@@ -52,6 +52,12 @@
     top: 20px;
     right: 20px;
     z-index: 250;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+      transition: 0.2s ease-in-out;
+    }
   }
 
   #nav {
@@ -70,14 +76,24 @@
     backdrop-filter: blur(15px);
     z-index: 200;
 
-    &.visible {
-      display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.95);
+      pointer-events: none;
     }
 
     div {
       width: 80%;
       &.hidden {
         display: none;
+        transform: translateX(-100%);
+        visibility: hidden;
       }
 
       a {
