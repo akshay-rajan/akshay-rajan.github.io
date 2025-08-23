@@ -81,7 +81,7 @@ const Navigation: React.FC = () => {
               <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer">
                 <div className="contact">LinkedIn</div>
               </a>
-              <a href={CONTACT.email} target="_blank" rel="noopener noreferrer">
+              <a href={`mailto:${CONTACT.email}`} target="_blank" rel="noopener noreferrer">
                 <div className="contact">Email</div>
               </a>
             </>
