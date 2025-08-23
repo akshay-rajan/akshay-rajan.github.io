@@ -10,18 +10,22 @@ const Contact: React.FC = () => {
       <div className="contact-links">
         <ContactItem
           icon={<FaEnvelope />}
+          text="Email"
           link={`mailto:${CONTACT.email}`}
         />
         <ContactItem
           icon={<FaLinkedin />}
+          text="LinkedIn"
           link={CONTACT.linkedin}
         />
         <ContactItem
           icon={<FaGithub />}
+          text="GitHub"
           link={CONTACT.github}
         />
         <ContactItem
           icon={<FaFileDownload />}
+          text="Download Resume"
           link={CONTACT.resume}
         />
       </div>
