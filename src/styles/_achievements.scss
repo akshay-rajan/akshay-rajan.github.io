@@ -1,14 +1,13 @@
 @use "variables" as *;
 
 .achievements {
-  margin: 10px;
   max-width: 35em;
 
   .achievement-item {
-    padding: 10px;
+    padding: 10px 0 0 0;
     display: flex;
     align-items: center;
-
+    
     &:hover {
       color: $primary-color;
     }
@@ -17,7 +16,7 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-
+      
       &:hover {
         color: $primary-color;
       }
@@ -26,18 +25,18 @@
       width: 30px;
       height: 30px;
       flex-shrink: 0;
-      margin: 5px;
       color: $highlight-color;
+      flex: 1;
     }
     
     .achievement-content {
       display: flex;
-      padding: 5px;
-      
+      padding: 10px;
+      flex: 10;      
     }
   }
-
-
+  
+  
 }
 
 .achievement-item:hover {
@@ -55,7 +54,9 @@
 @media screen and (max-width: 798px) {
   .achievements {
     .achievement-item {
-      padding-left: 0;      
+      .achievement-content {
+        margin: 5px;
+      }      
     }
   }
 }

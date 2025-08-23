@@ -3,17 +3,27 @@
 .certifications {
   margin-top: 10px;
   max-width: 40em;
-
+  
   div {
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    
+    .certificate-icon {
+      width: 34px;
+      height: 34px;
+      vertical-align: middle;
+      color: $highlight-color;
+      flex: 1;
+    }
   }
   
   .certificate-item {
     padding: 10px;
+    list-style: none;
     text-align: left;
+    flex: 10;
     
     .extra {
       font-style: italic;
@@ -26,7 +36,7 @@
       &:hover {
         color: $primary-color;
         
-        svg {
+        .link-icon {
           margin-left: 7px;
           opacity: 1;
           color: $highlight-color;

@@ -11,7 +11,7 @@ const Certificate: React.FC<{
       <a href={link} className="certificate-link" target="_blank" rel="noopener noreferrer">
         <span className="title" dangerouslySetInnerHTML={{ __html: title }} />
         {extra && <span className="extra" dangerouslySetInnerHTML={{ __html: extra }} />}
-        <MdArrowOutward />
+        <MdArrowOutward className="link-icon" />
       </a>
     </li>
   );
