@@ -11,7 +11,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  // min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -54,6 +53,34 @@ body {
     margin-top: 15px;
     margin-bottom: 5px;
   }
+
+  .resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    background: $background-color;
+    background: $background-1;
+    background: $background-2;
+    background: $background-3;
+    background: $background-4;
+    background: $background-5;
+    background-attachment:scroll, fixed;
+
+    .content section {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 50px;
+    }
+    section.contact {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 
@@ -64,28 +91,6 @@ body {
   min-height: 100vh;
 }
 
-.resume-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-height: none;
-  box-sizing: border-box;
-  overflow: hidden;
-  
-  background: $background-color;
-  background: $background-1;
-  background: $background-2;
-  background: $background-3;
-  background: $background-4;
-  background: $background-5;
-  background-attachment:scroll, fixed;
-}
-
-section {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 50px;
-}
 
 li {
   list-style-type: square;
@@ -200,37 +205,45 @@ footer {
 
     h2 {
       margin-bottom: 10px;
+      padding-top: 0;
       margin-top: 0;
     }
-  }
-  
-  .resume-container {
-    padding: 10px;
-    flex-direction: column;
-    max-height: none;
 
-    .content {
-      width: 100%;
-      padding: 0;
-      
-      section {
-        margin-bottom: auto;
-        padding: 10px;
+    
+    .resume-container {
+      padding: 10px;
+      flex-direction: column;
+      max-height: none;
+
+      section.contact {
+        margin-bottom: 20px;
+      }
+  
+      .content {
+        width: 100%;
+        padding: 0;
+        
+        section {
+          margin-bottom: auto;
+          padding: 10px;
+
+        }
       }
     }
   }
+  
   
   .header {
     margin-top: 10px;
     position: relative;
     display: block;
     z-index: auto;
-    min-height: auto;
+    min-height: 0;
     padding: 5px;
 
     .header-content {
       padding: 10px;
-      min-height: auto;
+      min-height: 0;
       
       .first {
         .my-name {

@@ -15,12 +15,8 @@ const Left: React.FC = () => {
             <FaMapMarkerAlt /> {ADDRESS}
           </div>
         </div>
-        <div className="second">
-          <Navigation />
-        </div>
-        <div className="third">
-          <Contact />
-        </div>
+        <div className="second"><Navigation /></div>
+        <div className="third"><Contact /></div>
       </div>
     </div>
   );

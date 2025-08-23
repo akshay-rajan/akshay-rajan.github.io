@@ -38,13 +38,12 @@
 @media screen and (max-width: 1080px) {
   .contact-links {
     justify-content: left;
+    margin-left: 5px;
     padding-bottom: 0;
   }
   .contact-item {
     margin-bottom: 0;
-    svg {
-      width: 24px;
-      height: 24px;
-    }
+    width: 34px;
+    height: 34px;
   }
 }

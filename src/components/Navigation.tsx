@@ -3,6 +3,7 @@ import { useActiveSectionContext } from "../context/ActiveSectionContext";
 import { useAnimationContext } from "../context/AnimationContext";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaChevronRight } from "react-icons/fa";
+import { CONTACT } from "../config";
 
 const Navigation: React.FC = () => {
   const activeSection = useActiveSectionContext();
@@ -72,6 +73,19 @@ const Navigation: React.FC = () => {
               </div>
             </a>
           ))}
+          {isMobile && (
+            <>
+              <a href={CONTACT.resume} target="_blank" rel="noopener noreferrer">
+                <div className="contact">Resume</div>
+              </a>
+              <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer">
+                <div className="contact">LinkedIn</div>
+              </a>
+              <a href={CONTACT.email} target="_blank" rel="noopener noreferrer">
+                <div className="contact">Email</div>
+              </a>
+            </>
+          )}
         </div>
       </nav>
     </>

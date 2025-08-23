@@ -17,6 +17,14 @@
       color: $highlight-color;
       flex: 1;
     }
+    
+    &:hover {
+      .certificate-icon {
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+      }
+    }
+    
   }
   
   .certificate-item {

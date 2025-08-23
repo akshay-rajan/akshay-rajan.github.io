@@ -99,8 +99,11 @@
       flex-direction: column;
       
       .category-name {
-        font-weight: bold;
-        margin-right: 10px;
+        font-weight: 200;
+        opacity: 0.2;
+        letter-spacing: 0.2em;
+        margin: 0 10px;
+        z-index: -1;
         min-width: 20%;
       }
       
@@ -132,8 +135,15 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
           }
         }
-        
-      }  
+      }
+      
+      &:hover {
+        .category-name {
+          opacity: 0.4;
+          color: $highlight-color;
+          transition: all 0.2s ease-in-out;
+        }
+      }
     } 
   }
 }
