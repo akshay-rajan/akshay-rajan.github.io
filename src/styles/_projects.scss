@@ -1,5 +1,36 @@
 @use "variables" as *;
 
+.project-item-container {
+  &.hidden {
+    display: none;
+  }
+
+}
+.project-toggle {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: $highlight-color;
+
+    svg {
+      &.more {
+        transform: translateY(-2px);
+      }
+      &.less {
+        transform: translateY(2px);
+      }
+    }
+  }
+}
+
 .project-item-link {
   text-decoration: none;
   color: $primary-color;

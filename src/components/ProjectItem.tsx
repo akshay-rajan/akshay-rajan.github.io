@@ -4,11 +4,13 @@ import { MdArrowOutward } from "react-icons/md";
 const ProjectItem: React.FC<{
   title: string;
   technologies: string[];
+  index: number;
+  description: string[];
+  show: boolean;
   link?: string;
   github?: string;
-  description: string[];
   image?: string;
-}> = ({ title, technologies, link, github, description, image }) => {
+}> = ({ title, technologies, index, link, github, description, image, show }) => {
   const handleVisitClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -18,7 +20,7 @@ const ProjectItem: React.FC<{
   };
 
   return (
-    <>
+    <div className={`project-item-container ${index > 1 && !show && "hidden"}`}>
       {github &&
         <a
           href={github}
@@ -66,7 +68,7 @@ const ProjectItem: React.FC<{
           </div>
         </a>
       }
-    </>
+    </div>
   );
 }
 
