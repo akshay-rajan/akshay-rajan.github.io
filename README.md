@@ -27,7 +27,8 @@ Reusable setup with all the text content in one [config.json](./src/config.json)
 
 ### Usage
 
-> To create a copy of this repository to your account, click <span background-color="green"> Use this template </span> on the top right. To serve the website locally, follow the steps below.
+> To create a copy of this repository to your account, click <span style="color='green';"> Use this template </span> on the top right. 
+> To serve the page locally, follow the steps below.
 
 ```sh
 # Clone the repository
