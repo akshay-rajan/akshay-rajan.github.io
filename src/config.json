@@ -68,27 +68,27 @@
     "main": [
       {
         "title": "Backend",
-        "logo": "/resume/python.png",
+        "logo": "/python.png",
         "description": "Worked on microservices with FastAPI, and also built projects using Django. Comfortable with advanced SQL and tuning APIs for speed."
       },
       {
         "title": "Frontend",
-        "logo": "/resume/react.png",
+        "logo": "/react.png",
         "description": "Built responsive web applications using React, Bootstrap, Tailwind CSS etc. (this site included)."
       },
       {
         "title": "Cloud",
-        "logo": "/resume/gcp.png",
+        "logo": "/gcp.png",
         "description": "Google Cloud Certified. Worked with GCP APIs, Cloud Functions, VMs etc. Tinkered with AWS services like S3, Lambda, Redshift etc."
       },
       {
         "title": "App",
-        "logo": "/resume/android.png",
+        "logo": "/android.png",
         "description": "Developed mobile apps with Android Studio and React Native (Expo)."
       },
       {
         "title": "Data",
-        "logo": "/resume/snowflake.jpg",
+        "logo": "/snowflake.jpg",
         "description": "Learned how to design data pipelines with Apache Airflow, Snowflake, BigQuery, Redshift, etc. Picked up basics of data processing in Pandas and PySpark."
       }
     ],
@@ -211,5 +211,5 @@
       "description": "Obtained an All India Rank of <strong>1778</strong> in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
     }
   ],
-  "builtAt": "23-08-2025"
+  "builtAt": "24-08-2025"
 }

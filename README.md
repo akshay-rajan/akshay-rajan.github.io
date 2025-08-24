@@ -5,7 +5,7 @@ Reusable setup with all the text content in one [config.json](./src/config.json)
 ### Folder Structure
 
 ```sh
-📁 resume
+📁
 ├── 📁 public
 ├── 📁 scripts
 ├── 📁 src
@@ -27,10 +27,12 @@ Reusable setup with all the text content in one [config.json](./src/config.json)
 
 ### Usage
 
+> To create a copy of this repository to your account, click <span background-color="green"> Use this template </span> on the top right. To serve the website locally, follow the steps below.
+
 ```sh
 # Clone the repository
-git clone https://github.com/akshay-rajan/resume.git
-cd resume
+git clone https://github.com/akshay-rajan/akshay-rajan.github.io.git
+cd akshay-rajan.github.io
 ```
 ```sh
 # Install packages
