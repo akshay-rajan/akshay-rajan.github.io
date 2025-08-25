@@ -149,7 +149,7 @@
       ],
       "link": "https://expertsyst.me",
       "github": "https://github.com/akshay-rajan/expertsystem",
-      "image": "/resume/expertsystem.png",
+      "image": "/expertsystem.png",
       "description": [
         "A user interface enabling the complete creation of a machine learning pipeline—including data preprocessing, modeling, and evaluation—without writing any code.",
         "Enables users to upload datasets, select from 13 algorithms and generate models directly from the platform, increasing accessibility to ML for over 95% of internet users without any programming knowledge.",
@@ -164,7 +164,7 @@
         "Blockchain"
       ],
       "github": "https://github.com/akshay-rajan/solanavault",
-      "image": "/resume/solanavault.png",
+      "image": "/solanavault.png",
       "description": [
         "A decentralized token staking platform built on the Solana blockchain using the Anchor framework.",
         "Implemented features for depositing and withdrawing tokens (SOL & SPL), automated minting and distribution of tokens as rewards, managing vault operations and stringent security protocols to protect user data and transactions.",
