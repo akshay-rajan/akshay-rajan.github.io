@@ -142,7 +142,7 @@
   },
   "projects": [
     {
-      "title": "Expert System: A User Interface for Machine Learning",
+      "title": "Expert System",
       "technologies": [
         "Django",
         "Machine Learning"
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "title": "Solana Vault: Token Staking Platform",
+      "title": "Solana Vault",
       "technologies": [
         "Solana",
         "Rust",
@@ -211,5 +211,5 @@
       "description": "Obtained an All India Rank of <strong>1778</strong> in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
     }
   ],
-  "builtAt": "24-08-2025"
+  "builtAt": "25-08-2025"
 }

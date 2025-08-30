@@ -31,7 +31,7 @@ const ProjectItem: React.FC<{
           <div className="project-item">
             <div className="project-title">
               <strong className="name">
-                {title}
+                {title} <MdArrowOutward className="external-link-icon" />
               </strong>
               <div className="technologies">
                 {technologies.join(", ")}
