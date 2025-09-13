@@ -36,7 +36,10 @@
       "company": "Quantiphi",
       "year": "2025 July - Present",
       "description": [
-        "Designed scalable REST APIs using FastAPI as part of a large-scale microservices architecture, with deployment on Google Cloud Platform and comprehensive unit test coverage."
+        "Developed REST APIs in Python (FastAPI) with PostgreSQL and Firebase for user authorization, data exchange, and cloud service allocation.",
+        "Optimized SQL queries and application logic, cutting API response times by 90% and improving the user experience for 1,000+ data scientists and engineers accessing cloud services and generative AI through the platform.",
+        "Implemented secure user sign-up with OTP verification and reCAPTCHA, and strengthened application security through multifactor authentication (MFA).",
+        "Took end-to-end ownership of features, executed swift bug resolutions, and provided guidance to developers throughout development, deployment, and maintenance."
       ],
       "link": "https://quantiphi.com/"
     },
@@ -46,8 +49,8 @@
       "company": "Quantiphi",
       "year": "2025 Jan - 2025 June",
       "description": [
-        "Designed and implemented a fully automated data migration pipeline leveraging AWS S3, Snowflake, Google BigQuery, Apache Airflow, and PySpark for seamless data movement, transformation, and orchestration.",
-        "Underwent comprehensive training on Data Engineering, guided by experienced leaders and senior developers."
+        "Designed and developed scalable APIs using FastAPI as part of a large-scale microservices architecture, with deployment on Google Cloud Platform and comprehensive unit test coverage.",
+        "Prototyped a fully automated data migration pipeline using AWS S3, Snowflake, Google BigQuery, Apache Airflow, and PySpark for seamless data movement and transformation."
       ],
       "link": "https://quantiphi.com/"
     },
@@ -57,9 +60,8 @@
       "company": "XTG Technologies",
       "year": "2024 May - 2024 Nov",
       "description": [
-        "Developed 100% on-chain decentralized applications on the Internet Computer blockchain using Motoko and React.",
-        "Developed an API to support user authorization to integrate into the company’s microservices architecture.",
-        "Collaborated with team members to develop a token-staking platform on the Solana blockchain, using Rust."
+        "Built a token-staking platform backend for cryptocurrency exchange on the Solana blockchain, using Rust.",
+        "Developed a decentralized API to support user authentication on the Internet Computer blockchain, using Motoko."
       ],
       "link": "https://xtgtechnologies.com/"
     }
@@ -211,5 +213,5 @@
       "description": "Obtained an All India Rank of <strong>1778</strong> in the IIT JAM (Joint Admission Test for Masters) Mathematics, 2023."
     }
   ],
-  "builtAt": "30-08-2025"
+  "builtAt": "13-09-2025"
 }
