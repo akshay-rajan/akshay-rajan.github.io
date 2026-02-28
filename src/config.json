@@ -39,12 +39,15 @@
         "Developed REST APIs in Python (FastAPI) with PostgreSQL and Firebase for user authorization, data exchange, and cloud service allocation.",
         "Optimized SQL queries and application logic, cutting API response times by 90% and improving the user experience for 1,000+ data scientists and engineers accessing cloud services and generative AI through the platform.",
         "Implemented secure user sign-up with OTP verification and reCAPTCHA, and strengthened application security through multifactor authentication (MFA).",
-        "Took end-to-end ownership of features, executed swift bug resolutions, and provided guidance to developers throughout development, deployment, and maintenance."
+        "Took end-to-end ownership of features, executed swift bug resolutions, and provided guidance to developers throughout development, deployment, and maintenance.",
+        "Revamped a legacy Java application UI with CSS and JavaScript to deliver a modern, responsive interface.",
+        "Resolved frontend and cross-browser bugs while stabilizing Selenium automation tests in Java.",
+        "Collaborated directly with clients to gather requirements, clarify UI expectations, and provide structured development updates throughout the life cycle."
       ],
       "link": "https://quantiphi.com/"
     },
     {
-      "title": "Software Developer, Data Engineering",
+      "title": "Software Developer",
       "role": "Internship",
       "company": "Quantiphi",
       "year": "2025 Jan - 2025 June",
@@ -149,7 +152,6 @@
         "Django",
         "Machine Learning"
       ],
-      "link": "https://expertsyst.me",
       "github": "https://github.com/akshay-rajan/expertsystem",
       "image": "/expertsystem.png",
       "description": [
@@ -196,11 +198,14 @@
   ],
   "achievements": [
     {
+      "description": "Received the <strong>SPOT Award</strong> at Quantiphi (H1 2025) for exceptional outstanding ownership and performance."
+    },
+    {
       "description": "Scored <strong>99.54</strong> percentile in UGC NET (Computer Science), 2025 — ranked among the <strong>top 200</strong> nationwide.",
       "link": "https://drive.google.com/file/d/1xbR91fP3k49jgRb3ddeMMr_EhvrH3g2S/view?usp=sharing"
     },
     {
-      "description": "Rated <strong>1800+ (Knight)</strong> on LeetCode, ranked in the <strong>top 5%</strong> globally, with 750+ problems solved.",
+      "description": "Rated <strong>1800+ (Knight)</strong> on LeetCode, ranked in the <strong>top 3%</strong> globally, with 850+ problems solved.",
       "link": "https://leetcode.com/u/akshayrajan/"
     },
     {
